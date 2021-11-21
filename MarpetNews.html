@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .news_container {
+            font-family: SVN-Poppins;
+            margin: 20px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        .title {
+            background-color: wheat;
+            color: palevioletred;
+            width: fit-content;
+        }
+        
+        .bigImg {
+            float: left;
+            width: 60%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .news-box {
+            display: flex;
+        }
+        
+        .bigImg span {
+            position: absolute;
+            z-index: 22;
+            background-color: rgb(216, 112, 147, 0.7);
+            left: 0;
+            bottom: 0;
+            padding: 10px;
+            color: wheat;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .right-content {
+            float: right;
+            width: 40%;
+            height: 100%;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        img#right {
+            width: 250px;
+            height: 170px;
+        }
+        
+        .ul-box {
+            height: 100%;
+            margin: 0 20px;
+        }
+        
+        .ul-box a {
+            display: flex;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .ul-box a span {
+            margin-left: 10px;
+        }
+        
+        .ul-box li {
+            margin-top: 15px;
+        }
+        
+        .ul-box li:first-child {
+            margin-top: 0px;
+        }
+        
+        .right-content a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #4c4c4c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news_container">
+        <div class="top-news">
+            <div class="title-box">
+                <h2 class="title">TIN NỔI BẬT</h2>
+            </div>
+            <div class="news-box">
+                <div class="bigImg">
+                    <a href="discount50.html">
+                        <img src="../MarpetNews/news_img/discount50.png" width="800px" alt="">
+                        <span>MÙA ĐÔNG KHÔNG LẠNH - GIẢM GIÁ 50% QUẦN ÁO THÚ CƯNG
+                        <div class="txt"></div>
+                    </span>
+                    </a>
+                </div>
+                <div class="right-content">
+                    <ul class="ul-box">
+                        <li>
+                            <a href="ulnews1.html">
+                                <img id="right" src="../MarpetNews/news_img/chuaviemdatainha.jpg" alt="">
+                                <span>CÁCH TỰ CHỮA VIÊM DA Ở CHÓ MÈO TẠI NHÀ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ulnews2.html">
+                                <img id="right" src="../MarpetNews/news_img/cunmangbau.jpg" alt="">
+                                <span>CÚN MANG BẦU NÊN CÓ CHẾ ĐỘ DINH DƯỠNG NHƯ THẾ NÀO?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ulnews3.html">
+                                <img id="right" src="../MarpetNews/news_img/tameoantoan.jpg" alt="">
+                                <span>CÁCH TẮM CHO MÈO MANG THAI AN TOÀN TẠI NHÀ</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-news"></div>
+    </div>
+</body>
+
+</html>
