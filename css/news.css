@@ -47,3 +47,24 @@ li {
 li span {
     font-weight: normal;
 }
+
+#breadcrumb div {
+    float: left;
+    line-height: 30px;
+}
+
+#breadcrumb {
+    height: 30px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+#breadcrumb a {
+    text-decoration: none;
+    padding: 0 5px;
+    color: #666;
+}
+
+a {
+    cursor: pointer;
+}
