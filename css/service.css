@@ -1,0 +1,96 @@
+* {
+    font-family: SVN-Poppins;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header, .contact {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+h2 {
+    margin: 0;
+}
+.header-text {
+    width: 60%;
+    text-align: center;
+    margin: 30px auto;
+}
+.content {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.color {
+    background-color: palevioletred;
+    color: white;
+}
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+h1 {
+    margin: 0;
+}
+.color div  {
+    width: 60%;
+    margin-top: 20px;
+}
+.content-text {
+    font-size: 14px;
+}
+.white span {
+    width: 45%;
+}
+.price {
+    flex-direction: column;
+    text-align: center;
+}
+.price h1 {
+    color: palevioletred;
+    margin-bottom: 20px;
+}
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.box {
+    background-color: palevioletred;
+    width: 20%;
+    color: white;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px palevioletred);
+}
+.box h2 {
+    margin-bottom: 20px;
+}
+.box p {
+    font-size: 14px;
+    margin: 10px 10px;
+}
+@media screen and (max-width: 780px) {
+    .content {
+        display: block;
+        text-align: center;
+    }
+    .content-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .box-container{
+        display: block;
+    }
+    .box {
+        display: block;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
