@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chính sách bảo hành</title>
+    <title>MarPet</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <style>
         html,body{
             font-family: SVN-Poppins;
@@ -25,44 +32,64 @@
         
     </style>
 </head>
+
 <body>
-    <div>
-        <h3 style="color: #db7093;">Chính sách Bảo hành Sản phẩm</h3>
-        <p>Bảo hành sản phẩm là khắc phục những lỗi hỏng hóc, sự cố kỹ thuật xảy ra do lỗi của nhà sản xuất.</p>
+    <!-- chèn html header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- phần nội dung -->
+    <div class="content">
         <div>
-            <ol>
-                <li>
-                    <h4>Điều kiện về bảo hành:</h4>
-                    <p class="khoangCachVoiLePhai" style="font-weight: normal; color:black;">Sản phẩm được bảo hành miễn phí nếu sản phẩm đó đáp ứng đủ các điều kiện sau:</p>
-                    <ol class="khoangCachVoiLePhai" type="a"">
-                        <li>Còn thời hạn bảo hành (được tính kể từ ngày khách hàng nhận được sản phẩm).</li>
-                        <li>Khách hàng có đủ cả hóa đơn bán hàng của MarPet , phiếu bảo hành, tem bảo hành theo quy định của từng Nhà sản xuất.</li>
-                    </ol>
-                </li>
-
-                <li>
-                    <h4>Nơi nhận bảo hành:</h4>
-                    <ol type="a" class="khoangCachVoiLePhai">
-                        <li>MarPet nhận sản phẩm cần bảo hành của khách: Khách hàng chuyển sản phẩm cần bảo hành đến bất kỳ cửa hàng thuộc hệ thống của MarPet. Chúng tôi sẽ có trách nhiệm gửi sản phẩm đến trung tâm bảo hành của nhà sản xuất. Sau khi sản phẩm được bảo hành, MarPet sẽ thông báo cho khách hàng đên nhận lại sản phẩm tại hệ thống cửa hàng của MarPet.</li>
-                        <p style="font-weight: normal; color:black;">Các chi phí phát sinh trong quá trình thực hiện việc bảo hành như phí vận chuyển, thay thế linh kiện v.v… sẽ do khách hàng chi trả.</p>
-                        <li>Khách hàng gửi trực tiếp sản phẩm cần bảo hành đến các trung tâm bảo hành của nhà sản xuất. Nhà sản xuất sẽ có trách nhiệm thực hiện việc bảo hành và thông báo kết quả cho khách hàng.</li>
-                    </ol>
-                </li>
-
-                <li>
-                    <h4>Những trường hợp không được bảo hành:</h4>
-                    <ol type="a" class="khoangCachVoiLePhai">
-                        <li>Sản phẩm đã hết thời hạn bảo hành.</li>
-                        <li>Phiếu bảo hành không được điền đầy đủ các thông tin khách hàng và các thông tin trên sản phẩm không trùng khớp với thông tin ghi trên phiếu bảo hành.</li>
-                        <li>Hóa đơn bán hàng bị mất hoặc bị rách không đọc được thông tin về sản phẩm.</li>
-                        <li>Phiếu bảo hành, Tem bảo hành bị rách hoặc mất; Tem bảo hành bị dán đè, hoặc Tem bảo hành bị sửa đổi nội dung (kể cả Tem bảo hành gốc).</li>
-                        <li>Tự ý tháo dỡ, sửa chữa sản phẩm bởi các cá nhân khác không phải là nhân viên của Nhà sản xuất.</li>
-                        <li>Sử dụng sai hướng dẫn hoặc quy định của nhà sản xuất: Sai điện áp, sản phẩm bị cháy nổ hay hỏng hóc do tác động cơ học; biến dạng do rơi, vỡ, va đập; bị xước, bị hỏng do ẩm ướt, hoen rỉ, chảy nước, động vật xâm nhập vào, thiên tai, hỏa hoạn.</li>
-                        <li>Theo các quy định riêng của nhà sản xuất.</li>
-                    </ol>
-                </li>
-            </ol>
+            <h3 style="color: #db7093;">Chính sách Bảo hành Sản phẩm</h3>
+            <p>Bảo hành sản phẩm là khắc phục những lỗi hỏng hóc, sự cố kỹ thuật xảy ra do lỗi của nhà sản xuất.</p>
+            <div>
+                <ol>
+                    <li>
+                        <h4>Điều kiện về bảo hành:</h4>
+                        <p class="khoangCachVoiLePhai" style="font-weight: normal; color:black;">Sản phẩm được bảo hành miễn phí nếu sản phẩm đó đáp ứng đủ các điều kiện sau:</p>
+                        <ol class="khoangCachVoiLePhai" type="a"">
+                            <li>Còn thời hạn bảo hành (được tính kể từ ngày khách hàng nhận được sản phẩm).</li>
+                            <li>Khách hàng có đủ cả hóa đơn bán hàng của MarPet , phiếu bảo hành, tem bảo hành theo quy định của từng Nhà sản xuất.</li>
+                        </ol>
+                    </li>
+    
+                    <li>
+                        <h4>Nơi nhận bảo hành:</h4>
+                        <ol type="a" class="khoangCachVoiLePhai">
+                            <li>MarPet nhận sản phẩm cần bảo hành của khách: Khách hàng chuyển sản phẩm cần bảo hành đến bất kỳ cửa hàng thuộc hệ thống của MarPet. Chúng tôi sẽ có trách nhiệm gửi sản phẩm đến trung tâm bảo hành của nhà sản xuất. Sau khi sản phẩm được bảo hành, MarPet sẽ thông báo cho khách hàng đên nhận lại sản phẩm tại hệ thống cửa hàng của MarPet.</li>
+                            <p style="font-weight: normal; color:black;">Các chi phí phát sinh trong quá trình thực hiện việc bảo hành như phí vận chuyển, thay thế linh kiện v.v… sẽ do khách hàng chi trả.</p>
+                            <li>Khách hàng gửi trực tiếp sản phẩm cần bảo hành đến các trung tâm bảo hành của nhà sản xuất. Nhà sản xuất sẽ có trách nhiệm thực hiện việc bảo hành và thông báo kết quả cho khách hàng.</li>
+                        </ol>
+                    </li>
+    
+                    <li>
+                        <h4>Những trường hợp không được bảo hành:</h4>
+                        <ol type="a" class="khoangCachVoiLePhai">
+                            <li>Sản phẩm đã hết thời hạn bảo hành.</li>
+                            <li>Phiếu bảo hành không được điền đầy đủ các thông tin khách hàng và các thông tin trên sản phẩm không trùng khớp với thông tin ghi trên phiếu bảo hành.</li>
+                            <li>Hóa đơn bán hàng bị mất hoặc bị rách không đọc được thông tin về sản phẩm.</li>
+                            <li>Phiếu bảo hành, Tem bảo hành bị rách hoặc mất; Tem bảo hành bị dán đè, hoặc Tem bảo hành bị sửa đổi nội dung (kể cả Tem bảo hành gốc).</li>
+                            <li>Tự ý tháo dỡ, sửa chữa sản phẩm bởi các cá nhân khác không phải là nhân viên của Nhà sản xuất.</li>
+                            <li>Sử dụng sai hướng dẫn hoặc quy định của nhà sản xuất: Sai điện áp, sản phẩm bị cháy nổ hay hỏng hóc do tác động cơ học; biến dạng do rơi, vỡ, va đập; bị xước, bị hỏng do ẩm ướt, hoen rỉ, chảy nước, động vật xâm nhập vào, thiên tai, hỏa hoạn.</li>
+                            <li>Theo các quy định riêng của nhà sản xuất.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
+
+    <!-- chèn html footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- function để chèn html -->
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
 </body>
+
 </html>
