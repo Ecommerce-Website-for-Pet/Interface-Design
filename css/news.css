@@ -40,10 +40,6 @@ p#illustrate {
     text-align: center;
 }
 
-li {
-    font-weight: 700;
-}
-
 li span {
     font-weight: normal;
 }
@@ -67,4 +63,30 @@ li span {
 
 a {
     cursor: pointer;
+}
+
+.news_inline-img {
+    width: 765px;
+    height: 465px;
+}
+
+@media screen and (max-width: 780px) {
+    .news_inline-img {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news_inline-img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .news_inline-img {
+        width: 200px;
+        height: 50px;
+    }
 }

@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin tức</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <style>
         html,
         body {
@@ -18,8 +24,8 @@
             margin: 0 20px 20px 20px;
         }
         
-        h2 {
-            margin-top: 0;
+        .top-news h2 {
+            margin-top: 5px;
             margin-bottom: 10px;
             font-size: 36px;
         }
@@ -29,7 +35,6 @@
         }
         
         .title {
-            background-color: wheat;
             color: palevioletred;
             width: fit-content;
         }
@@ -44,6 +49,7 @@
         
         .news-box {
             display: flex;
+            margin-bottom: 15px;
         }
         
         .bigImg span {
@@ -59,19 +65,24 @@
             font-weight: 700;
         }
         
+        .bigImg span:hover {
+            text-decoration: underline;
+        }
+        
         .right-content {
             float: right;
             width: 40%;
             height: 100%;
+            margin-left: 15px;
         }
         
-        ul {
+        .news-box ul {
             padding: 0;
             margin: 0;
             list-style: none;
         }
         
-        img#right {
+        .right-content img#right {
             width: 250px;
             height: 170px;
         }
@@ -89,6 +100,12 @@
         
         .ul-box a span {
             margin-left: 10px;
+            width: 100%;
+        }
+        
+        .ul-box a span:hover {
+            text-decoration: underline;
+            color: palevioletred;
         }
         
         .ul-box li {
@@ -122,13 +139,114 @@
             color: #666;
         }
         
-        a {
+        .bigImg a {
             cursor: pointer;
+        }
+        
+        @media screen and (max-width: 1250px) {
+            .bigImg img {
+                width: 700px;
+                height: 500px;
+            }
+            .bigImg span {
+                width: 690px;
+                padding-right: 0px;
+            }
+            .right-content img#right {
+                width: 230px;
+                height: 158px;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .bigImg img {
+                width: 600px;
+                height: 400px;
+            }
+            .bigImg span {
+                width: 550px;
+                padding-right: 0px;
+            }
+            .right-content img#right {
+                width: 180px;
+                height: 124px;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .bigImg img {
+                width: 480px;
+                height: 350px;
+            }
+            .bigImg span {
+                width: 470px;
+                padding-right: 0px;
+            }
+            .right-content img#right {
+                width: 150px;
+                height: 108px;
+            }
+        }
+        
+        @media screen and (max-width: 840px) {
+            .bigImg img {
+                width: 430px;
+                height: 300px;
+            }
+            .bigImg span {
+                width: 420px;
+                padding-right: 0px;
+            }
+            .right-content img#right {
+                width: 132px;
+                height: 89px;
+            }
+        }
+        
+        @media screen and (max-width: 760px) {
+            .news-box {
+                display: flex;
+                flex-direction: column;
+                width: 900px;
+            }
+            .right-content {
+                margin-top: 15px;
+                margin-left: 0px;
+            }
+            .bigImg img {
+                width: 450px;
+                height: 300px;
+            }
+            .bigImg span {
+                width: 440px;
+                padding-right: 0px;
+            }
+            .right-content img#right {
+                width: 300px;
+                height: 200px;
+            }
+            .li_news-title {
+                width: 140px;
+                text-align: left;
+            }
+            .ul-box {
+                margin-left: 0px;
+            }
+            .top-news h2 {
+                font-size: 28px;
+            }
+            .ul-box {
+                height: 100%;
+                margin: 0 20px;
+                width: 460px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div w3-include-html="header.html"></div>
+    <div></div>
     <div id="breadcrumb">
         <div>
             <a href="" class="nopad-1">
@@ -144,6 +262,7 @@
         </div>
     </div>
     <div class="news_container">
+
         <div class="top-news">
             <div class="title-box">
                 <h2 class="title">TIN NỔI BẬT</h2>
@@ -151,7 +270,7 @@
             <div class="news-box">
                 <div class="bigImg">
                     <a href="discount50.html">
-                        <img src="../MarpetNews/news_img/discount50.png" width="800px" alt="">
+                        <img src="./library/discount50.png" width="800px" alt="">
                         <span>MÙA ĐÔNG KHÔNG LẠNH - GIẢM GIÁ 50% QUẦN ÁO THÚ CƯNG
                         <div class="txt"></div>
                     </span>
@@ -161,20 +280,20 @@
                     <ul class="ul-box">
                         <li>
                             <a href="ulnews1.html">
-                                <img id="right" src="../MarpetNews/news_img/chuaviemdatainha.jpg" alt="">
-                                <span>CÁCH TỰ CHỮA VIÊM DA Ở CHÓ MÈO TẠI NHÀ</span>
+                                <img id="right" src="./library/chuaviemdatainha.jpg" alt="">
+                                <span class="li_news-title">CÁCH TỰ CHỮA VIÊM DA Ở CHÓ MÈO TẠI NHÀ</span>
                             </a>
                         </li>
                         <li>
                             <a href="ulnews2.html">
-                                <img id="right" src="../MarpetNews/news_img/cunmangbau.jpg" alt="">
-                                <span>CÚN MANG BẦU NÊN CÓ CHẾ ĐỘ DINH DƯỠNG NHƯ THẾ NÀO?</span>
+                                <img id="right" src="./library/cunmangbau.jpg" alt="">
+                                <span class="li_news-title">CÚN MANG BẦU NÊN CÓ CHẾ ĐỘ DINH DƯỠNG NHƯ THẾ NÀO?</span>
                             </a>
                         </li>
                         <li>
                             <a href="ulnews3.html">
-                                <img id="right" src="../MarpetNews/news_img/tameoantoan.jpg" alt="">
-                                <span>CÁCH TẮM CHO MÈO MANG THAI AN TOÀN TẠI NHÀ</span>
+                                <img id="right" src="./library/tameoantoan.jpg" alt="">
+                                <span class="li_news-title">CÁCH TẮM CHO MÈO MANG THAI AN TOÀN TẠI NHÀ</span>
                             </a>
                         </li>
 
@@ -182,8 +301,17 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-news"></div>
+
+
     </div>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
 </body>
 
 </html>
