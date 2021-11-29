@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chính sách đổi trả hàng</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <style>
         html{
             font-family: SVN-Poppins;
@@ -15,40 +22,60 @@
         }
     </style>
 </head>
+
 <body>
-    <div>
-        <h3 style="color: #db7093;">Chính sách Đổi hàng tại MarPet</h3>
-        <p style="font-weight: bold;">Quý khách hoàn toàn có thể đổi lại hàng. </p>
+    <!-- chèn html header -->
+    <div w3-include-html="header.html"></div>
 
-        <p>Bạn đã bao giờ mua hàng tại các cửa hàng & bạn không thích sản phẩm mình đã mua? Các cửa hàng không cho bạn đổi sang sản phẩm khác? Bạn hoàn toàn có thể đổi được khi bạn mua hàng tại showroom MarPet. </p>
-
-        <p style="font-weight: bold;">Điều kiện đổi sản phẩm: </p>
-        <div style="margin-right:30px;">
-            <ol>
-                <li>Bạn có thể đổi lại hàng trong vòng <b style="color: #db7093;">30 ngày</b> kể từ ngày mua theo Hoá đơn mà không phải chịu bất kỳ một khoản phí nào.</li>
-                <li>Sản phẩm chưa bóc hộp hoặc tem & còn mới 100% kể từ lúc mua. Nguyên trạng như khi MarPet giao sản phẩm cho Quý khách.</li>
-                <li>
-                    Sản phẩm đổi trực tiếp tại:
-                    <ol style="margin-right: 30px;">
-                        <br>
-                        <li>10 Hàm Long, Q.Hoàn Kiếm, Hà Nội - 024 3933 2727</li>
-                        <li>174 Kim Mã, Q.Ba Đình, Hà Nội - 024 3244 4824</li>
-                        <li>250/3 Lý Chính Thắng, Quận 3, Tp. HCM - 028 3526 0717</li>
-                        <li>174 Cộng Hòa, Q.Tân Bình, Tp. HCM - 028 3811 2799</li>
-                        <li>255 Trưng Nữ Vương, Q.Hải Châu, Đà Nẵng – 023 6364 6727</li>
-                        
-                    </ol>
-                    <p style="color: #db7093; font-weight: bold;">Không đổi tại nhà khách hàng. Không gửi trực tiếp cho Nhà sản xuất </p>
-                </li>
-                <li>Sản phẩm đổi mới sẽ ngang bằng hoặc lớn hơn sản phẩm đã mua trước đó.</li>
-                <li>Đối với quý khách hàng đã mua hàng tại cửa hàng & sản phẩm đã mở hộp ra kiểm tra tại cửa hàng sẽ không được đổi sang sản phẩm khác.</li>
-                <li>Không nhận đổi lại hàng nếu các sản phẩm kể trên nằm trong chương trình “Stock Clearance” (Thanh lý hàng tồn kho).</li>
-                <li>Trong các trường hợp khác quyền quyết định sẽ thuộc về MarPet.</li>
-            </ol>
+    <!-- phần nội dung -->
+    <div class="content">
+        <div>
+            <h3 style="color: #db7093;">Chính sách Đổi hàng tại MarPet</h3>
+            <p style="font-weight: bold;">Quý khách hoàn toàn có thể đổi lại hàng. </p>
+    
+            <p>Bạn đã bao giờ mua hàng tại các cửa hàng & bạn không thích sản phẩm mình đã mua? Các cửa hàng không cho bạn đổi sang sản phẩm khác? Bạn hoàn toàn có thể đổi được khi bạn mua hàng tại showroom MarPet. </p>
+    
+            <p style="font-weight: bold;">Điều kiện đổi sản phẩm: </p>
+            <div style="margin-right:30px;">
+                <ol>
+                    <li>Bạn có thể đổi lại hàng trong vòng <b style="color: #db7093;">30 ngày</b> kể từ ngày mua theo Hoá đơn mà không phải chịu bất kỳ một khoản phí nào.</li>
+                    <li>Sản phẩm chưa bóc hộp hoặc tem & còn mới 100% kể từ lúc mua. Nguyên trạng như khi MarPet giao sản phẩm cho Quý khách.</li>
+                    <li>
+                        Sản phẩm đổi trực tiếp tại:
+                        <ol style="margin-right: 30px;">
+                            <br>
+                            <li>10 Hàm Long, Q.Hoàn Kiếm, Hà Nội - 024 3933 2727</li>
+                            <li>174 Kim Mã, Q.Ba Đình, Hà Nội - 024 3244 4824</li>
+                            <li>250/3 Lý Chính Thắng, Quận 3, Tp. HCM - 028 3526 0717</li>
+                            <li>174 Cộng Hòa, Q.Tân Bình, Tp. HCM - 028 3811 2799</li>
+                            <li>255 Trưng Nữ Vương, Q.Hải Châu, Đà Nẵng – 023 6364 6727</li>
+                            
+                        </ol>
+                        <p style="color: #db7093; font-weight: bold;">Không đổi tại nhà khách hàng. Không gửi trực tiếp cho Nhà sản xuất </p>
+                    </li>
+                    <li>Sản phẩm đổi mới sẽ ngang bằng hoặc lớn hơn sản phẩm đã mua trước đó.</li>
+                    <li>Đối với quý khách hàng đã mua hàng tại cửa hàng & sản phẩm đã mở hộp ra kiểm tra tại cửa hàng sẽ không được đổi sang sản phẩm khác.</li>
+                    <li>Không nhận đổi lại hàng nếu các sản phẩm kể trên nằm trong chương trình “Stock Clearance” (Thanh lý hàng tồn kho).</li>
+                    <li>Trong các trường hợp khác quyền quyết định sẽ thuộc về MarPet.</li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <h4 style="color: #db7093; text-align: center;">MarPet | Thiên đường thú cưng</h4>
         </div>
     </div>
-    <div>
-        <h4 style="color: #db7093; text-align: center;">MarPet | Thiên đường thú cưng</h4>
-    </div>
+
+    <!-- chèn html footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- function để chèn html -->
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
 </body>
+
 </html>
