@@ -157,6 +157,7 @@ a {
 
 .header_bottom--menu>li :hover+.sub-menu {
     display: block;
+    z-index: 99999;
 }
 
 .sub-menu li {
