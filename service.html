@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DỊCH VỤ</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        .intro {
+            color: palevioletred;
+            text-align: center;
+            margin: 12px auto;
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
+        .box {
+            text-align: center;
+            width: 250px;
+            height: 270px;
+        }
+        .box-container a {
+            text-decoration: none;
+            color: black;
+        }
+        .box:hover {
+            box-shadow: 0px 0px 25px 2px rgb(173, 173, 173);
+        }
+        .box span {
+            font-size: 12px;
+        }
+        .box img {
+            width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- chèn html header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- phần nội dung -->
+    <div class="content">
+        <h4 class="intro">TẠI MARPET, CHÚNG TÔI COI THÚ CƯNG CỦA BẠN NHƯ THÚ CƯNG CỦA CHÚNG TÔI</h4>
+    <div class="box-container">
+        <a href="service-grooming.html"><div class="box">
+            <div><img src="https://sites.google.com/site/benhvienthuytphcm/_/rsrc/1523348405558/dich-vu-cat-tia-long-cho-meo-tphcm/dich-vu-cat-tia-long-cho-meo-tphcm.jpg" alt=""></div>
+            <h3>DỊCH VỤ CẮT TỈA LÔNG</h3>
+            <span>Để thú cưng của bạn chỉn chu nhất!</span>
+        </div></a>
+        <a href="service-spa.html"><div class="box">
+            <div><img src="http://cdn.petlove.vn/wp-content/uploads/2019/07/AdobeStock_305398567-1.jpeg" alt=""></div>
+            <h3>DỊCH VỤ TẮM SPA</h3>
+            <span>Nơi biến thú cưng của bạn thành 1 ngôi sao!</span>
+        </div></a>
+        <a href="service-hotel.html"><div class="box">
+            <div><img src="https://vnn-imgs-f.vgcloud.vn/2020/01/21/08/thu-cung-1.jpg" alt=""></div>
+            <h3>DỊCH VỤ TRÔNG GIỮ</h3>
+            <span>Trở thành ngôi nhà thứ hai cho thú cưng của bạn</span>
+        </div></a>
+    </div>
+    </div>
+
+    <!-- chèn html footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- function để chèn html -->
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
+    
+</body>
+</html>
