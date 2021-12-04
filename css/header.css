@@ -14,11 +14,14 @@
 
 .header-bottom {
     background-color: white;
+     border-bottom: 1px solid black;
 }
 
 .announce-content {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: boldẻ;
 }
 
 .search-icon {
@@ -31,6 +34,7 @@
 
 .logo {
     width: 20%;
+    margin: 10px;
 }
 
 .logo-img {
@@ -51,7 +55,7 @@
 .others>li {
     padding: 10px 0px;
     /* width: 10%; */
-    font-size: 20px;
+    font-size: 16px;
 }
 
 li {
@@ -62,6 +66,9 @@ a {
     text-decoration: none;
     color: black;
 }
+.fa-search {
+    color: white;
+}
 
 .others>li:first-child {
     width: 50%;
@@ -71,10 +78,11 @@ a {
     width: 80%;
     position: relative;
     border: 3px solid #db7093;
+    margin-left: 25px;
     padding: 5px;
     border-right: none;
-    height: 50px;
-    font-size: 20px;
+    height: 30px;
+    font-size: 16px;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
@@ -82,7 +90,8 @@ a {
 .others>li:first-child i {
     position: absolute;
     background-color: #db7093;
-    padding: 23px;
+    padding: 15px;
+    margin-left: -2px;
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -98,6 +107,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 8px;
 }
 
 .menu-btn>span {
@@ -105,11 +115,14 @@ a {
 }
 
 .fas {
-    font-size: 25px;
+    font-size: 23px;
+    margin-bottom: 5px;
 }
 
 .fa-phone-alt {
     font-size: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .others>li a:hover {
@@ -133,19 +146,20 @@ a {
     /* display: block; */
 }
 
-.header_bottom--menu>li :hover {
+/*.header_bottom--menu>li :hover {
     text-decoration-line: underline;
-}
+}*/
 
 .sub-menu {
     position: absolute;
-    width: fit-content;
-    background-color: gainsboro;
+    width: 220px;
+    background-color: rgb(241, 241, 241);
     padding: 10px 10px;
     font-size: 18px;
     display: none;
+    z-index: 1;
+    opacity: 95%;
 }
-
 
 /*trỏ vào thì hiển thị menu con chứa các danh mục sp */
 
@@ -157,12 +171,19 @@ a {
 
 .header_bottom--menu>li :hover+.sub-menu {
     display: block;
+    z-index: 99999;
+
+}
+
+.sub-menu img {
+    display: block;
+    margin: 8px auto 15px auto;
 }
 
 .sub-menu li {
     margin-bottom: 5px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .sub-menu:hover {
@@ -260,18 +281,19 @@ a {
     position: absolute;
     left: 250px;
     top: 0px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(241, 241, 241);
     z-index: 9999999999999999999;
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px;
-    width: 500px;
+    width: 510px;
     display: none;
+    opacity: 95%;
 }
 
 .side-submenu--content>img {
     float: left;
-    margin-right: 50px;
-    width: 50%;
+    margin: auto 20px;
+    width: 40%;
 }
 
 .side-submenu--content>a {

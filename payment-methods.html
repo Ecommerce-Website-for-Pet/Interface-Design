@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="./css/trichDan.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css" rel="stylesheet" type="text/css" >
+
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" > -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+
     <style>
+        #cachDong{
+            margin-bottom:15px;
+        }
         html,body{
             font-family: SVN-Poppins;
             text-align:justify;
@@ -34,7 +46,21 @@
             color:black;
             font-weight: bold;
         }
-        
+        .module-header {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        hr {
+            width: 200px;
+            height: 2px;
+            background-color: #db7093;
+            border: none;
+            margin: 15px 10px;
+        }
+        h2 {
+            color: #db7093;
+        }
     </style>
 </head>
 
@@ -44,10 +70,30 @@
 
     <!-- phần nội dung -->
     <div class="content">
+        <div id="breadcrumb" style="margin-bottom:30px">
+            <div>
+                <a href="index.html" class="nopad-1">
+                    <span>Trang chủ</span>
+                </a>
+                ›
+            </div>
+            <div>
+                <a href="policy.html" class="nopad-2">
+                    <span>Chính sách</span>
+                </a>
+                ›
+            </div>
+            <div>
+                <a href="payment-methods.html" class="nopad-1">
+                    <span>Phương thức thanh toán</span>
+                </a>
+    
+            </div>
+        </div>
         <div>
             <h3 style="color: #db7093;">Phương thức thanh toán khi mua hàng tại MarPet</h3>
     <p>Để tạo thuận lợi cho việc mua sắm của Quý Khách tại cửa hàng MarPet, chúng tôi hỗ trợ Quý khách 6 phương thức thanh toán sau: </p>
-    <div style="margin-right: 35px;">
+    <div style="margin-right: 35px; margin-left:20px">
         <ol>
             <li>
                 <h4>Dịch vụ giao hàng và thu tiền tận nơi COD: áp dụng cho khách hàng tại Hà Nội & Tp.HCM</h4>
@@ -94,7 +140,7 @@
                     <div>
                         <p style="font-weight: bold;">Vietinbank CN Hoàng Mai</p>
                         <p>Số TK : 106868087203</p>
-                        <p>Chủ TK:  Lưu Thị Huyền Mai</p>
+                        <p>Chủ TK:  Uyên Nguyễn</p>
                     </div>
             </li>
             <li><h4>Thanh toán qua máy Vietinbank CN Hoàng Mai</>
@@ -102,7 +148,7 @@
                 <div>
                     <p style="font-weight: bold;">Vietinbank CN Hoàng Mai</p>
                     <p>Số TK : 106868087203</p>
-                    <p>Chủ TK:  Lưu Thị Huyền Mai</p>
+                    <p>Chủ TK:  Uyên Nguyễn</p>
                 </div>
             </li>
             <li><h4>Thanh toán bằng thẻ Visa, Master, các Thẻ ATM (thanh toán tại cửa hàng)</h4>
@@ -110,7 +156,7 @@
             </li>
         </ol>
     </div>
-    <div>
+    <!-- <div>
         <h4 style="font-weight: bold;">Để biết thêm thông tin, Quý khách vui lòng liên hệ:</h4>
 
 <h4 style="font-weight: bold; color:#db7093">Cửa hàng MarPet</h4>
@@ -124,13 +170,40 @@
 <p>Tel: 024 3931 0777 | Hotline: 0987 612727 </p>
 
 <p>E-mail: marpetvn@gmail.com | Web: MarPet.UEL</p>
+    </div> -->
+    <div style="margin-left:20px">
+        <p id="cachDong"><span style="color:red; font-weight: bold;">HỆ THỐNG CỬA HÀNG MARPET:</span></p>
+        <p id="cachDong"><span style="font-weight: bold;"> Văn phòng Điều hành: </span> Tầng 79, Tòa nhà Landmark 81, 720A Điện Biên Phủ, P22, Q.Bình Thạnh, Thành phố Hồ Chí Minh</p>
+        <p id="cachDong"><span style="font-weight: bold;">Hà Nội:</span> 174 Kim Mã, Q.Ba Đình, Hà Nội</p>
+        <p id="cachDong"><span style="font-weight: bold;">Hồ Chí Minh:</span> 166 Lý Chính Thắng, Quận 3, Tp. HCM</p>
+        <p id="cachDong"><span style="font-weight: bold;"> Tel:</span> 024 3931 0777 - 024 3933 2727</p>
+        <p id="cachDong"><span style="font-weight: bold;"> Hotline:</span> 0987 612727</p>
+        <p id="cachDong"><span style="font-weight: bold;"> E-mail:</span> petcity.vn@gmail.com</p>
+        <p id="cachDong"><span style="font-weight: bold;"> Web:</span> http://marpet.vn</p>
     </div>
-    <div>
-        <h4 style="color: #db7093; text-align: center;">MarPet | Thiên đường thú cưng</h4>
-    </div>
+    
         </div>
     </div>
-
+    <div class="row" style="margin-top:50px;">
+        <div>
+            <span class="module-header scenter" style=" margin-bottom:50px">
+                    <hr/>
+                    <h2>CÁC PHƯƠNG THỨC THANH TOÁN</h2>
+                    <hr/>
+            </span>
+        </div>
+		<div class="container">
+		    <section class="customer-logos slider">
+                <div class="slide"><img src="./library/mastercard.svg"  style="width: 100px;"></div>
+                <div class="slide"><img src="./library/momo.png" style="width: 100px;"></div>
+                <div class="slide"><img src="./library/JCB.png" style="width: 100px;"></div>
+                <div class="slide"><img src="./library/napas.png" style="width: 200px;"></div>
+                <div class="slide"><img src="./library/visa.png" style="width: 100px; margin-top:25px"></div>
+                <div class="slide"><img src="./library/americanexpress.png" style="width: 100px;margin-bottom: 55px;"></div>
+                <div class="slide"><img src="./library/cod.png" style="width: 150px;"></div>
+			</section>
+		</div>
+	</div>
     <!-- chèn html footer -->
     <div w3-include-html="footer.html"></div>
 
@@ -142,6 +215,30 @@
     <script src="./js/chatBox&returnTop-btn.js"></script>
     <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
     <script src="./js/flat-menu.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 3
+					}
+				}]
+			});
+		});
+	</script>
 </body>
 
 </html>
