@@ -1,19 +1,37 @@
 * {
     font-family: SVN-Poppins;
 }
-body {
-    margin: 0;
-    padding: 0;
-}
-.header, .contact {
-    background-color: palevioletred;
-    color: white;
+.header-page {
     text-align: center;
-    line-height: 50px;
-    height: 50px;
+    height: 230px;
+    display: flex;
+    background-color: palevioletred;
+    position: relative;
 }
-h2 {
+.header-page img {
+    height: 230px;
+    position: absolute;
+    right: 0;
+}
+.header-page-text hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 10px auto;
+}
+.header-page-text {
+    color: white;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.contact {
+    color: palevioletred;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header-page h1 {
     margin: 0;
+    text-align: left;
 }
 .header-text {
     width: 60%;
@@ -26,10 +44,10 @@ h2 {
     justify-content: space-evenly;
 }
 .color {
-    background-color: palevioletred;
+    background-color: rgb(231, 196, 130);
     color: white;
 }
-img {
+.content img {
     width: 300px;
     height: auto;
     border-radius: 50px;
@@ -78,6 +96,13 @@ h1 {
     .content {
         display: block;
         text-align: center;
+    }
+    .header-page img {
+        /*width: 100%;
+        height: auto;
+        left: auto;
+        bottom: 0;*/
+        display: none;
     }
     .content-text {
         margin-left: auto;
