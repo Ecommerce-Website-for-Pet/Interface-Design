@@ -53,6 +53,7 @@
         }
         .listStyleIcon{
             list-style-image: url(./library/dogicon.png);
+            /* list-style-image: url(./library/carticon.png); */
         }
         @media only screen and (max-width:375px) {
             .bienMat{
@@ -81,7 +82,76 @@
   align-items: center;
   height: 120px;
 }
+@media screen and (max-width: 992px) {
+  
+  .thayDoi{
+      display: none !important;
+  }
+}
 
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .thayDoi{
+      display: none !important;
+  }}
+  .container{
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .wrapper{
+        margin-bottom: 1rem;
+      }
+      .grid {
+        height: 100%;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: 2fr 1fr; */
+        grid-gap: 1rem;
+      }
+      .grid2 {
+        height: 100%;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: 2fr 1fr; */
+        grid-gap: 1rem;
+      }
+      .box{
+        display: flex;
+        
+      }
+      .box1{
+          /* background-color: blue; */
+        grid-row: 1;
+        justify-content: right;
+        float:left;
+        vertical-align: center;
+      }
+      .box2{
+          /* background-color: red; */
+        grid-row: 1;
+        justify-content: left;
+        text-align: justify;
+        align-items: center;
+        vertical-align: center;
+      }
+      .box3{
+          /* background-color: blue; */
+        grid-row: 1;
+        float:left;
+        vertical-align: top;
+      }
+      .box5{
+          /* background-color: red; */
+        grid-row: 1;
+        /* direction:rtl; */ text-align-last: right;
+        text-align: justify;
+        align-items: center;
+        vertical-align: top;
+        justify-content: right;
+        float:right;
+      }
+      
+      
     </style>
     
     
@@ -136,7 +206,7 @@
             <!-- <h3 style="color: #db7093;">CHÍNH SÁCH GIAO HÀNG</h3> -->
             <p style="text-align: center; margin-top:15px">MarPet giao hàng miễn phí với các đơn hàng từ 199k trong vòng từ 2 đến 4 giờ với các đơn hàng thuộc nội thành Hà Nội và Thành phố Hồ Chí Minh. Chi tiết như sau:</p>
             <table style="margin-left:auto; margin-right:auto; margin-top:15px;margin-bottom:15px">
-            <img src="./library/signup_img2_xoay.png" style="width: 75px; float:left; display:flex; position:relative; z-index: -99;">
+            <img class="thayDoi" src="./library/signup_img2_xoay.png" style="width: 75px; float:left; display:flex; position:relative; z-index: -99;">
 
                 <tr style="background-color: #f5deb3;">
                     <th>STT</th>
@@ -170,7 +240,7 @@
                     <td>Tính theo biểu phí của đơn vị vận chuyển hàng</td>
                     <td>Từ 2 đến 7 ngày</td>
                 </tr>
-            <img class="bienMat" src="./library/signup_img2.png" style="width: 75px; float:right; display:flex; position:relative; z-index: -99;">
+            <img class="thayDoi" class="bienMat" src="./library/signup_img2.png" style="width: 75px; float:right; display:flex; position:relative; z-index: -99;">
 
             </table>
             
@@ -191,17 +261,110 @@
             </div>
             <h3 style="color: red; text-align: center;">CHÍNH SÁCH GIAO HÀNG KHÔNG ÁP DỤNG TẠI ĐỊA PHƯƠNG ÁP DỤNG GIÃN CÁCH XÃ HỘI. MARPET SẼ THÔNG BÁO PHÍ GIAO HÀNG SAU KHI TIẾP NHẬN ĐƠN.</h3>
 
-            <div style="margin-top:30px;">
-                <ul style="margin-left:30px;text-align: justify; float:left; margin-right:30px">
+            <!-- <div style="margin-top:30px;">
+                <ul style="margin-left:30px;text-align: justify; margin-right:30px">
                     <li class="listStyleIcon">Nếu quý khách hàng có nhu cầu giao hàng nhanh trong vòng từ 1 đến 2 tiếng kể từ khi đặt hàng, MarPet sẽ cố gắng hỗ trợ tối đa, trường hợp nhân viên giao hàng của MarPet không kịp đáp ứng sẽ gọi đơn vị vận chuyển và sẽ thu phí theo quy định của đơn vị vận chuyển đó.</li>
                     <li class="listStyleIcon">Trường hợp khách hàng chỉ định đơn vị vận chuyển hoặc chuyển hàng qua nhà xe quen, quý khách vui lòng thanh toán các khoản phí vận chuyển và các chi phí phát sinh với đơn vị vận chuyển đó. MarPet cũng sẽ không chịu trách nhiệm với các phát sinh liên quan đến hàng hóa bị hỏng hóc hoặc thất lạc trong quá trình vận chuyển.</li>
                     <li class="listStyleIcon">Quy định về việc nhận hàng: Quý khách vui lòng kiểm tra kỹ hàng hóa tại thời điểm nhận hàng, mở bao gói sản phẩm kiểm tra số lượng và chất lượng hàng hóa, nếu phát hiện dấu hiệu móp méo, bao bì rách… quý khách cần từ chối nhận hàng và báo lại phía MarPet phối hợp giải quyết.</li>
                     <li class="listStyleIcon">Kiểm tra thông tin trên hóa đơn để nhận đúng hàng hóa và thanh toán tiền theo hóa đơn.</li>
                     <li class="listStyleIcon">Trường hợp quý khách không thực hiện đúng quy định trên, mọi rủi ro xảy ra MarPet sẽ không chịu trách nhiệm.</li>
                 </ul> 
-            </div>
+            </div> -->
+            
+            <!-- <div style="column-count:2; margin-top:310px; margin-left:10%; margin-right:10%">
 
-        </div>
+                <p style="font-size:100px;">01</p>
+                <p>Nếu quý khách hàng có nhu cầu giao hàng nhanh trong vòng từ 1 đến 2 tiếng kể từ khi đặt hàng, MarPet sẽ cố gắng hỗ trợ tối đa, trường hợp nhân viên giao hàng của MarPet không kịp đáp ứng sẽ gọi đơn vị vận chuyển và sẽ thu phí theo quy định của đơn vị vận chuyển đó.</p>
+
+            </div>
+            <div style="column-count:2; margin-top:310px; margin-left:10%; margin-right:10%">
+
+                <p>Nếu quý khách hàng có nhu cầu giao hàng nhanh trong vòng từ 1 đến 2 tiếng kể từ khi đặt hàng, MarPet sẽ cố gắng hỗ trợ tối đa, trường hợp nhân viên giao hàng của MarPet không kịp đáp ứng sẽ gọi đơn vị vận chuyển và sẽ thu phí theo quy định của đơn vị vận chuyển đó.</p>
+                <p style="font-size:100px;">01</p>
+
+            </div> -->
+            <br>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="grid">
+                     <div class="box box1">
+                       <h2 style="font-size: 100px;">01</h2>
+                     </div> 
+
+                     <div class="box box2">
+                       <p>
+                          Nếu quý khách hàng có nhu cầu giao hàng nhanh trong vòng từ 1 đến 2 tiếng kể từ khi đặt hàng, MarPet sẽ cố gắng hỗ trợ tối đa, trường hợp nhân viên giao hàng của MarPet không kịp đáp ứng sẽ gọi đơn vị vận chuyển và sẽ thu phí theo quy định của đơn vị vận chuyển đó.
+                       </p>
+                     </div> 
+                     
+                   </div>
+                  </div>
+                  <hr style="width: 100% !important; margin:0; height:5px">
+                  <br>
+                  <div class="wrapper">
+                    <div class="grid">
+                        
+                     <div class="box box5">
+                       <p>
+                        Trường hợp khách hàng chỉ định đơn vị vận chuyển hoặc chuyển hàng qua nhà xe quen, quý khách vui lòng thanh toán các khoản phí vận chuyển và các chi phí phát sinh với đơn vị vận chuyển đó. MarPet cũng sẽ không chịu trách nhiệm với các phát sinh liên quan đến hàng hóa bị hỏng hóc hoặc thất lạc trong quá trình vận chuyển.
+                       </p>
+                     </div> 
+                     <div class="box box3">
+                        <h2 style="font-size: 100px;">02</h2>
+                      </div> 
+                     
+                   </div>
+                  </div>
+                  <hr style="width: 100% !important; margin:0; height:5px">
+                  <br>
+                  <div class="wrapper">
+                    <div class="grid">
+                     <div class="box box1">
+                       <h2 style="font-size: 100px;">03</h2>
+                     </div> 
+                     <div class="box box2">
+                       <p>
+                        Quy định về việc nhận hàng: Quý khách vui lòng kiểm tra kỹ hàng hóa tại thời điểm nhận hàng, mở bao gói sản phẩm kiểm tra số lượng và chất lượng hàng hóa, nếu phát hiện dấu hiệu móp méo, bao bì rách… quý khách cần từ chối nhận hàng và báo lại phía MarPet phối hợp giải quyết.
+                       </p>
+                     </div> 
+                     
+                   </div>
+                  </div>
+                  <hr style="width: 100% !important; margin:0; height:5px">
+                  <br>
+                  <div class="wrapper">
+                    <div class="grid2">
+                        
+                     <div class="box box5">
+                       <p>
+                           Kiểm tra thông tin trên hóa đơn để nhận đúng hàng hóa và thanh toán tiền theo hóa đơn.
+                        </p>
+                     </div> 
+                     <div class="box box3">
+                        <h2 style="font-size: 100px;">04</h2>
+                      </div> 
+                     
+                   </div>
+                  </div>
+                  <hr style="width: 100% !important; margin:0; height:5px">
+                  <br>
+                  <div class="wrapper">
+                    <div class="grid">
+                     <div class="box box1">
+                       <h2 style="font-size: 100px;">05</h2>
+                     </div> 
+                     <div class="box box2">
+                       <p>
+                        Trường hợp quý khách không thực hiện đúng quy định trên, mọi rủi ro xảy ra MarPet sẽ không chịu trách nhiệm.
+                       </p>
+                     </div> 
+                     
+                   </div>
+                  </div>
+                
+              </div>
+
+        
         <!-- <div class="owl-carousel">        <div class="item">
             <a href="#" target="_blank"><img src="https://vinawebsite.vn/wp-content/uploads/2019/07/logo-kh1.png" alt=""></a>
           </div>
