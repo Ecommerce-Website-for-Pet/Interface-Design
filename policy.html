@@ -17,16 +17,17 @@
         
 
 .background-one {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
 }
 
 .background-two {
+  /* background-color: white; */
   background-color: whitesmoke;
   /* background-color: #151515; */
 }
 
 .background-three {
-  background-color: whitesmoke;
+  /* background-color: white; */
 }
 
 .link-container {
@@ -34,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 500px;
   position: relative;
   z-index: 0;
 }
@@ -167,7 +168,7 @@
 }
 
 .link-two {
-  color: blue;
+  color: #f27b9b;
   transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
 }
 
@@ -234,15 +235,15 @@
 
 .link-three {
   /* color: #0a84c3; */
-  /* color: #eb7132; */
-  color:#e11391;
+  color: #eb7132;
+  /* color:#e11391; */
 }
 
 .link-three::after {
   content: "";
   position: absolute;
   z-index: 2;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0%;
   left: 0%;
@@ -260,7 +261,7 @@
     60% 20%,
     20% 20%
   );
-  background-color: #e11391;
+  background-color: #eb7132;
 }
 .policyChange{
     grid-template-columns: repeat(4, 1fr);
@@ -268,12 +269,17 @@
 .link-three:hover::after {
   transform: translate(0, 0%) scaleY(1);
 }
-
+@media only screen and (max-width: 926px) {
+  /* For mobile phones: */
+  .policyChange{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
 .link-three::before {
   content: "";
   position: absolute;
   z-index: 2;
-  width: 50%;
+  width: 100%;
   height: 100%;
   bottom: 0%;
   right: 0%;
@@ -292,7 +298,7 @@
     80% 80%
   );
 
-  background-color: #e11391;
+  background-color: #eb7132;
 }
 
 .link-three:hover::before {
@@ -351,7 +357,6 @@ h2{
         </div>
 
         <div class="policyChange" style="margin: 0;
-        height: 500px;
         display: grid;
         grid-template-rows: 1fr; font-family: 'SVN-Poppins', cursive;
   font-size: 2.5em; font-weight: bold; text-align: center;">
@@ -369,7 +374,7 @@ h2{
               <div class="background-three link-container">
                 <a class="link-three" href="payment-methods.html">THANH<br>TOÁN</a>
               </div>
-              <div class="background-one">
+              <div class="background-one" style="background-color: whitesmoke;">
                 <div class="link-container">
                   <a class="link-one" href="warranty-policy.html">BẢO<br>HÀNH</a>
                 </div>
