@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="./css/trichDan.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        
+
+.background-one {
+  background-color: rgb(238, 238, 238);
+}
+
+.background-two {
+  /* background-color: white; */
+  background-color: whitesmoke;
+  /* background-color: #151515; */
+}
+
+.background-three {
+  /* background-color: white; */
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  z-index: 0;
+}
+
+/* a {
+  font-family: "Bungee", cursive;
+  font-size: 2.5em;
+} */
+
+.link-one {
+  color: brown;
+  /* color: #53d9d1; */
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  /* line-height: 1em; */
+}
+
+.link-one:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+
+}
+
+.link-one::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #53d9d1;
+
+  clip-path: circle(0% at 50% calc(50%));
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-one:hover::before {
+  clip-path: circle(100% at 50% 50%);
+}
+
+.link-one::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #151515;
+
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 0%,
+    40% 0%,
+    40% 100%,
+    60% 100%,
+    60% 100%,
+    40% 100%
+  );
+
+  /*
+  Didn't look consistently awesome enough
+  across different viewing widths.
+  clip-path: polygon(
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%
+  );
+  */
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-one:hover::after {
+  /*
+  clip-path: polygon(
+    20% 45%,
+    10% 40%,
+    30% 30%,
+    40% 35%,
+    60% 35%,
+    70% 30%,
+    90% 40%,
+    80% 45%,
+    60% 35%,
+    40% 35%,
+    20% 45%,
+    20% 55%,
+    10% 60%,
+    30% 70%,
+    40% 65%,
+    60% 65%,
+    70% 70%,
+    90% 60%,
+    80% 55%,
+    60% 65%,
+    40% 65%,
+    20% 55%
+  );
+  */
+  clip-path: polygon(
+    40% 10%,
+    60% 10%,
+    60% 35%,
+    40% 35%,
+    40% 90%,
+    60% 90%,
+    60% 65%,
+    40% 65%
+  );
+}
+
+.link-two {
+  color: #f27b9b;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.link-two:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link-two::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  clip-path: polygon(
+    0% -20%,
+    100% -30%,
+    100% -10%,
+    0% 0%,
+    0% 130%,
+    100% 120%,
+    100% 100%,
+    0% 110%
+  );
+  background-color: #f27b9b;
+
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.link-two:hover::before {
+  clip-path: polygon(
+    0% 10%,
+    100% 0%,
+    100% 20%,
+    0% 30%,
+    0% 100%,
+    100% 90%,
+    100% 70%,
+    0% 80%
+  );
+}
+
+.link-two::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 5ch;
+  height: 5ch;
+  /* height: 80px; */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg) scale(0);
+  transition: transform 1s ease;
+
+  background-color: #f27b9b;
+}
+
+.link-two:hover::after {
+  /* transform: translate(50%, -50%) rotate(90deg) scale(1); */
+  transform: translate(50%, -50%) rotate(135deg) scale(1);
+}
+
+.link-three {
+  /* color: #0a84c3; */
+  color: #eb7132;
+  /* color:#e11391; */
+}
+
+.link-three::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transform: translate(0, -50%) scaleY(0);
+  transition: transform 1s ease;
+  mix-blend-mode: difference;
+
+  clip-path: polygon(
+    20% 60%,
+    100% 60%,
+    100% 40%,
+    20% 40%,
+    20% 0%,
+    60% 0%,
+    60% 20%,
+    20% 20%
+  );
+  background-color: #eb7132;
+}
+.policyChange{
+    grid-template-columns: repeat(4, 1fr);
+}
+.link-three:hover::after {
+  transform: translate(0, 0%) scaleY(1);
+}
+@media only screen and (max-width: 950px) {
+  /* For mobile phones: */
+  .policyChange{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+.link-three::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(0, 50%) scaleY(0);
+  transition: transform 1s ease;
+  mix-blend-mode: difference;
+
+  clip-path: polygon(
+    80% 40%,
+    0% 40%,
+    0% 60%,
+    80% 60%,
+    80% 100%,
+    40% 100%,
+    40% 80%,
+    80% 80%
+  );
+
+  background-color: #eb7132;
+}
+
+.link-three:hover::before {
+  transform: translate(0%, 0%) scaleY(1);
+}
+h2{
+    color:#db7093;
+}
+.module-header {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        hr {
+            width: 200px;
+            height: 2px;
+            background-color: palevioletred;
+            border: none;
+            margin: 15px 10px;
+        }
+        .scenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- chèn html header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- phần nội dung -->
+    <div class="content">
+        <div id="breadcrumb" style="margin-bottom:30px">
+            <div>
+                <a href="index.html" class="nopad-1">
+                    <span>Trang chủ</span>
+                </a>
+                ›
+            </div>
+            <div>
+                <a href="policy.html" class="nopad-2">
+                    <span>Chính sách</span>
+                </a>
+            </div>
+            
+        </div>
+        <div style="background-color: #f5deb3; height:120px">
+            <span class="module-header scenter">
+                    <hr/>
+                    <h2>CÁC CHÍNH SÁCH CHUNG</h2>
+                    <hr/>
+            </span>
+        </div>
+
+        <div class="policyChange" style="margin: 0;
+        display: grid;
+        grid-template-rows: 1fr; font-family: 'SVN-Poppins', cursive;
+  font-size: 2.5em; font-weight: bold; text-align: center;">
+            <div class="background-one">
+                <div class="link-container">
+                  <a class="link-one" href="delivery-policy.html">GIAO<br>HÀNG</a>
+                </div>
+            </div>
+              <!-- <div class="background-one link-container">
+                <a class="link-one" href="delivery-policy.html">GIAO<br>HÀNG</a>
+              </div> -->
+              <div class="background-two link-container">
+                <a class="link-two" href="exchange-return-policy.html">ĐỔI<br>TRẢ</a>
+              </div>
+              <div class="background-three link-container">
+                <a class="link-three" href="payment-methods.html">THANH<br>TOÁN</a>
+              </div>
+              <div class="background-one">
+                <div class="link-container">
+                  <a class="link-one" href="warranty-policy.html">BẢO<br>HÀNH</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- <br> -->
+    <!-- chèn html footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- function để chèn html -->
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
+</body>
+
+</html>

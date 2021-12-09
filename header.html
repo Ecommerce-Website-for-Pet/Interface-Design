@@ -12,6 +12,45 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/chat-box.css">
+    <style>
+        .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+    </style>
 </head>
 
 <body>
@@ -60,13 +99,13 @@
                 </div>
                 <a><input class="typeForSeach " type="text " placeholder="Nhập để tìm kiếm "><i class="fa fa-search "></i>
                 </a>
-                <a href="#" class=" menu-btn">
+                <a style="margin-left:30px" href="#" class=" menu-btn">
                     <i class="fas fa-shopping-cart "></i>
-                    <span>Giỏ hàng</span>
+                    <span style="text-align: center">Giỏ hàng</span>
                 </a>
-                <a href="#" class="menu-btn">
+                <a href="sign-in.html" class="menu-btn">
                     <i class="fas fa-user-circle "></i>
-                    <span>Đăng nhập</span>
+                    <span style="text-align: center">Đăng nhập</span>
                 </a>
             </div>
         </nav>
@@ -84,13 +123,13 @@
                     <li>
                         <a href="#" class="btn-card menu-btn">
                             <i class="fas fa-shopping-cart"></i>
-                            <span>Giỏ hàng</span>
+                            <span style="text-align: center">Giỏ hàng</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="btn-user menu-btn">
+                        <a href="sign-in.html" class="btn-user menu-btn">
                             <i class="fas fa-user-circle"></i>
-                            <span>Đăng nhập</span>
+                            <span style="text-align: center">Đăng nhập</span>
                         </a>
                     </li>
                     <li>
@@ -137,15 +176,15 @@
     </div>
     <img src="./library/back-to-top-icon-png-0.png" class="" onclick="topFunction()" id="topBtn" title="Go to top">
     <!-- Khi nhấp vào thì chuyển qua trang messenger fb của shop -->
-    <a href="https://m.me/107421025083727" target="blank"><img src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2"></img>
+    <a href="https://m.me/107421025083727" target="blank"><img style="z-index:99" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2"></img>
     </a>
     <!-- Khi nhấp vào thì mở ô chat box để gửi tn -->
-    <img src="./library/sms-3.png" class="open-button-1" onclick="openForm()"></img>
+    <img src="./library/sms-3.png" class="open-button-1" onclick="openForm()" style="z-index:99"></img>
 
     <div class="chat-popup" id="myForm">
 
-        <img src="./library/cattt.gif" style="width: 200px; position:relative; top:50px; right:-10%;">
-        <form action="/action_page.php" class="form-container">
+        <img src="./library/cattt.gif" style="width: 150px; position:absolute; top:-95px; right:25%;">
+        <form action="" class="form-container">
             <img src="./library/close-window-icon-512.png" style="width: 10%; float: right; cursor: pointer;" type="button" onclick="closeForm()">
             <br>
             <br>
@@ -164,6 +203,16 @@
             </button>
         </form>
     </div>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
     <!-- <script>
         window.onscroll = function() {
             scrollFunction()
@@ -178,6 +227,50 @@
             }
         }
     </script> -->
+    <script>
+        window.onload=function(){
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        
+          modal.style.display = "block";
+        
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+         }
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 
 </html>
