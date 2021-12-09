@@ -52,3 +52,9 @@
     background-color: #cddc39;
     color: #fff;
 }
+.KhoangCachVoiIcon{
+    width:90%;
+}
+.accordion-menu li.open .KhoangCachVoiIcon {
+    color: #db7093;transition: all 0.4s ease-out;
+}
