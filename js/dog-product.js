@@ -15,8 +15,18 @@ function myFunction(arr) {
   for (i = 0; i < arr.length; i++) {
     if (arr[i].category == "food") {
       div +=
-        '<div class="products"><div class="product-item"><div class="product-top"><img src="'+ arr[i].image + ' "alt="" </div><div class="product-info"><div class="product-label"> '+ arr[i].label +'</div><br/><div class="product-name">'+ arr[i].name +'</div><br/><div class="product-price"> '+ arr[i].price +'</div></div></div></div></div>'
+        // '<div class="products"><div class="product-item"><div class="product-top"><img src="'+ arr[i].image + ' "alt=""><button type = "button" class = "add-to-cart-btn"><i class = "fas fa-shopping-cart"></i>Thêm vào giỏ</button><button type = "button" class = "view-product-detail-btn"><i class = "fas fa-shopping-cart"></i>Xem chi tiết</button></div><div class="product-info"><div class="product-label"> '+ arr[i].label +'</div><br/><div class="product-name">'+ arr[i].name +'</div><br/><div class="product-price"> '+ arr[i].price +'</div></div></div></div></div>'
+        '<div class="products"><div class="product-item"><div class="product-top"><img src="'+ arr[i].image + ' "alt=""><button type = "button" class = "add-to-cart-btn">Thêm vào giỏ</button><button type = "button" class = "view-product-detail-btn">Xem chi tiết</button></div><div class="product-info"><div class="product-label"> '+ arr[i].label +'</div><br/><div class="product-name">'+ arr[i].name +'</div><br/><div class="product-price"> '+ arr[i].price +'</div></div></div></div></div>'
+
     }
     document.getElementById("product").innerHTML = div;
+  }
+}
+
+// purchase product
+function purchaseProduct(e){
+  if(e.target.classList.contains('add-to-cart-btn')){
+      let product = e.target.parentElement.parentElement;
+      getProductInfo(product);
   }
 }

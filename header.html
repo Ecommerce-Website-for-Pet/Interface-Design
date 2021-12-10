@@ -50,11 +50,20 @@
   text-decoration: none;
   cursor: pointer;
 }
+@media only screen and (max-width: 950px) {
+
+
+
+}
     </style>
 </head>
 
 <body>
     <div class="header">
+        <div class="header-announcement">
+            <!-- ------------------banner thông báo------------------ -->
+            <span class="announce-content">Tặng ngay voucher giảm 15% tổng hóa đơn cho khách hàng lần đầu mua sắm tại MarPet</span>
+        </div>
         <!-- -----------------thanh menu cố định------------- -->
         <nav class="slide-down-bar" id="slide-down-bar">
             <div class="flat-menu">
@@ -109,10 +118,7 @@
                 </a>
             </div>
         </nav>
-        <div class="header-announcement">
-            <!-- ------------------banner thông báo------------------ -->
-            <span class="announce-content">Tặng ngay voucher giảm 15% tổng hóa đơn cho khách hàng lần đầu mua sắm tại MarPet</span>
-        </div>
+        
         <div class="header-bottom" id="header-bottom">
             <div class="header_bottom--top">
                 <div class="logo">
@@ -193,8 +199,8 @@
 
             <hr style="width:50%; margin:auto; background-color:black; height:2px; border: 1px solid white; border-radius: 5px;">
             <input class="inputNameOnChatPopUp" type="text" placeholder="Họ tên">
-            <input class="inputEmailOnChatPopUp" type="text" placeholder="Email">
-            <input class="inputPhoneOnChatPopUp" type="text" placeholder="Điện thoại">
+            <input class="inputEmailOnChatPopUp" type="text" placeholder="Email hoặc số điện thoại">
+            <!-- <input class="inputPhoneOnChatPopUp" type="text" placeholder="Điện thoại"> -->
             <textarea placeholder="Nội dung" name="msg" required></textarea>
 
             <button type="submit" class="btn">
