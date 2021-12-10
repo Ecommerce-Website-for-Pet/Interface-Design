@@ -87,10 +87,10 @@ body{
     text-decoration: none;
     color: black;
 }
-img{
+/* img{
     max-width: 200px;
     height: 200px;
-}
+} */
 .product-info a{
     display: block;
     text-decoration: none;

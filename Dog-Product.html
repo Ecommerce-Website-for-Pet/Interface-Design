@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarPet</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="./css/dog-product.css">
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- chèn html header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- phần nội dung -->
+    <div class="content">
       <div class="container">
         <div class="category">
 
@@ -22,6 +34,19 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <!-- chèn html footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- function để chèn html -->
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
     <script src="./js/dog-product.js">
       // var xmlhttp = new XMLHttpRequest();
       // var url = "../json/products.json";
@@ -46,5 +71,7 @@
       //   }
       // }
     </script>
-  </body>
+    
+</body>
+
 </html>
