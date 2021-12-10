@@ -165,6 +165,7 @@ body{
 .add-to-cart-btn:hover{
     /* color: var(--fire-bush); */
     color: #DB7093;
+    cursor: pointer;
 }
 
 .view-product-detail-btn{
@@ -200,6 +201,7 @@ body{
 }
 .view-product-detail-btn:hover{
     background-color: #23272a;
+    cursor: pointer;
 }
 .view-product-detail-btn:hover{
     /* color: var(--fire-bush); */
