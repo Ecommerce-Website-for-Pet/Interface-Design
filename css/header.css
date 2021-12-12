@@ -212,7 +212,7 @@ a {
 .typeForSeach {
     position: relative;
     height: 32px;
-    width: 99%;
+    width: 98%;
     border-right: none;
     border-radius: 5px 0px 0px 5px;
     font-size: 16px;
@@ -324,4 +324,32 @@ a {
     width: 100%;
     z-index: 999999999999999;
     display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #db7093;     border-radius: 10px;
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: pink; 
+  }
+
+#cart-btn:hover{
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+    cursor: pointer;
 }
