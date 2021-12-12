@@ -12,15 +12,30 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <style>
-        .intro {
-            color: palevioletred;
+        .module-header {
+            display: flex;
+            justify-content: center;
             text-align: center;
-            margin: 12px auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .module-header h2 {
+            letter-spacing: 5px;
+            color: palevioletred;
+            margin-right: -10px;
+        }
+        .module-header hr {
+            width: 200px;
+            height: 2px;
+            background-color: palevioletred;
+            border: none;
+            margin: 15px 10px;
         }
         .box-container {
             display: flex;
             justify-content: space-evenly;
-            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
         }
         .box {
             text-align: center;
@@ -42,6 +57,18 @@
             height: auto;
             margin-bottom: 10px;
         }
+        .img-banner {
+            position: relative;
+            z-index: 1;
+            margin-top: -120px;
+        }
+        .text-banner {
+            color: black;
+            text-align: center;
+            margin: 17px auto;
+            z-index: 2;
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -50,24 +77,30 @@
 
     <!-- phần nội dung -->
     <div class="content">
-        <h4 class="intro">TẠI MARPET, CHÚNG TÔI COI THÚ CƯNG CỦA BẠN NHƯ THÚ CƯNG CỦA CHÚNG TÔI</h4>
-    <div class="box-container">
-        <a href="service-grooming.html"><div class="box">
-            <div><img src="./library/thu-cung-11.png" alt=""></div>
-            <h3>DỊCH VỤ CẮT TỈA LÔNG</h3>
-            <span>Để thú cưng của bạn chỉn chu nhất!</span>
-        </div></a>
-        <a href="service-spa.html"><div class="box">
-            <div><img src="http://cdn.petlove.vn/wp-content/uploads/2019/07/AdobeStock_305398567-1.jpeg" alt=""></div>
-            <h3>DỊCH VỤ TẮM SPA</h3>
-            <span>Nơi biến thú cưng của bạn thành 1 ngôi sao!</span>
-        </div></a>
-        <a href="service-hotel.html"><div class="box">
-            <div><img src="https://vnn-imgs-f.vgcloud.vn/2020/01/21/08/thu-cung-1.jpg" alt=""></div>
-            <h3>DỊCH VỤ TRÔNG GIỮ</h3>
-            <span>Trở thành ngôi nhà thứ hai cho thú cưng của bạn</span>
-        </div></a>
-    </div>
+        <div class="module-header">
+            <hr/>
+            <h2 class="intro">NHỮNG DỊCH VỤ TẠI MARPET</h2>
+            <hr/>
+        </div>
+        <div class="box-container">
+            <a href="service-grooming.html"><div class="box">
+                <div><img src="https://sites.google.com/site/benhvienthuytphcm/_/rsrc/1523348405558/dich-vu-cat-tia-long-cho-meo-tphcm/dich-vu-cat-tia-long-cho-meo-tphcm.jpg" alt=""></div>
+                <h3>DỊCH VỤ CẮT TỈA LÔNG</h3>
+                <span>Để thú cưng của bạn chỉn chu nhất!</span>
+            </div></a>
+            <a href="service-spa.html"><div class="box">
+                <div><img src="http://cdn.petlove.vn/wp-content/uploads/2019/07/AdobeStock_305398567-1.jpeg" alt=""></div>
+                <h3>DỊCH VỤ TẮM SPA</h3>
+                <span>Nơi biến thú cưng của bạn thành 1 ngôi sao!</span>
+            </div></a>
+            <a href="service-hotel.html"><div class="box">
+                <div><img src="https://vnn-imgs-f.vgcloud.vn/2020/01/21/08/thu-cung-1.jpg" alt=""></div>
+                <h3>DỊCH VỤ TRÔNG GIỮ</h3>
+                <span>Trở thành ngôi nhà thứ hai cho thú cưng của bạn</span>
+            </div></a>
+        </div>
+        <h4 class="text-banner">TẠI MARPET, CHÚNG TÔI COI THÚ CƯNG CỦA BẠN NHƯ THÚ CƯNG CỦA CHÚNG TÔI</h4>
+        <img class="img-banner" src="https://www.heartlandpets.net/wp-content/uploads/1970/01/breedbanner-1200x398.jpg" alt="">
     </div>
 
     <!-- chèn html footer -->
