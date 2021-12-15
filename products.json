@@ -4,12 +4,28 @@
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó con cỡ nhỏ ROYAL CANIN Mini Puppy",
         "price": "185.000 ",
-        "image1": "https://media.alobacsi.com/Images/Uploaded/Share/2018/01/03/cho4.jpg",
-        "image2": "http://2.bp.blogspot.com/-Dm8ns6HJc9E/UFciSGY3yuI/AAAAAAAADuw/ahvXNdwYNOo/s1600/cho-con.jpg",
+        "image": "../library/products/dog/DG_BE_sp1.jpg",
+        "image2": "./library/products/dog/DG_BE_sp2.jpg",
         "image3": "",
-        "weight1": "800g",
-        "weight2": "1kg",
-        "weight3": "2kg",
+        "background-color": "red",
+        "weights": [{
+                "weight": "800g"
+            }, {
+                "weight": "1kg"
+            },
+            {
+                "weight": "2kg"
+            }
+        ],
+        "color": [{
+                "backgroundcolor": "green"
+
+            },
+            {
+                "backgroundcolor": "blue"
+            }
+        ],
+
 
 
         "description": "Thức ăn cho chó CỠ NHỎ 111 ROYAL CANIN Poodle Puppy dành riêng cho tất cả các giống chó Teacup, Tiny Poodle, Toy Poodle, Standard Poodle dưới 10 tháng tuổi",

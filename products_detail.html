@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="./js/angular.js"></script>
+    <link rel="stylesheet" href="./css/products_detail.css">
     <script>
         let urlparams = new URLSearchParams(location.search);
         var id = urlparams.get('productId');
@@ -39,360 +40,7 @@
 
         })
     </script>
-    <style>
-        body {
-            font-family: SVN-Poppins;
-            margin: 10px;
-            background-color: #f9f9f9;
-        }
-        
-        #breadcrumb div {
-            float: left;
-            line-height: 30px;
-        }
-        
-        #breadcrumb {
-            height: 30px;
-            font-size: 16px;
-            margin-left: 15px;
-        }
-        
-        #breadcrumb a {
-            text-decoration: none;
-            padding: 0 5px;
-            color: #666;
-        }
-        
-        .products_detail_container {
-            margin-top: 10px;
-        }
-        
-        .slider_imgbox img {
-            width: 100px;
-        }
-        
-        .products_content {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .products_gallery {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .products_gallery-right {
-            width: 450px;
-            margin-left: 30px;
-            padding-left: 10px;
-        }
-        
-        .products_gallery-right img {
-            width: 400px;
-        }
-        
-        .weight-option {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
-        }
-        
-        .weight-label {
-            margin-top: 15px;
-        }
-        
-        .weight-label label {
-            font-weight: 700;
-        }
-        
-        .weight-option {
-            margin-top: 5px;
-        }
-        
-        .weight-option li {
-            width: 180px;
-            height: 50px;
-            text-align: center;
-            padding: 5px 15px;
-            touch-action: manipulation;
-            background-color: white;
-            color: gray;
-            border: 1px solid #ddd;
-            box-shadow: 0 0.1rem 0 0 #ddd;
-            ;
-            box-sizing: border-box;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 4px 8px 4px 0;
-            position: relative;
-            user-select: none;
-        }
-        
-        .products_infor {
-            margin-left: 25px;
-        }
-        
-        .products_buybox {
-            padding: 0 50px;
-            margin-left: 20px;
-        }
-        
-        .products_buybox-wrapper {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .btn_add-to-cart {
-            padding: 15px;
-            background-color: #da1f24;
-            color: white;
-            font-weight: 700;
-            font-size: 18px;
-            position: relative;
-            display: inline-block;
-            vertical-align: middle;
-            cursor: pointer;
-            line-height: 1;
-            text-align: center;
-            white-space: nowrap;
-            box-sizing: border-box;
-            touch-action: manipulation;
-            user-select: none;
-            border: 0;
-            border-radius: 4px;
-            margin-top: 10px;
-            margin-left: 10px;
-            width: 300px;
-        }
-        
-        .btn_add-to-cart:hover {
-            background-color: #8f0e12;
-        }
-        
-        .btn_add-to-wishlist {
-            padding: 15px;
-            background-color: palevioletred;
-            color: white;
-            font-weight: 700;
-            font-size: 18px;
-            position: relative;
-            display: inline-block;
-            vertical-align: middle;
-            cursor: pointer;
-            line-height: 1;
-            text-align: center;
-            white-space: nowrap;
-            box-sizing: border-box;
-            touch-action: manipulation;
-            user-select: none;
-            border: 0;
-            border-radius: 4px;
-            margin-top: 10px;
-            margin-left: 10px;
-            width: 300px;
-        }
-        
-        .btn_add-to-wishlist:hover {
-            background-color: rgb(250, 107, 131);
-        }
-        
-        .quantity-dropdown {
-            padding-left: 15px;
-        }
-        
-        .quantity-dropdown label {
-            pointer-events: none;
-            height: auto;
-            line-height: 1em;
-            font-size: 18px;
-            padding: 7px 0 0 10px;
-            display: block;
-            font-weight: 400;
-            text-transform: none;
-            width: 100%;
-            z-index: 1;
-            margin: 0;
-            color: #999;
-            text-align: left;
-        }
-        
-        .quantity-dropdown select {
-            width: 300px;
-            height: 30px;
-            margin-left: 10px;
-            margin-top: 5px;
-        }
-        /* .quantity_select {
-            border: gray solid 1px;
-        } */
-        
-        .stock {
-            font-weight: 700;
-            color: #327435;
-            font-size: 18px;
-            margin-top: 15px;
-        }
-        
-        .price {
-            color: #b93505;
-            font-size: 24px;
-            font-weight: 700;
-        }
-        
-        .products_price {
-            margin-top: 15px;
-        }
-        
-        .button_select-weight {
-            margin-top: 20px;
-        }
-        
-        .products_name {
-            font-weight: 600;
-            font-size: 30px;
-        }
-        
-        .products_detail-tabs {
-            display: flex;
-            flex-direction: row;
-            margin-top: 20px;
-        }
-        
-        .products_detail-tabs li {
-            width: 250px;
-            height: 40px;
-            background-color: rgb(216, 112, 147, 0.5);
-            font-size: 22px;
-            text-align: center;
-            font-weight: 600;
-            padding-top: 13px;
-        }
-        
-        .products_detail-tabs li:hover {
-            background-color: white;
-            border-top: palevioletred solid 3px;
-        }
-        
-        .products_description-container {
-            margin: 10px 0;
-            background-color: white;
-        }
-        
-        .products_description-text {
-            margin: 10px;
-        }
-        
-        .products_description-text p {
-            text-align: justify;
-        }
-        
-        .mySlides {
-            display: none
-        }
-        
-        img {
-            vertical-align: middle;
-        }
-        /* Slideshow container */
-        
-        .gallery_slides-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-        
-        .dot_container {
-            display: flex;
-            flex-direction: column;
-        }
-        /* Next & previous buttons */
-        
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-        /* Position the "next button" to the right */
-        
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Number text (1/3 etc) */
-        
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-        /* The dots/bullets/indicators */
-        
-        .dot {
-            cursor: pointer;
-            height: 80px;
-            width: 80px;
-            margin: 0 2px;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            margin-top: 10px;
-        }
-        
-        .active,
-        .dot:hover {
-            border: red solid 1px;
-        }
-        
-        .dot img {
-            width: 75px;
-        }
-        /* Fading animation */
-        
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-            to {
-                opacity: 1
-            }
-        }
-        
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-            to {
-                opacity: 1
-            }
-        }
-    </style>
+
 </head>
 
 <body ng-app="angularApp" ng-controller="DetailController">
@@ -426,7 +74,7 @@
                         <div class="products_gallery-slider">
                             <div style="text-align:center" class="dot_container">
                                 <span class="dot" onclick="currentSlide(1)">
-                                <img src="{{selectedProduct.image1}}" alt=""></span>
+                                <img src="{{selectedProduct.image}}" alt=""></span>
                                 <span class="dot" onclick="currentSlide(2)">
                                 <img src="{{selectedProduct.image2}}" alt=""></span>
                                 <span class="dot" onclick="currentSlide(3)">
@@ -438,7 +86,7 @@
                         <div class="gallery_slides-container">
                             <div class="mySlides fade">
 
-                                <img src="{{selectedProduct.image1}}" style="width:100%">
+                                <img src="{{selectedProduct.image}}" style="width:100%">
 
                             </div>
 
@@ -486,11 +134,21 @@
                                 <div class="weight-label">
                                     <label>Chọn trọng lượng (Select weight)</label>
                                 </div>
-                                <ul class="weight-option">
-                                    <li>{{selectedProduct.weight1}} - {{selectedProduct.price}}đ</li>
-                                    <li>{{selectedProduct.weight2}} - 390.000đ</li>
-                                    <li>{{selectedProduct.weight3}} - 1.340.000đ</li>
-                                </ul>
+                                <div class="weight-option">
+                                    <button>{{selectedProduct.weights[0].weight}} - {{selectedProduct.price}}đ</button>
+                                    <button>{{selectedProduct.weights[1].weight}} - 390.000đ</button>
+                                    <button>{{selectedProduct.weights[2].weight}} - 1.340.000đ</button>
+                                </div>
+                            </div>
+                            <div class="button_select-color">
+                                <div class="weight-label">
+                                    <label>Chọn màu sắc (Select color)</label>
+                                </div>
+                                <div class="color-option">
+                                    <button ng-style="selectedProduct"></button>
+                                    <button class="btncolor">{{selectedProduct.color[0].backgroundcolor}}</button>
+                                    <button class="btncolor">{{selectedProduct.color[1].backgroundcolor}}</button>
+                                </div>
                             </div>
                         </div>
                         <div class="products_buybox">
