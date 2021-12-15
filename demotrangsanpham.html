@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/demogiohangstyles.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Shopping Cart</title>
+    <style>
+        img{
+            width:500px;
+        }
+        h3{
+            text-align: center;
+        }
+        .image{
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li><a href="demotrangsanpham.html">Home</a></li>
+                <li class="cart">
+                    <a href="demotranggiohang.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div w3-include-html="demotrangheader.html"></div> -->
+    <div class="container">
+        <div class="image">
+            <img src="./library/dog1.jpg" alt="thsirt1">
+            <h3>Pate cho chó vị thịt bò IRIS One Care Beef</h3>
+            <h3>130.000 ₫</h3>
+            <a class="add-cart cart1" href="#">Add Cart</a>
+        </div>
+        <div class="image">
+            <img src="./library/dog2.jpg" alt="thsirt1">
+            <h3>Pate cho chó vị thịt gà JERHIGH Chicken Grilled Gravy</h3>
+            <h3>130.000 ₫</h3>
+            <a class="add-cart cart2" href="#">Add Cart</a>
+        </div>
+        <div class="image">
+            <img src="./library/dog3.jpg" alt="thsirt1">
+            <h3>Thức ăn cho chó con cỡ nhỏ ROYAL CANIN Mini Puppy</h3>
+            <h3>185.000 ₫</h3>
+            <a class="add-cart cart3" href="#">Add Cart</a>
+        </div>
+        <div class="image">
+            <img src="./library/dog4.jpg" alt="thsirt1">
+            <h3>Thức ăn cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult</h3>
+            <h3>130.000 ₫</h3>
+            <a class="add-cart cart4" href="#">Add Cart</a>
+        </div>
+        <div class="image">
+            <img src="./library/dog5.jpg" alt="thsirt1">
+            <h3>Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb</h3>
+            <h3>130.000 ₫</h3>
+            <a class="add-cart cart5" href="#">Add Cart</a>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/demogiohang.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>
