@@ -18,6 +18,10 @@ xmlhttp.send(); //thực hiên
 function myFunction(arr) {
   var div = "";
   var i;
+  var href = window.location.href;
+  var link = new Array();
+  link = href.split('/');
+  var name = link[link.length-1]
   // alert(ten);
   if (name == "Dog-Product.html") {
     for (i = 0; i < arr.length; i++) {
