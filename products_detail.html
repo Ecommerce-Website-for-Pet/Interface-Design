@@ -144,11 +144,12 @@
                                 <div class="weight-label">
                                     <label>Chọn màu sắc (Select color)</label>
                                 </div>
-                                <div class="color-option">
-                                    <button ng-style="selectedProduct"></button>
-                                    <button class="btncolor">{{selectedProduct.color[0].backgroundcolor}}</button>
-                                    <button class="btncolor">{{selectedProduct.color[1].backgroundcolor}}</button>
+                                <div class="color-option" ng-repeat="w in selectedProduct.color">
+                                    <button ng-style="{ background-color: w.backgroundcolor }"></button>
+                                    <!-- <button class="btncolor">{{selectedProduct.color[0].backgroundcolor}}</button>
+                                    <button class="btncolor">{{selectedProduct.color[1].backgroundcolor}}</button> -->
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="products_buybox">
@@ -260,7 +261,14 @@
     <script src="./js/chatBox&returnTop-btn.js"></script>
 
     <script src="./js/flat-menu.js"></script>
+    <script>
+            let productContainer=document.querySelector(".color-option");
 
+            
+            for (let i=0; i<selectedProduct.color.length;i++){
+                productContainer.innerHTML +=`<button style="background-color: ${selectedProduct.color[i]}"></button>`;
+            }
+    </script>
 
 </body>
 
