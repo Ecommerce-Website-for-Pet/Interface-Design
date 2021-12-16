@@ -1,47 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MarPet</title>
-    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
-    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png" />
+    <script
+      src="https://kit.fontawesome.com/09f1ff1e12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="./css/dog-product.css">
-</head>
+    <link rel="stylesheet" href="./css/dog-product.css" />
+    <script>
+      function getUrlParams() {
+        var params = {};
+        var queryString = window.location.href.replace(
+          /[?&]+([^=&]+)=([^&]*)/gi,
+          function (m, key, value) {
+            params[key] = value;
+          }
+        );
+        return params;
+      }
+      var category = unescape(getUrlParams().category);
+    </script>
+  </head>
 
-<body>
+  <body>
     <!-- chèn html header -->
     <div w3-include-html="header.html"></div>
 
     <!-- phần nội dung -->
-    <div class="content">
-      <div class="container">
-        <div class="category">
+    <div class="container" style="overflow: auto">
+      <div class="category">
+        <h2>Danh mục</h2>
+        <ul class="category-list">
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=food">Thức ăn</a>
+          </li>
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=clothes">Quần áo</a>
+          </li>
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=ds">Dụng cụ ăn uống</a>
+          </li>
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=co">Vòng cổ, dây dắt, rọ mõm</a>
+          </li>
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=ca">Chuồng, giường, nhà, túi</a>
+          </li>
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=toy"
+              >Đồ chơi, phụ kiện, huấn luyện</a
+            >
+          </li>
+          <li class="category-item category-item--active">
+            <a href="Dog-Product.html?category=be">Mỹ phẩm, dụng cụ làm đẹp</a>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="headline" id="title-pro"></div>
+        <script>
+          var title = document.getElementById('title-pro');
+          if (category == "food") {
+            title.innerText = 'Thức ăn'
+          }
+          else if (category == "clothes"){
+            title.innerText = 'Quần áo'
+          }
+          else if (category == "ds"){
+            title.innerText = 'Dụng cụ ăn uống'
+          }
+          else if (category == "co"){
+            title.innerText = 'Vòng cổ, dây dắt, rọ mõm'
+          }
+          else if (category == "ca"){
+            title.innerText = 'Chuồng, giường, nhà, túi'
+          }
+          else if (category == "toy"){
+            title.innerText = 'Đồ chơi, phụ kiện, huấn luyện'
+          }
+          else if (category == "be"){
+            title.innerText = 'Mỹ phẩm, dụng cụ làm đẹp'
+          }
+          var href = window.location.href;
+          var link = new Array();
+          link = href.split('/');
+          var name = link[link.length-1]
+        </script>
 
-        </div>
-        
-        <div class="wrapper">
-          <div class="headline">Food</div>
-          <a href="">
-            <div class="products" id="product">
-
-            </div>
-          </a>
-        </div>
+        <a href="">
+          <div class="products" id="product"></div>
+        </a>
       </div>
     </div>
-    
+
     <!-- chèn html footer -->
-    <div w3-include-html="footer.html"></div>
+    <!-- <div w3-include-html="footer.html"></div> -->
 
     <!-- function để chèn html -->
     <script>
-        w3.includeHTML();
+      w3.includeHTML();
     </script>
     <!-- js mở chatbox và quay về đầu trang -->
     <script src="./js/chatBox&returnTop-btn.js"></script>
@@ -71,7 +141,5 @@
       //   }
       // }
     </script>
-    
-</body>
-
+  </body>
 </html>
