@@ -25,15 +25,15 @@
         </nav>
     </header> -->
     <!-- <div w3-include-html="demotrangheader.html"></div> -->
-    <div id="1"></div>
+    <div id="header"></div>
     <script>
-        load("demotrangheader.html");
+        load("header.html");
         function load(url)
         {
             req = new XMLHttpRequest();
             req.open("GET", url, false);
             req.send(null);
-            document.getElementById(1).innerHTML = req.responseText;
+            document.getElementById("header").innerHTML = req.responseText;
         }
     </script>
     <div class="products-container">
@@ -47,7 +47,17 @@
 
         </div>
     </div>
-
+    <div id="footer"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("footer").innerHTML = req.responseText;
+        }
+    </script>
     <script src="./js/demogiohang.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

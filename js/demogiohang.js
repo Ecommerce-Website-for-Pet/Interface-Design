@@ -5,31 +5,31 @@ let products=[
     {
         name:'Pate cho chó vị thịt bò IRIS One Care Beef',
         tag:'dog1',
-        price:130,
+        price:130000,
         "inCart":0
     },
     {
         name:'Pate cho chó vị thịt gà JERHIGH Chicken Grilled Gravy',
         tag:'dog2',
-        price:130,
+        price:130000,
         inCart:0
     },
     {
         name:'Thức ăn cho chó con cỡ nhỏ ROYAL CANIN Mini Puppy',
         tag:'dog3',
-        price:185,
+        price:185000,
         inCart:0
     },
     {
         name:'Thức ăn cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult',
         tag:'dog4',
-        price:130,
+        price:130000,
         inCart:0
     },
     {
         name:'Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb',
         tag:'dog5',
-        price:130,
+        price:130000,
         inCart:0
     }
 ];
@@ -44,7 +44,8 @@ function onLoadCartNumbers(){
     let productNumbers=localStorage.getItem('cartNumbers')
     if(productNumbers){
         // document.querySelector('.cart span').textContent=productNumbers;
-        document.querySelector('.cart span').textContent=productNumbers;
+        document.querySelector('.countProductsInCart1 span').textContent=productNumbers;
+        document.querySelector('.countProductsInCart2 span').textContent=productNumbers;
 
     } else {
         
@@ -57,10 +58,12 @@ function cartNumbers(product){
     productNumbers=parseInt(productNumbers);
     if(productNumbers){
         localStorage.setItem('cartNumbers', productNumbers+1);
-        document.querySelector('.cart span').textContent=productNumbers+1;
+        document.querySelector('.countProductsInCart1 span').textContent=productNumbers+1;
+        document.querySelector('.countProductsInCart2 span').textContent=productNumbers+1;
     } else {
         localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.cart span').textContent=1;
+        document.querySelector('.countProductsInCart1 span').textContent=1;
+        document.querySelector('.countProductsInCart2 span').textContent=1;
     }
     setItems(product);
 }
@@ -119,14 +122,14 @@ function displayCart(){
                 <img src="./library/${item.tag}.jpg">
                 <span>${item.name}</span>
             </div>
-            <div class="price">${item.price},000₫</div>
+            <div class="price">${item.price}₫</div>
             <div class="quantity">
                 <ion-icon name="caret-back-circle-outline"></ion-icon>
                 <span>${item.inCart}</span>
                 <ion-icon name="caret-forward-circle-outline"></ion-icon>
             </div>
             <div class="total">
-                ${item.inCart*item.price},000₫
+                ${item.inCart*item.price}₫
             </div>
             `;
         });
@@ -136,7 +139,7 @@ function displayCart(){
                     Basket Total
                 </h4>
                 <h4 class="basketTotal">
-                    ${cartCost}000₫
+                    ${cartCost}₫
                 </h4>
             </div>
         `;
