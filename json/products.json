@@ -106,107 +106,416 @@
         "image":"../library/products/dog/DG_CL_sp10-blue.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Mũ cho chó AMBABY PET 1JXS081",
         "price":"155.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp2-pink",
-        "description":"Mũ cho chó AMBABY PET 1JXS081 là sản phẩm dành cho tất cả giống chó và mèo."
+        "image":"../library/products/dog/DG_CL_sp2-grey.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Mũ sừng nai cho chó AMBABY PET",
         "price":"155.000 ₫",
         "image":"../library/products/dog/DG_CL_sp3-beige.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Quần áo cho chó mèo AMBABY PET 2JXF162",
         "price":"245.000 ₫",
         "image":"../library/products/dog/DG_CL_sp6-pink.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Quần áo cho chó đầm công chúa AMBABY PET",
         "price":"245.000 ₫",
         "image":"../library/products/dog/DG_CL_sp9.jpg"
     },
     {
-        "label":"Ambaby",
-        "name":"Quần áo cho chó đầm công chúa AMBABY PET",
-        "price":"245.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp9.jpg"
-    },
-    {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF164",
         "price":"245.000 ₫",
         "image":"../library/products/dog/DG_CL_sp7-blue.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF109",
         "price":"180.000 ₫",
         "image":"../library/products/dog/DG_CL_sp4-blue.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF218",
         "price":"245.000 ₫",
         "image":"../library/products/dog/DG_CL_sp8-pink.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF112",
         "price":"245.000 ₫",
         "image":"../library/products/dog/DG_CL_sp5-blue.jpg"
     },
     {
+        "category":"clothes",
         "label":"Ambaby",
         "name":"Mũ cho chó AMBABY PET 1JXS003",
         "price":"155.000 ₫",
         "image":"../library/products/dog/DG_CL_sp2-grey.jpg"
     },
     {
+        "category":"co",
         "label":"HAND IN HAND",
         "name":"Xích cho chó kèm vòng cổ HAND IN HAND Reflective Collar Leash",
         "price":"200.000 ₫",
         "image":"../library/products/dog/DG_CO_sp10-red.jpg"
     },
     {
+        "category":"co",
         "label":"DELE",
         "name":"Dây dắt chó đi dạo tự cuốn DELE 006 Retractable Leash",
         "price":"175.000 ₫",
         "image":"../library/products/dog/DG_CO_sp3-blue.jpg"
     },
     {
+        "category":"co",
         "label":"PAW",
         "name":"Vòng cổ cho chó cỡ nhỏ PAW bằng da đính cườm cao cấp",
         "price":"170.000 ₫",
         "image":"../library/products/dog/DG_CO_sp6-1.jpg"
     },
     {
+        "category":"co",
         "label":"PAW",
         "name":"Rọ mõm chó hình mỏ vịt PAW Aduck",
         "price":"75.000 ₫",
         "image":"../library/products/dog/DG_CO_sp5-3.jpg"
     },
     {
+        "category":"co",
         "label":"PAW",
-        "name":"Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ ",
+        "name":"Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ",
         "price":"75.000 ₫",
         "image":"../library/products/dog/DG_CO_sp4-1.jpg"
     },
     {
+        "category":"co",
         "label":"HAND IN HAND",
         "name":"Dây dắt cho chó cường lực vải dù loại dài HAND IN HAND Knitting Lead With Buffering Spring",
         "price":"190.000 ₫",
         "image":"../library/products/dog/DG_CO_sp1-grey.jpg"
     },
     {
+        "category":"co",
         "label":"HAND IN HAND",
         "name":"Dây dắt cho chó cường lực HAND IN HAND",
         "price":"170.000 ₫",
         "image":"../library/products/dog/DG_CO_sp2-blue.jpg"
+    },
+    {
+        "category":"co",
+        "label":"TOUCH DOG",
+        "name":"Xích cho chó đai ngực cỡ to",
+        "price":"325.000 ₫",
+        "image":"../library/products/dog/DG_CO_sp8.jpg"
+    },
+    {
+        "category":"co",
+        "label":"HAND IN HAND",
+        "name":"Xích cho chó đai ngực cỡ bé HAND IN HAND",
+        "price":"100.000 ₫",
+        "image":"../library/products/dog/DG_CO_sp7-pink.jpg"
+    },
+    {
+        "category":"co",
+        "label":"TOUCH DOG",
+        "name":"Xích cho chó kèm vòng cổ cỡ nhỏ TOUCH DOG",
+        "price":"195.000 ₫",
+        "image":"../library/products/dog/DG_CO_sp9-yellow.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Bình uống nước cho chó mèo gài chuồng BOBO",
+        "price":"80.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp7-1.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"SAWYER PET",
+        "name":"Bát ăn cho chó mèo nhựa mềm SAWYER PET",
+        "price":"40.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp4-1.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
+        "price":"35.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp2.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl",
+        "price":"135.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp5.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"SAWYER PET",
+        "name":"Bát ăn cho chó mèo bằng cao su SAWYER PET Silicone Bowl",
+        "price":"60.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp1-1.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Vòi uống nước cho chó mèo gài chuồng BOBO",
+        "price":"80.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp10.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Bình uống nước đi dạo BOBO cho chó mèo",
+        "price":"90.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp8-1.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
+        "price":"155.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp3-yellow.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"BOBO",
+        "name":"Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl 3057",
+        "price":"175.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp6.jpg"
+    },
+    {
+        "category":"ds",
+        "label":"PAW",
+        "name":"Dụng cụ ăn uống cho chó mèo PAW tự động thông minh",
+        "price":"245.000 ₫",
+        "image":"../library/products/both/BOTH_DS_sp9-green.jpg"
+    },
+    {
+        "category":"be",
+        "label":"BBN",
+        "name":"Sữa tắm cho chó trị ve rận BBN Killing Mites Shampoo",
+        "price":"150.000 ₫",
+        "image":"../library/products/dog/DG_BE_sp1.jpg"
+    },
+    {
+        "category":"be",
+        "label":"JOYCE & DOLLS",
+        "name":"Sữa tắm cho chó khử mùi JOYCE & DOLLS 102 Deodorizing Formula",
+        "price":"230.000 ₫",
+        "image":"../library/products/dog/DG_BE_sp2.jpg"
+    },
+    {
+        "category":"be",
+        "label":"PERFECT COAT",
+        "name":"Sữa tắm trị ve rận cho chó PERFECT COAT 8in1 Flea Tick",
+        "price":"225.000 đ",
+        "image":"../library/products/dog/DG_BE_sp11.jpg"
+    },
+    {
+        "category":"be",
+        "label":"JOYCE & DOLLS",
+        "name":"Sữa tắm khô cho chó mèo JOYCE & DOLLS Waterless Cleansing Foam",
+        "price":"180.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp6-1.jpg"
+    },
+    {
+        "category":"be",
+        "label":"BBN",
+        "name":"Sữa tắm chó mèo mùi hương khoai môn BBN Taro Silky",
+        "price":"180.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp5.jpg"
+    },
+    {
+        "category":"be",
+        "label":"JOYCE & DOLLS",
+        "name":"Sữa tắm cho mèo lông dài JOYCE & DOLLS 102 Long Hair",
+        "price":"225.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp4.jpg"
+    },
+    {
+        "category":"be",
+        "label":"DELE",
+        "name":"Lược chải lông chó mèo bấm nút DELE M006 Round Head",
+        "price":"140.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp3-1.jpg"
+    },
+    {
+        "category":"be",
+        "label":"CODOS",
+        "name":"Tông đơ cắt lông chó mèo chạy pin CODOS 3100",
+        "price":"540.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp7-1.jpg"
+    },
+    {
+        "category":"be",
+        "label":"PAW",
+        "name":"Bộ kéo cắt tỉa lông chó mèo chuyên dụng TOBY Pet Scissors",
+        "price":"1.500.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp1-1.jpg"
+    },
+    {
+        "category":"be",
+        "label":"PAW",
+        "name":"Kềm cắt bấm kèm dũa móng chó mèo PAW Nail Clipper & File",
+        "price":"110.000 ₫",
+        "image":"../library/products/both/BOTH_BE_sp2.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"AUPET",
+        "name":"Chuồng chó mèo bằng sắt mái chóp AUPET Conical Dog Cage",
+        "price":"1.450.000 ₫",
+        "image":"../library/products/dog/DG_CA_sp1-green.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"IRIS OHYAMA",
+        "name":"Chuồng chó mèo nan sắt sàn cố định IRIS PCSC-901",
+        "price":"1.850.000 ₫",
+        "image":"../library/products/dog/DG_CA_sp2-black.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"AUPET",
+        "name":"Lồng vận chuyển chó mèo AUPET BP27 Pet Kennel",
+        "price":"600.000 ₫",
+        "image":"../library/products/dog/DG_CA_sp3.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"AUPET",
+        "name":"Lồng vận chuyển chó mèo cỡ đại AUPET Travel Box Kennel",
+        "price":"1.800.000 ₫",
+        "image":"../library/products/dog/DG_CA_sp4-1.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"RICHELL",
+        "name":"Chuồng gỗ cho chó mèo 2 tầng RICHELL RC09",
+        "price":"4.690.000 ₫",
+        "image":"../library/products/dog/DG_CA_sp5.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"IRIS OHYAMA",
+        "name":"Chuồng chó mèo lắp ghép đa năng 2 ngăn IRIS PCS1400",
+        "price":"2.650.000 đ",
+        "image":"../library/products/dog/DG_CA_sp6-1.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"BOBBYPET",
+        "name":"Nệm cho chó mèo BOBBY PET DS14OB",
+        "price":"455.000 đ",
+        "image":"../library/products/dog/DG_CA_sp7-orange.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"BOBBYPET",
+        "name":"Ổ đệm cho chó mèo hình lều BOBBY PET 16CT003",
+        "price":"495.000 đ",
+        "image":"../library/products/dog/DG_CA_sp8.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"BOBBYPET",
+        "name":"Balo đựng chó mèo phi hành gia LOFFEE Outdoor Transparent",
+        "price":"535.000 đ",
+        "image":"../library/products/dog/DG_CA_sp9-pink.jpg"
+    },
+    {
+        "category":"ca",
+        "label":"BOBBYPET",
+        "name":"Balo đựng chó mèo phi hành gia LOFFE Bubble Bag",
+        "price":"535.000 đ",
+        "image":"../library/products/dog/DG_CA_sp10-red.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"ELITE",
+        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình thú",
+        "price":"50.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp8-brown.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"PAW",
+        "name":"Đồ chơi cho chó kêu chút chít PAW hình bánh Hamburger",
+        "price":"50.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp9.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"ELITE",
+        "name":"Đồ chơi cho chó chút chít ELITE size L",
+        "price":"140.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp3-1.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"BOBO",
+        "name":"Đĩa bay cho chó BOBO Pet Frisbee Thương hiệu BOBO",
+        "price":"110.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp1-1.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"PAW",
+        "name":"Đồ chơi cho chó gặm bằng cao su PAW Rubber Dog Toy Jingle Knobby Dumbbell",
+        "price":"95.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp4.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"IKEA",
+        "name":"Đồ chơi chó nhồi bông IKEA Gosig Golden",
+        "price":"545.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp10-1.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"ELITE",
+        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình động vật",
+        "price":"50.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp7-orange.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"ELITE",
+        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con gà",
+        "price":"50.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp5.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"PAW",
+        "name":"Đồ chơi cho chó bằng cao su PAW hình tròn in dấu bàn chân",
+        "price":"55.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp2.jpg"
+    },
+    {
+        "category":"toy",
+        "label":"ELITE",
+        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con hươu",
+        "price":"50.000 đ",
+        "image":"../library/products/dog/DG_TOY&ACC_sp6-1.jpg"
     }
-
 ]

@@ -43,7 +43,7 @@
         app.controller("ProductController", function($scope, $http) {
             $http({
                 method: "GET",
-                url: "products.json"
+                url: "./json/products.json"
             }).then(
                 function success(response) {
                     $scope.products = response.data;
