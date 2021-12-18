@@ -91,7 +91,7 @@ display: none;
 background: whitesmoke;
 }
 .submenuItems li {
-border-bottom: 1px solid #b6b6b6;
+/* border-bottom: 1px solid #b6b6b6; */
 }
 .submenuItems a {
 display: block;
