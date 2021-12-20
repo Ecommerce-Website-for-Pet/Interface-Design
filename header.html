@@ -108,12 +108,13 @@
                 </div>
                 <a><input class="typeForSeach " type="text " placeholder="Nhập để tìm kiếm "><i class="fa fa-search "></i>
                 </a>
-                <button style="margin-left:30px; background-color:#db7093; border:none" type = "button" class="menu-btn" id = "cart-btn">
+                <a href="giohang.html" style="margin-left:30px; background-color:#db7093; border:none" class="menu-btn" id = "cart-btn">
                         <i class = "fas fa-shopping-cart"></i>
                         <!-- <span id = "cart-count-info" style="background-color:wheat;top:7px;right:439px; color:black">0</span> -->
-                        <span id = "cart-count-info" style="background-color:wheat;top:7px;right:29%; color:black;"></span>
-                    <span style="text-align: center; font-size:15px">Giỏ hàng</span>
-                </button>
+                        
+                        <div class="countProductsInCart2"><span id = "cart-count-info" style="background-color:wheat;top:7px;right:29%; color:black;">0</span></div>
+                        <span style="text-align: center; font-size:15px">Giỏ hàng</span>
+                </a>
                 
                 <a href="sign-in.html" class="menu-btn">
                     <i class="fas fa-user-circle "></i>
@@ -129,13 +130,12 @@
                 </div>
                 <div class="others">
                     <li><input type="text" placeholder="Nhập để tìm kiếm"><a href=""><i class="fa fa-search"></i></a></li>
-                    <li>
-                        <button style="margin-left:30px; background-color:white; border:none" type = "button"  class="btn-card menu-btn" id = "cart-btn">
+                    <li class="countProductsInCart1">
+                        <a href="giohang.html" style="margin-left:30px; background-color:white; border:none" class="btn-card menu-btn" id = "cart-btn">
                             <i class = "fas fa-shopping-cart"></i>
-                            <!-- <span id = "cart-count-info">0</span> -->
-                            <span id = "cart-count-info"></span>
-                        <span style="text-align: center; font-size:15px">Giỏ hàng</span>
-                    </button>
+                            <span id = "cart-count-info">0</span>
+                            <span style="text-align: center; font-size:15px">Giỏ hàng</span>
+                        </a>
                     </li>
                     <li>
                         <a href="sign-in.html" class="btn-user menu-btn">
@@ -187,10 +187,10 @@
     </div>
     <img src="./library/back-to-top-icon-png-0.png" class="" onclick="topFunction()" id="topBtn" title="Go to top">
     <!-- Khi nhấp vào thì chuyển qua trang messenger fb của shop -->
-    <a href="https://m.me/107421025083727" target="blank"><img style="z-index:99" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2"></img>
+    <a href="https://m.me/107421025083727" target="blank"><img style="z-index:9999999999999" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2"></img>
     </a>
     <!-- Khi nhấp vào thì mở ô chat box để gửi tn -->
-    <img src="./library/sms-3.png" class="open-button-1" onclick="openForm()" style="z-index:99"></img>
+    <img src="./library/sms-3.png" class="open-button-1" onclick="openForm()" style="z-index:9999999999999"></img>
 
     <div class="chat-popup" id="myForm">
 

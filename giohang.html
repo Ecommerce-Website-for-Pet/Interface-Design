@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="./css/giohang.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <!-- <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li><a href="demotrangsanpham.html">Home</a></li>
+                <li class="cart">
+                    <a href="demotranggiohang.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> -->
+    <!-- <div w3-include-html="demotrangheader.html"></div> -->
+    <div id="header"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("header").innerHTML = req.responseText;
+        }
+    </script>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">SẢN PHẨM</h5>
+            <h5 class="price">GIÁ TIỀN</h5>
+            <h5 class="quantity">SỐ LƯỢNG</h5>
+            <h5 class="total">TỔNG</h5>
+        </div>
+        <div class="products">
+
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("footer").innerHTML = req.responseText;
+        }
+    </script>
+    <script src="./js/demogiohang.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+<!-- js mở chatbox và quay về đầu trang -->
+<script src="./js/chatBox&returnTop-btn.js"></script>
+<!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+<script src="./js/flat-menu.js"></script>
+<!-- js xổ ra các mục nhỏ của footer khi trình duyệt thu nhỏ -->
+<script src="./js/footer.js"></script>
+
+<script src="./js/popupads.js"></script>
+<script src="./js/demogiohang.js"></script>
+</body>
+</html>

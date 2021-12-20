@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
     <link rel="stylesheet" href="./css/dog-product.css" />
     <script>
       function getUrlParams() {
@@ -37,7 +38,18 @@
 
   <body>
     <!-- chèn html header -->
-    <div w3-include-html="header.html"></div>
+    <!-- <div w3-include-html="header.html"></div> -->
+    <div id="header"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("header").innerHTML = req.responseText;
+        }
+    </script>
 
     <!-- phần nội dung -->
     <div class="container" style="overflow: auto">
@@ -103,6 +115,17 @@
 
     <!-- chèn html footer -->
     <!-- <div w3-include-html="footer.html"></div> -->
+    <div id="footer"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("footer").innerHTML = req.responseText;
+        }
+    </script>
 
     <!-- function để chèn html -->
     <script>
@@ -112,6 +135,11 @@
     <script src="./js/chatBox&returnTop-btn.js"></script>
     <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
     <script src="./js/flat-menu.js"></script>
+    <!-- js xổ ra các mục nhỏ của footer khi trình duyệt thu nhỏ -->
+    <script src="./js/footer.js"></script>
+    
+    <script src="./js/demogiohang.js"></script>
+    
     <script src="./js/dog-product.js">
       // var xmlhttp = new XMLHttpRequest();
       // var url = "../json/products.json";
