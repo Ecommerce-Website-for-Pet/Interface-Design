@@ -845,7 +845,7 @@
     },
     {
         "productid":"61",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình thú",
         "price":[50000],
@@ -859,7 +859,7 @@
     },
     {
         "productid":"62",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"PAW",
         "name":"Đồ chơi cho chó kêu chút chít PAW hình bánh Hamburger",
         "price":[50000],
@@ -873,7 +873,7 @@
     },
     {
         "productid":"63",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó chút chít ELITE size L",
         "price":[140000],
@@ -887,7 +887,7 @@
     },
     {
         "productid":"64",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"BOBO",
         "name":"Đĩa bay cho chó BOBO Pet Frisbee Thương hiệu BOBO",
         "price":[110000],
@@ -901,7 +901,7 @@
     },
     {
         "productid":"65",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"PAW",
         "name":"Đồ chơi cho chó gặm bằng cao su PAW Rubber Dog Toy Jingle Knobby Dumbbell",
         "price":[95000],
@@ -915,7 +915,7 @@
     },
     {
         "productid":"66",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"IKEA",
         "name":"Đồ chơi chó nhồi bông IKEA Gosig Golden",
         "price":[545000],
@@ -929,7 +929,7 @@
     },
     {
         "productid":"67",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình động vật",
         "price":[50000],
@@ -943,7 +943,7 @@
     },
     {
         "productid":"68",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con gà",
         "price":[50000],
@@ -956,7 +956,7 @@
     },
     {
         "productid":"69",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"PAW",
         "name":"Đồ chơi cho chó bằng cao su PAW hình tròn in dấu bàn chân",
         "price":[55000],
@@ -970,7 +970,7 @@
     },
     {
         "productid":"70",
-        "category":"d-toy&acc",
+        "category":"d-toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con hươu",
         "price":[50000],
@@ -1810,7 +1810,7 @@
     },
     {
         "productid": "130",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Bàn cào móng cho mèo dạng cong lượn sóng",
         "price": [350000],
@@ -1824,7 +1824,7 @@
     },
     {
         "productid": "131",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Bàn cào móng cho mèo hình bàn chân",
         "price": [250000],
@@ -1838,7 +1838,7 @@
     },
     {
         "productid": "132",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Bàn cào móng cho mèo kèm ổ QQ80337",
         "price": [300000],
@@ -1852,7 +1852,7 @@
     },
     {
         "productid": "133",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo kèm đồ chơi QQ60064A",
         "price": [400000],
@@ -1866,7 +1866,7 @@
     },
     {
         "productid": "134",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo kèm đồ chơi QQ801501",
         "price": [400000],
@@ -1880,7 +1880,7 @@
     },
     {
         "productid": "135",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo kèm đồ chơi QQ801504",
         "price": [400000],
@@ -1894,7 +1894,7 @@
     },
     {
         "productid": "136",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen loại 1 QQ60144",
         "price": [480000],
@@ -1908,7 +1908,7 @@
     },
     {
         "productid": "137",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen QQ60014",
         "price": [350000],
@@ -1922,7 +1922,7 @@
     },
     {
         "productid": "138",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen QQ60136",
         "price": [280000],
@@ -1937,7 +1937,7 @@
     {
 
         "productid": "139",
-        "category": "c-toy&acc",
+        "category": "c-toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen QQ60137",
         "price": [350000],
