@@ -14,7 +14,7 @@
 
 .header-bottom {
     background-color: white;
-     border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .announce-content {
@@ -66,6 +66,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 .fa-search {
     color: white;
 }
@@ -146,6 +147,7 @@ a {
     /* display: block; */
 }
 
+
 /*.header_bottom--menu>li :hover {
     text-decoration-line: underline;
 }*/
@@ -161,6 +163,7 @@ a {
     opacity: 95%;
 }
 
+
 /*trỏ vào thì hiển thị menu con chứa các danh mục sp */
 
 
@@ -172,7 +175,6 @@ a {
 .header_bottom--menu>li :hover+.sub-menu {
     display: block;
     z-index: 99999;
-
 }
 
 .sub-menu img {
@@ -204,7 +206,6 @@ a {
     justify-content: space-evenly;
     background-color: #db7093;
     align-items: center;
-    padding: 10px 0px;
     width: 100%;
     /* font-size: 20px; */
 }
@@ -326,35 +327,42 @@ a {
     display: block;
 }
 
+
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #db7093;     border-radius: 10px;
-  
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: pink; 
-  }
+}
 
-#cart-btn:hover{
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #db7093;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: pink;
+}
+
+#cart-btn:hover {
     border: 1px solid black !important;
     border-radius: 5px !important;
     cursor: pointer;
 }
 
-#cart-count-info{
+#cart-count-info {
     position: absolute;
     top: 46px;
     right: 28%;
@@ -375,7 +383,7 @@ a {
     font-weight: 600;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 50%;
@@ -393,13 +401,15 @@ a {
     background: var(--ghost-white);
     z-index: 999;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--granite-gray);
     justify-self: flex-start;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     justify-self: center;
     border: none;
     color: #fff;
@@ -414,7 +424,8 @@ a {
     font-size: 1.5rem;
     position: relative;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -432,29 +443,38 @@ a {
     -ms-transition: var(--trans);
     -o-transition: var(--trans);
 }
+
+
 /* js related class */
-.show-navbar{
-    height: 204px; 
+
+.show-navbar {
+    height: 204px;
 }
+
+
 /*  */
-.navbar-collapse ul{
+
+.navbar-collapse ul {
     list-style-type: none;
 }
-.navbar-collapse li{
+
+.navbar-collapse li {
     margin: 0.7rem 0;
     letter-spacing: 2px;
     text-align: center;
 }
-.navbar-collapse a{
+
+.navbar-collapse a {
     font-size: 1.15rem;
     opacity: 0.7;
 }
-.cart{
+
+.cart {
     justify-self: flex-end;
     padding-right: 8px;
 }
 
-.cart-container{
+.cart-container {
     position: absolute;
     overflow-y: scroll;
     background: #fff;
@@ -466,10 +486,12 @@ a {
     box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.21);
     display: none;
 }
-.cart-container::-webkit-scrollbar{
+
+.cart-container::-webkit-scrollbar {
     width: 8px;
 }
-.cart-container::-webkit-scrollbar-thumb{
+
+.cart-container::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -477,7 +499,10 @@ a {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
+
 /* js related class */
-.show-cart-container{
+
+.show-cart-container {
     display: block;
 }
