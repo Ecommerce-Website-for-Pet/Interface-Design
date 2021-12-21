@@ -14,36 +14,41 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="./js/angular.js"></script>
     <link rel="stylesheet" href="./css/products_detail.css">
+<<<<<<< HEAD
+    <script src="./js/products_detail.js"></script>
+=======
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+>>>>>>> 51c4f218153102a1dfc28805e5f842dee972330d
     <script>
-        let urlparams = new URLSearchParams(location.search);
-        var id = urlparams.get('productId');
-    </script>
-    <script>
-        let app = angular.module("angularApp", []);
-        app.controller("DetailController", function($scope, $http) {
-            $http({
-                method: "GET",
-                url: "products.json"
-            }).then(
-                function success(response) {
-                    $scope.selectedProduct = response.data.find(value => value.productid == id)
-                },
-                function error(response) {
-                    $scope.error = response.statusText;
+        function getUrlParams() {
+            var params = {};
+            var queryString = window.location.href.replace(
+                /[?&]+([^=&]+)=([^&]*)/gi,
+                function(m, key, value) {
+                    params[key] = value;
                 }
-
             );
-            $scope.selectProduct = function(val) {
-                $scope.productDetails = val;
-            }
-
-
-        })
+            return params;
+        }
+        var id = unescape(getUrlParams().productid);
     </script>
+    <script>
+        function getSrc(x) {
+            var src = x.children[0].src;
+            // alert(src);
+            document.getElementById('products_detail-img').innerHTML = '<img src="' + src + '" alt="">'
+        }
+    </script>
+
+
 
 </head>
 
+<<<<<<< HEAD
+<body>
+    <div w3-include-html="header.html"></div>
+    <div class="products_detail_container" id='container'>
+=======
 <body ng-app="angularApp" ng-controller="DetailController">
     <!-- chèn html header -->
     <!-- <div w3-include-html="header.html"></div> -->
@@ -80,63 +85,41 @@
 
     </div>
     <div class="products_detail_container">
+>>>>>>> 51c4f218153102a1dfc28805e5f842dee972330d
         <div class="products_main">
             <div class="products_content">
-                <div class="products_gallery">
+                <div class="products_gallery" id="products_gallery">
                     <div class="products_gallery-left">
                         <div class="products_gallery-slider">
                             <div style="text-align:center" class="dot_container">
-                                <span class="dot" onclick="currentSlide(1)">
-                                <img src="{{selectedProduct.image}}" alt=""></span>
-                                <span class="dot" onclick="currentSlide(2)">
-                                <img src="{{selectedProduct.image2}}" alt=""></span>
-                                <span class="dot" onclick="currentSlide(3)">
-                                <img src="" alt=""></span>
+                                <span class="dot" onclick="showImg()">
+                                <img src="" alt="">
+                            </span>
+                            </div>
+                            <div class="products_detail-img" id="products_detail-img">
+                                <img src="" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="products_gallery-right">
-                        <div class="gallery_slides-container">
-                            <div class="mySlides fade">
-
-                                <img src="{{selectedProduct.image}}" style="width:100%">
-
-                            </div>
-
-                            <div class="mySlides fade">
-
-                                <img src="{{selectedProduct.image2}}" style="width:100%">
-
-                            </div>
-
-                            <div class="mySlides fade">
-
-                                <img src="" style="width:100%">
-
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                        <br>
-
-                    </div>
-
                 </div>
+
                 <div class="products_infor">
-                    <div class="products_infor-summary" id="idneee">
-                        <h1 class="products_name">{{selectedProduct.name}}</h1>
-                        <SPan class="sub-title-products" style="color: #da1f24;">Thương hiệu</SPan>
-                        <a href="" class="brand_name">{{selectedProduct.label}}</a>
+                    <div class="products_infor-summary" id="products_infor-summary">
+                        <h1 class="products_name"></h1>
+                        <span class="sub-title-products" style="color: #da1f24;">Thương hiệu</span>
+                        <a href="" class="brand_name"></a>
                     </div>
+
+                    <!-- đây -->
+
                     <div class="products_buybox-wrapper">
                         <div class="products_buybox-options">
                             <div class="products_price">
                                 <div>
                                     <label>Giá bán:</label>
                                     <span class="price-amount">
-                                         <span class="price">{{selectedProduct.price}}</span>
-                                    <span style="color: #b93505; font-weight: 700;">đ</span>
+                                         <span class="price"></span>
+                                    <span style="color: #b93505; font-weight: 700;"></span>
                                     </span>
                                 </div>
                             </div>
@@ -148,29 +131,31 @@
                                     <label>Chọn trọng lượng (Select weight)</label>
                                 </div>
                                 <div class="weight-option">
-                                    <button>{{selectedProduct.weights[0].weight}} - {{selectedProduct.price}}đ</button>
-                                    <button>{{selectedProduct.weights[1].weight}} - 390.000đ</button>
-                                    <button>{{selectedProduct.weights[2].weight}} - 1.340.000đ</button>
+
+
+
+                                    <button>đ</button>
+
+
+                                </div>
+                                <div class="button_select-color">
+                                    <div class="color-label">
+                                        <label>Chọn màu sắc (Select color)</label>
+                                    </div>
+                                    <div class="color-option">
+                                        <div class="btn_color">
+                                            <button></button>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="button_select-color">
-                                <div class="weight-label">
-                                    <label>Chọn màu sắc (Select color)</label>
-                                </div>
-                                <div class="color-option" ng-repeat="w in selectedProduct.color">
-                                    <button ng-style="{ background-color: w.backgroundcolor }"></button>
-                                    <!-- <button class="btncolor">{{selectedProduct.color[0].backgroundcolor}}</button>
-                                    <button class="btncolor">{{selectedProduct.color[1].backgroundcolor}}</button> -->
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="products_buybox">
-                            <form action="" class="cart">
-                                <div class="quantity_select" style="float: left;">
-                                    <div class="quantity-dropdown">
-                                        <label for="quantity">Số lượng</label>
-                                        <select name="quantity" id="quantity" title="Chọn số lượng" class="qty_select">
+                            <div class="products_buybox">
+                                <form action="" class="cart">
+                                    <div class="quantity_select" style="float: left;">
+                                        <div class="quantity-dropdown">
+                                            <label for="quantity">Số lượng</label>
+                                            <select name="quantity" id="quantity" title="Chọn số lượng" class="qty_select">
         <option value="1" selected="selected">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -187,64 +172,62 @@
         <option value="14">14</option>
         <option value="15">15</option>
     </select>
-                                        <button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button>
-                                        <button type="submit" name="add-to-wishlist" class="btn_add-to-wishlist">Sản phẩm yêu thích</button>
+                                            <button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button>
+                                            <button type="submit" name="add-to-wishlist" class="btn_add-to-wishlist">Sản phẩm yêu thích</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="products_detail">
-            <div class="products_detail-description">
-                <ul class="products_detail-tabs">
-                    <li class="tab-active" ng-click="selectProduct(selectedProduct)">
-                        <p>Mô tả</p>
-                    </li>
-                    <!-- <li class="tab-address">
-                        <p ng-click="location">Địa chỉ mua hàng</p>
-                    </li> -->
-                </ul>
-                <div class="products_description-container">
-                    <div class="products_description" ng-if="productDetails">
-
-                        <div class="products_description-text">
-                            <h3 class="products_description-title">Mô tả</h3>
-                            <p id="description">
-                                {{productDetails.description}}
-                            </p>
-                            <br>
-                            <h3 class="products_description-title">Mục đích</h3>
-                            <p>
-                                {{productDetails.purpose}}
-                            </p>
-                            <br>
-                            <h3 class="products_description-title">Hướng dẫn sử dụng</h3>
-                            <p>
-                                {{productDetails.instruct}}
-                            </p>
+                                </form>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="products_detail">
+                <div class="products_detail-description">
+                    <ul class="products_detail-tabs">
+                        <li class="tab-active">
+                            <p>Mô tả</p>
+                        </li>
+                    </ul>
+                    <div class="products_description-container">
+                        <div class="products_description">
+
+                            <div class="products_description-text">
+                                <h3 class="products_description-title">Mô tả</h3>
+                                <p id="description"></p>
+                                <br>
+                                <h3 class="products_description-title">Mục đích</h3>
+                                <p></p>
+                                <br>
+                                <h3 class="products_description-title">Hướng dẫn sử dụng</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description_right">
+                    <img src="./library/cattt.gif" alt="">
+                    <div>
+                        <p>Products you can trust</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+        <div w3-include-html="footer.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+        <script src="./js/chatBox&returnTop-btn.js"></script>
 
+<<<<<<< HEAD
+        <script src="./js/flat-menu.js"></script>
+        <script>
+            let productContainer = document.querySelector(".color-option");
+
+=======
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -294,12 +277,16 @@
     
     <!-- <script>
             let productContainer=document.querySelector(".color-option");
+>>>>>>> 51c4f218153102a1dfc28805e5f842dee972330d
 
-            
-            for (let i=0; i<selectedProduct.color.length;i++){
-                productContainer.innerHTML +=`<button style="background-color: ${selectedProduct.color[i]}"></button>`;
+            for (let i = 0; i < selectedProduct.color.length; i++) {
+                productContainer.innerHTML += `<button style="background-color: ${selectedProduct.color[i]}"></button>`;
             }
+<<<<<<< HEAD
+        </script>
+=======
     </script> -->
+>>>>>>> 51c4f218153102a1dfc28805e5f842dee972330d
 
 </body>
 
