@@ -20,11 +20,12 @@ function myFunction(arr) {
   var i;
   var href = window.location.href;
   var link = new Array();
-  link = href.split("/");
-  var name = link[link.length - 1];
-  if (name == "Dog-Product.html") {
-    for (i = 0; i < arr.length; i++) {
-      if(arr[i].category.charAt(0) == 'd'){
+  link = href.split('/');
+  var name = link[link.length-1]
+  // alert(ten);
+  if (name == "Cat-Product.html") {
+    for (i = 0;  i < arr.length; i++) {
+      if (arr[i].category.charAt(0) == 'c') {
         var d = '';
         var open_del = '';
         var close_del = '';
@@ -44,13 +45,12 @@ function myFunction(arr) {
         arr[i].price[0] +
         " đ" + close_del + "</div><div class='product-discount' >"+ arr[i].discount + ' ' + d +"</div></div></div></div></div>";
       }
-      
     }
     document.getElementById("product").innerHTML = div;
     return 0;
   }
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i].category == category) {
+  for (i = 0; i<arr.length; i++) {
+    if (arr[i].category == category){
       var d = '';
         var open_del = '';
         var close_del = '';
@@ -68,12 +68,13 @@ function myFunction(arr) {
         arr[i].name +
         '</div><br/><div class="product-price">' + open_del +
         arr[i].price[0] +
-        " đ" + close_del + "</div><div class='product-discount' >"+ arr[i].discount + d +"</div></div></div></div></div>";
+        " đ" + close_del + "</div><div class='product-discount' >"+ arr[i].discount + ' ' + d +"</div></div></div></div></div>";
     }
-
     document.getElementById("product").innerHTML = div;
+
   }
 }
+
 
 let cartItemID = 1;
 

@@ -1,7 +1,7 @@
 [
     {
         "productid": "1",
-        "category": "d-fo",
+        "category": "d_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó con cỡ nhỏ ROYAL CANIN Mini Puppy",
         "price": [185000, 390000, 1340000],
@@ -16,7 +16,7 @@
 
     {
         "productid": "2",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó Poodle con ROYAL CANIN  Poodle Puppy",
         "price":[155000, 395000],
@@ -31,7 +31,7 @@
 
     {
         "productid":"3",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult",
         "price":[130000, 340000],
@@ -46,7 +46,7 @@
     },
     {
         "productid":"4",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ZENITH",
         "name": "Thức ăn cho chó con hạt mềm ZENITH Puppy Chicken Potato",
         "price": [200000],
@@ -60,7 +60,7 @@
     },
     {
         "productid":"5",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ANF",
         "name": "Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb ",
         "price":[95000, 440000, 1200000],
@@ -74,7 +74,7 @@
     },
     {
         "productid":"6",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ANF",
         "name": "Thức ăn cho chó vị thịt vịt ANF Organic 6 Free Duck",
         "price":[95000, 440000, 1200000],
@@ -88,7 +88,7 @@
     },
     {
         "productid":"7",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó trưởng thành cỡ nhỏ ROYAL CANIN Mini Adult",
         "price":[155000, 335000, 1130000],
@@ -102,7 +102,7 @@
     },
     {
         "productid":"8",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó trưởng thành cỡ vừa ROYAL CANIN Medium Aldult",
         "price": [155000, 530000, 1180000],
@@ -116,11 +116,11 @@
         
     },
     {
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "IRIS",
         "name": "Pate cho chó vị thịt bò IRIS One Care Beef",
         "price": [35000],
-        "discount":[28000],
+        "discount":28000,
         "weight":"",
         "colors":"",
         "image": ["../library/products/dog/DG_FO_sp9.jpg"],
@@ -130,7 +130,7 @@
     },
     {
         "productid":"10",
-        "category":"d-fo",
+        "category":"d_fo",
         "label": "JERHIGH",
         "name": " Pate cho chó vị thịt gà JERHIGH Chicken Grilled Gravy",
         "price": [30000],
@@ -144,11 +144,11 @@
     },
     {
         "productid":"11",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Yếm cho chó kèm dây dắt Ambaby 1JXS043",
         "price": [255000],
-        "discount": [200000],
+        "discount": 200000,
         "weight":"",
         "image":["../library/products/dog/DG_CL_sp10-blue.jpg", "../library/products/dog/DG_CL_sp10-pink.jpg", "../library/products/dog/DG_CL_sp10-yellow.jpg"],
         "colors":["blue", "pink", "yellow"],
@@ -158,7 +158,7 @@
     },
     {
         "productid":"12",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Mũ cho chó AMBABY PET 1JXS081",
         "price":[155000],
@@ -172,7 +172,7 @@
     },
     {
         "productid":"13",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Mũ sừng nai cho chó AMBABY PET",
         "price":[155000],
@@ -187,7 +187,7 @@
     },
     {
         "productid":"14",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Quần áo cho chó mèo AMBABY PET 2JXF162",
         "price":[245000],
@@ -201,11 +201,11 @@
     },
     {
         "productid":"15",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Quần áo cho chó đầm công chúa AMBABY PET",
         "price":[245000],
-        "discount":[200000],
+        "discount":"",
         "weight":"",
         "image":["../library/products/dog/DG_CL_sp9.jpg"],
         "colors":"",
@@ -215,7 +215,7 @@
     },
     {
         "productid":"16",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF164",
         "price":[245000],
@@ -229,7 +229,7 @@
     },
     {
         "productid":"17",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF109",
         "price":[180000],
@@ -243,7 +243,7 @@
     },
     {
         "productid":"18",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF218",
         "price":[245000],
@@ -257,7 +257,7 @@
     },
     {
         "productid":"19",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Quần áo cho chó AMBABY PET 2JXF112",
         "price":[245000],
@@ -271,7 +271,7 @@
     },
     {
         "productid":"20",
-        "category":"d-cl",
+        "category":"d_cl",
         "label":"Ambaby",
         "name":"Mũ cho chó AMBABY PET 1JXS003",
         "price":[155000],
@@ -286,7 +286,7 @@
     },
     {
         "productid":"21",
-        "category":"d-co",
+        "category":"d_co",
         "label":"HAND IN HAND",
         "name":"Xích cho chó kèm vòng cổ HAND IN HAND Reflective Collar Leash",
         "price":[200000],
@@ -300,7 +300,7 @@
     },
     {
         "productid":"22",
-        "category":"d-co",
+        "category":"d_co",
         "label":"DELE",
         "name":"Dây dắt chó đi dạo tự cuốn DELE 006 Retractable Leash",
         "price":[175000],
@@ -314,11 +314,11 @@
     },
     {
         "productid":"23",
-        "category":"d-co",
+        "category":"d_co",
         "label":"PAW",
         "name":"Vòng cổ cho chó cỡ nhỏ PAW bằng da đính cườm cao cấp",
         "price":[170000],
-        "discount":[140000],
+        "discount":140000,
         "image":["../library/products/dog/DG_CO_sp6-1.jpg", "../library/products/dog/DG_CO_sp6-2.jpg", "../library/products/dog/DG_CO_sp6-3.jpg"],
         "colors":"",
         "weight":"",
@@ -328,7 +328,7 @@
     },
     {
         "productid":"24",
-        "category":"d-co",
+        "category":"d_co",
         "label":"PAW",
         "name":"Rọ mõm chó hình mỏ vịt PAW Aduck",
         "price":[75000],
@@ -342,12 +342,12 @@
     },
     {
         "productid":"25",
-        "category":"d-co",
+        "category":"d_co",
         "label":"PAW",
         "name":"Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ",
         "price":[75000],
         "weight":"",
-        "discount":[60000],
+        "discount": "",
         "image":["../library/products/dog/DG_CO_sp4-1.jpg"],
         "description":"Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ phù hợp cho các giống chó: Pug, Bull Pháp, Bull Anh, Boxer, Bắc Kinh, Nhật…",
         "colors":"",
@@ -356,11 +356,11 @@
     },
     {
         "productid":"26",
-        "category":"d-co",
+        "category":"d_co",
         "label":"HAND IN HAND",
         "name":"Dây dắt cho chó cường lực vải dù loại dài HAND IN HAND Knitting Lead With Buffering Spring",
         "price":[190000],
-        "discount":[150000],
+        "discount":150000,
         "image":["../library/products/dog/DG_CO_sp1-grey.jpg", "../library/products/dog/DG_CO_sp1-blue.jpg"],
         "colors":"",
         "weight":"",
@@ -370,7 +370,7 @@
     },
     {
         "productid":"27",
-        "category":"d-co",
+        "category":"d_co",
         "label":"HAND IN HAND",
         "name":"Dây dắt cho chó cường lực HAND IN HAND",
         "price":[170000],
@@ -384,7 +384,7 @@
     },
     {
         "productid":"28",
-        "category":"d-co",
+        "category":"d_co",
         "label":"TOUCH DOG",
         "name":"Xích cho chó đai ngực cỡ to",
         "price":[325000],
@@ -398,7 +398,7 @@
     },
     {
         "productid":"29",
-        "category":"d-co",
+        "category":"d_co",
         "label":"HAND IN HAND",
         "name":"Xích cho chó đai ngực cỡ bé HAND IN HAND",
         "price":[100000],
@@ -412,7 +412,7 @@
     },
     {
         "productid":"30",
-        "category":"d-co",
+        "category":"d_co",
         "label":"TOUCH DOG",
         "name":"Xích cho chó kèm vòng cổ cỡ nhỏ TOUCH DOG",
         "price":[195000],
@@ -425,7 +425,7 @@
     },
     {
         "productid":"31",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Bình uống nước cho chó mèo gài chuồng BOBO",
         "price":[80000],
@@ -439,7 +439,7 @@
     },
     {
         "productid":"32",
-        "category":"d-ds",
+        "category":"d_",
         "label":"SAWYER PET",
         "name":"Bát ăn cho chó mèo nhựa mềm SAWYER PET",
         "price":[40000],
@@ -453,7 +453,7 @@
     },
     {
         "productid":"33",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
         "price":[35000],
@@ -467,7 +467,7 @@
     },
     {
         "productid":"34",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl",
         "price":[135000],
@@ -475,13 +475,13 @@
         "image":["../library/products/both/BOTH_DS_sp5.jpg"],
         "colors":"",
         "weight":"",
-        "description":"Bát ăn inox cho chó mèo BOBO  Melamine Inox Bowl 3056 tiện lợi, sử dụng cho tất cá các giống chó mèo ở từng giai đoạn phát triển khác nhau. <br/> Kích thước: 17.5 ×17.5 ×6cm (340ml)",
+        "description":"Bát ăn inox cho chó mèo BOBO  Melamine Inox Bowl 3056 tiện lợi, sử dụng cho tất cá các giống chó mèo ở từng giai đoạn phát triển khác nhau. <br/> Kích thước: 17.5 × 17.5 × 6cm (340ml)",
         "benefit":"- Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl 3056 có vỏ được làm từ chất liệu nhựa cao cấp không gây hại. Đặc biệt không làm ảnh hưởng đến chất lượng thức ăn, màu sắc bất mắt giúp thú cưng ăn ngon miệng hơn. <br/> - Chất liệu inox không gỉ tạo ra lòng bát có bề mặt trơn láng, dễ dàng vệ sinh. <br/> - Không làm ảnh hưởng đến chất lượng thức ăn. <br/> - Được thiết kế dựa trên tiêu chuẩn chất lượng của Châu Âu. <br/> - Mẫu mã đẹp, không độc hại, không kích ứng với da.",
         "instruction":""
     },
     {
         "productid":"35",
-        "category":"d-ds",
+        "category":"d_",
         "label":"SAWYER PET",
         "name":"Bát ăn cho chó mèo bằng cao su SAWYER PET Silicone Bowl",
         "price":[60000],
@@ -495,7 +495,7 @@
     },
     {
         "productid":"36",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Vòi uống nước cho chó mèo gài chuồng BOBO",
         "price":[80000],
@@ -509,7 +509,7 @@
     },
     {
         "productid":"37",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Bình uống nước đi dạo BOBO cho chó mèo",
         "price":[90000],
@@ -522,7 +522,7 @@
     },
     {
         "productid":"38",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
         "price":[155000],
@@ -536,7 +536,7 @@
     },
     {
         "productid":"39",
-        "category":"d-ds",
+        "category":"d_",
         "label":"BOBO",
         "name":"Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl 3057",
         "price":[175000],
@@ -550,7 +550,7 @@
     },
     {
         "productid":"40",
-        "category":"d-ds",
+        "category":"d_",
         "label":"PAW",
         "name":"Dụng cụ ăn uống cho chó mèo PAW tự động thông minh",
         "price":[245000],
@@ -564,7 +564,7 @@
     },
     {
         "productid":"41",
-        "category":"d-be",
+        "category":"d_be",
         "label":"BBN",
         "name":"Sữa tắm cho chó trị ve rận BBN Killing Mites Shampoo",
         "price":[150000],
@@ -579,7 +579,7 @@
     },
     {
         "productid":"42",
-        "category":"d-be",
+        "category":"d_be",
         "label":"JOYCE & DOLLS",
         "name":"Sữa tắm cho chó khử mùi JOYCE & DOLLS 102 Deodorizing Formula",
         "price":[230000],
@@ -594,7 +594,7 @@
     },
     {
         "productid":"43",
-        "category":"d-be",
+        "category":"d_be",
         "label":"PERFECT COAT",
         "name":"Sữa tắm trị ve rận cho chó PERFECT COAT 8in1 Flea Tick",
         "price":[225000],
@@ -608,11 +608,11 @@
     },
     {
         "productid":"44",
-        "category":"d-be",
+        "category":"d_be",
         "label":"JOYCE & DOLLS",
         "name":"Sữa tắm khô cho chó mèo JOYCE & DOLLS Waterless Cleansing Foam",
         "price":[180000],
-        "discount":[150000],
+        "discount":"",
         "image":["../library/products/both/BOTH_BE_sp6-1.jpg","../library/products/both/BOTH_BE_sp6-2.jpg"],
         "colors":"",
         "description":"Sữa tắm khô cho chó mèo JOYCE & DOLLS Waterless Cleansing Foam phù hợp đặc biệt là trong trường hợp đang bị bệnh, đang mang thai. Hoặc trong nhiều trường hợp khác không thể tắm rửa bằng nước. Sản phẩm này có thể thay thế cho việc tắm bằng nước thông thường, làm sạch bụi bẩn và mùi hôi mọi lúc mọi nơi. Phù hợp với tất cả các giống chó mèo.",
@@ -621,11 +621,11 @@
     },
     {
         "productid":"45",
-        "category":"d-be",
+        "category":"d_be",
         "label":"BBN",
         "name":"Sữa tắm chó mèo mùi hương khoai môn BBN Taro Silky",
         "price":[180000],
-        "discount": 155000,
+        "discount":"",
         "image":["../library/products/both/BOTH_BE_sp5.jpg"],
         "colors":"",
         "weight":"",
@@ -635,7 +635,7 @@
     },
     {
         "productid":"46",
-        "category":"d-be",
+        "category":"d_be",
         "label":"JOYCE & DOLLS",
         "name":"Sữa tắm cho mèo lông dài JOYCE & DOLLS 102 Long Hair",
         "price":[225000],
@@ -649,7 +649,7 @@
     },
     {
         "productid":"47",
-        "category":"d-be",
+        "category":"d_be",
         "label":"DELE",
         "name":"Lược chải lông chó mèo bấm nút DELE M006 Round Head",
         "price":[140000],
@@ -663,7 +663,7 @@
     },
     {
         "productid":"48",
-        "category":"d-be",
+        "category":"d_be",
         "label":"CODOS",
         "name":"Tông đơ cắt lông chó mèo chạy pin CODOS 3100",
         "price":[540000],
@@ -677,11 +677,11 @@
     },
     {
         "productid":"49",
-        "category":"d-be",
+        "category":"d_be",
         "label":"PAW",
         "name":"Bộ kéo cắt tỉa lông chó mèo chuyên dụng TOBY Pet Scissors",
         "price":1500000,
-        "discount":1200000,
+        "discount":"",
         "image":["../library/products/both/BOTH_BE_sp1-1.jpg", "../library/products/both/BOTH_BE_sp1-2.jpg"],
         "colors":"",
         "weight":"",
@@ -691,11 +691,11 @@
     },
     {
         "productid":"50",
-        "category":"d-be",
+        "category":"d_be",
         "label":"PAW",
         "name":"Kìm cắt bấm kèm dũa móng chó mèo PAW Nail Clipper & File",
         "price":[110000],
-        "discount":90000,
+        "discount":"",
         "image":["../library/products/both/BOTH_BE_sp2.jpg"],
         "colors":"",
         "weight":"",
@@ -705,11 +705,11 @@
     },
     {
         "productid":"51",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"AUPET",
         "name":"Chuồng chó mèo bằng sắt mái chóp AUPET Conical Dog Cage",
         "price":[1450000],
-        "discount":1200000,
+        "discount":"",
         "image":["../library/products/dog/DG_CA_sp1-green.jpg","../library/products/dog/DG_CA_sp1-brown.jpg", "../library/products/dog/DG_CA_sp1-red.jpg"],
         "colors":["green", "brown", "red"],
         "weight":"",
@@ -719,11 +719,11 @@
     },
     {
         "productid":"52",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"IRIS OHYAMA",
         "name":"Chuồng chó mèo nan sắt sàn cố định IRIS PCSC-901",
         "price":[1850000],
-        "discount":1600000,
+        "discount":"",
         "image":["../library/products/dog/DG_CA_sp2-black.jpg","../library/products/dog/DG_CA_sp2-white.jpg"],
         "colors":["black", "white"],
         "weight":"",
@@ -733,7 +733,7 @@
     },
     {
         "productid":"53",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"AUPET",
         "name":"Lồng vận chuyển chó mèo AUPET BP27 Pet Kennel",
         "price":[650000],
@@ -747,7 +747,7 @@
     },
     {
         "productid":"54",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"AUPET",
         "name":"Lồng vận chuyển chó mèo cỡ đại AUPET Travel Box Kennel",
         "price":[3450000],
@@ -761,7 +761,7 @@
     },
     {
         "productid":"55",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"RICHELL",
         "name":"Chuồng gỗ cho chó mèo 2 tầng RICHELL RC09",
         "price":[4690000],
@@ -775,11 +775,11 @@
     },
     {
         "productid":"56",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"IRIS OHYAMA",
         "name":"Chuồng chó mèo lắp ghép đa năng 2 ngăn IRIS PCS1400",
         "price":[2650000],
-        "discount": 2100000,
+        "discount": "",
         "image":["../library/products/dog/DG_CA_sp6-1.jpg", "../library/products/dog/DG_CA_sp6-2.jpg","../library/products/dog/DG_CA_sp6-3.jpg"],
         "colors":"brown",
         "weight":"",
@@ -789,7 +789,7 @@
     },
     {
         "productid":"57",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"BOBBYPET",
         "name":"Nệm cho chó mèo BOBBY PET DS14OB",
         "price":[455000],
@@ -803,7 +803,7 @@
     },
     {
         "productid":"58",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"BOBBYPET",
         "name":"Ổ đệm cho chó mèo hình lều BOBBY PET 16CT003",
         "price":[495000],
@@ -817,7 +817,7 @@
     },
     {
         "productid":"59",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"BOBBYPET",
         "name":"Balo đựng chó mèo phi hành gia LOFFEE Outdoor Transparent",
         "price":[535000],
@@ -831,7 +831,7 @@
     },
     {
         "productid":"60",
-        "category":"d-ca",
+        "category":"d_ca",
         "label":"BOBBYPET",
         "name":"Balo đựng chó mèo phi hành gia LOFFE Bubble Bag",
         "price":[535000],
@@ -845,7 +845,7 @@
     },
     {
         "productid":"61",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình thú",
         "price":[50000],
@@ -859,7 +859,7 @@
     },
     {
         "productid":"62",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"PAW",
         "name":"Đồ chơi cho chó kêu chút chít PAW hình bánh Hamburger",
         "price":[50000],
@@ -873,7 +873,7 @@
     },
     {
         "productid":"63",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó chút chít ELITE size L",
         "price":[140000],
@@ -887,11 +887,11 @@
     },
     {
         "productid":"64",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"BOBO",
         "name":"Đĩa bay cho chó BOBO Pet Frisbee Thương hiệu BOBO",
         "price":[110000],
-        "discount":95000,
+        "discount":"",
         "image":["../library/products/dog/DG_TOY&ACC_sp1-1.jpg","../library/products/dog/DG_TOY&ACC_sp1-2.jpg","../library/products/dog/DG_TOY&ACC_sp1-3.jpg"],
         "colors":"",
         "weight":"",
@@ -901,7 +901,7 @@
     },
     {
         "productid":"65",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"PAW",
         "name":"Đồ chơi cho chó gặm bằng cao su PAW Rubber Dog Toy Jingle Knobby Dumbbell",
         "price":[95000],
@@ -915,7 +915,7 @@
     },
     {
         "productid":"66",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"IKEA",
         "name":"Đồ chơi chó nhồi bông IKEA Gosig Golden",
         "price":[545000],
@@ -929,7 +929,7 @@
     },
     {
         "productid":"67",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình động vật",
         "price":[50000],
@@ -943,11 +943,11 @@
     },
     {
         "productid":"68",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con gà",
         "price":[50000],
-        "discount":40000,
+        "discount":"",
         "image":["../library/products/dog/DG_TOY&ACC_sp5.jpg"],
         "colors":"",
         "weight":"",
@@ -956,7 +956,7 @@
     },
     {
         "productid":"69",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"PAW",
         "name":"Đồ chơi cho chó bằng cao su PAW hình tròn in dấu bàn chân",
         "price":[55000],
@@ -970,7 +970,7 @@
     },
     {
         "productid":"70",
-        "category":"d-toy",
+        "category":"d_toy",
         "label":"ELITE",
         "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con hươu",
         "price":[50000],
@@ -984,7 +984,7 @@
     },
     {
         "productid": "71",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "CIAO",
         "name": "Soup cho mèo CIAO Scallop & Chicken vị sò điệp và thịt gà",
         "price": [25000],
@@ -998,7 +998,7 @@
     },
     {
         "productid": "72",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "JERHIGH",
         "name": "Bánh thưởng cho mèo vị cá ngừ JERHIGH Jinny Tuna",
         "price": [45000],
@@ -1012,7 +1012,7 @@
     },
     {
         "productid": "73",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "TRIXIE",
         "name": "Catnip cho mèo TRIXIE Katzenminze Spielanregend ",
         "price": [50000],
@@ -1026,7 +1026,7 @@
     },
     {
         "productid": "74",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "WHISKAS",
         "name": "Pate cho mèo vị nước sốt cá ngừ WHISKAS Tuna Flavour Sauce",
         "price": [25000],
@@ -1040,7 +1040,7 @@
     },
     {
         "productid": "75",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "CIAO",
         "name": "Soup cho mèo CIAO Grilled Tuna vị cá ngừ nướng",
         "price": [25000],
@@ -1054,7 +1054,7 @@
     },
     {
         "productid": "76",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "CIAO",
         "name": "Soup cho mèo CIAO Scallop & Chicken vị sò điệp và thịt gà",
         "price": [25000],
@@ -1068,7 +1068,7 @@
     },
     {
         "productid": "77",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "DR HOLI",
         "name": "Sữa tươi cho chó mèo ít béo DR HOLI Pet Milk Mango",
         "price": [90000],
@@ -1082,7 +1082,7 @@
     },
     {
         "productid": "78",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho mèo con ROYAL CANIN Kitten",
         "price": [100000, 410000, 1715000],
@@ -1096,7 +1096,7 @@
     },
     {
         "productid": "79",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho mèo trưởng thành ROYAL CANIN Indoor 27",
         "price": [105000, 425000, 1785000],
@@ -1110,7 +1110,7 @@
     },
     {
         "productid": "80",
-        "category": "c-fo",
+        "category": "c_fo",
         "label": "BBN",
         "name": "Sữa bột cho mèo con BBN Kitten Milk",
         "price": [320000],
@@ -1124,7 +1124,7 @@
     },
     {
         "productid": "81",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Mũ cho chó mèo AMBABY PET 1JXS018",
         "price": [155000],
@@ -1138,7 +1138,7 @@
     },
     {
         "productid": "82",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Mũ cho chó mèo AMBABY PET 1JXS008",
         "price": [155000],
@@ -1152,7 +1152,7 @@
     },
     {
         "productid": "83",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Mũ cho chó mèo AMBABY PET 1JXS013",
         "price": [155000],
@@ -1166,7 +1166,7 @@
     },
     {
         "productid": "84",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Mũ cho chó mèo AMBABY PET 1JXS040",
         "price": [155000],
@@ -1180,7 +1180,7 @@
     },
     {
         "productid": "85",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Mũ cho chó mèo AMBABY PET 1JXS050",
         "price": [155000],
@@ -1194,7 +1194,7 @@
     },
     {
         "productid": "86",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Mũ cho chó mèo AMBABY PET 1JXS055",
         "price": [155000],
@@ -1208,7 +1208,7 @@
     },
     {
         "productid": "87",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Quần áo cho chó mèo AMBABY PET 2JXF108",
         "price": [245000],
@@ -1222,7 +1222,7 @@
     },
     {
         "productid": "88",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Quần áo cho chó mèo AMBABY PET 2JXF166",
         "price": [245000],
@@ -1236,7 +1236,7 @@
     },
     {
         "productid": "89",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Vòng cổ cho chó mèo kèm dây dắt AMBABY PET 1JXS073",
         "price": [225000],
@@ -1250,7 +1250,7 @@
     },
     {
         "productid": "90",
-        "category": "c-cl",
+        "category": "c_cl",
         "label": "AMBABY PET",
         "name": "Vòng cổ cho chó mèo kèm dây dắt AMBABY PET  1JXS017",
         "price": [225000],
@@ -1264,7 +1264,7 @@
     },
     {
         "productid": "91",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình bàn chân HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1278,7 +1278,7 @@
     },
     {
         "productid": "92",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình bông hoa HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1292,7 +1292,7 @@
     },
     {
         "productid": "93",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình kẻ ca rô HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1306,7 +1306,7 @@
     },
     {
         "productid": "94",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình kẻ sọc HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1320,7 +1320,7 @@
     },
     {
         "productid": "95",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình kẻ vằn HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1334,7 +1334,7 @@
     },
     {
         "productid": "96",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình ngôi sao HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1348,7 +1348,7 @@
     },
     {
         "productid": "97",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình vân gỗ HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1362,7 +1362,7 @@
     },
     {
         "productid": "98",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo hình chấm bi HAND IN HAND Pet Collar",
         "price": [50000],
@@ -1376,7 +1376,7 @@
     },
     {
         "productid": "99",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo kèm dây dắt cỡ vừa HAND IN HAND",
         "price": [130000],
@@ -1390,7 +1390,7 @@
     },
     {
         "productid": "100",
-        "category": "c-co",
+        "category": "c_co",
         "label": "HAND IN HAND",
         "name": "Vòng cổ chó mèo kèm dây dắt cỡ mini HAND IN HAND",
         "price": [70000],
@@ -1404,7 +1404,7 @@
     },
     {
         "productid": "101",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "SAWYER PET",
         "name": "Bát ăn cho chó mèo bằng cao su SAWYER PET Silicone Bowl",
         "price": [60000],
@@ -1418,7 +1418,7 @@
     },
     {
         "productid": "102",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
         "price": [35000],
@@ -1432,7 +1432,7 @@
     },
     {
         "productid": "103",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
         "price": [155000],
@@ -1446,7 +1446,7 @@
     },
     {
         "productid": "104",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "SAWYER PET",
         "name": "Bát ăn cho chó mèo nhựa mềm SAWYER PET",
         "price": [40000],
@@ -1460,7 +1460,7 @@
     },
     {
         "productid": "105",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl",
         "price": [135000],
@@ -1474,7 +1474,7 @@
     },
     {
         "productid": "106",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl 3057",
         "price": [175000],
@@ -1488,7 +1488,7 @@
     },
     {
         "productid": "107",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Bình uống nước cho chó mèo gài chuồng BOBO",
         "price": [80000],
@@ -1502,7 +1502,7 @@
     },
     {
         "productid": "108",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Bình uống nước đi dạo BOBO cho chó mèo",
         "price": [90000],
@@ -1516,7 +1516,7 @@
     },
     {
         "productid": "109",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "PAW",
         "name": "Dụng cụ ăn uống cho chó mèo PAW tự động thông minh",
         "price": [245000],
@@ -1530,7 +1530,7 @@
     },
     {
         "productid": "110",
-        "category": "c-ds",
+        "category": "c_ds",
         "label": "BOBO",
         "name": "Vòi uống nước cho chó mèo gài chuồng BOBO",
         "price": [80000],
@@ -1544,7 +1544,7 @@
     },
     {
         "productid": "111",
-        "category": "c-be",
+        "category": "c_be",
         "label": "PAW",
         "name": "Bộ kéo cắt tỉa lông chó mèo chuyên dụng TOBY Pet Scissors",
         "price": [1500000],
@@ -1558,7 +1558,7 @@
     },
     {
         "productid": "112",
-        "category": "c-be",
+        "category": "c_be",
         "label": "PAW",
         "name": "Kiềm cắt bấm kèm dũa móng chó mèo PAW Nail Clipper & File",
         "price": [110000],
@@ -1572,7 +1572,7 @@
     },
     {
         "productid": "113",
-        "category": "c-be",
+        "category": "c_be",
         "label": "DELE",
         "name": "Lược chải lông chó mèo bấm nút DELE M006 Round Head",
         "price": [140000],
@@ -1586,7 +1586,7 @@
     },
     {
         "productid": "114",
-        "category": "c-be",
+        "category": "c_be",
         "label": "JOYCE & DOLLS",
         "name": "Sữa tắm cho mèo lông dài JOYCE & DOLLS 102 Long Hair",
         "price": [255000],
@@ -1600,7 +1600,7 @@
     },
     {
         "productid": "115",
-        "category": "c-be",
+        "category": "c_be",
         "label": "BBN",
         "name": "Sữa tắm chó mèo mùi hương khoai môn BBN Taro Silky",
         "price": [180000],
@@ -1614,7 +1614,7 @@
     },
     {
         "productid": "116",
-        "category": "c-be",
+        "category": "c_be",
         "label": "JOYCE & DOLLS",
         "name": "Sữa tắm khô cho chó mèo JOYCE & DOLLS Waterless Cleansing Foam",
         "price": [180000],
@@ -1628,7 +1628,7 @@
     },
     {
         "productid": "117",
-        "category": "c-be",
+        "category": "c_be",
         "label": "CODOS",
         "name": "Tông đơ cắt lông chó mèo chạy pin CODOS 3100",
         "price": [540000],
@@ -1642,7 +1642,7 @@
     },
     {
         "productid": "118",
-        "category": "c-be",
+        "category": "c_be",
         "label": "BBN",
         "name": "Sữa tắm cho mèo BBN For Cats Shampoo",
         "price": [150000],
@@ -1656,7 +1656,7 @@
     },
     {
         "productid": "119",
-        "category": "c-be",
+        "category": "c_be",
         "label": "TRIXIE",
         "name": "Dầu tắm cho mèo TRIXIE Katzen Shampoo",
         "price": [180000],
@@ -1670,7 +1670,7 @@
     },
     {
         "productid": "120",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "LOFFE",
         "name": "Balo đựng chó mèo hình vỏ trứng LOFFE Eggshell",
         "price": [795000],
@@ -1684,7 +1684,7 @@
     },
     {
         "productid": "121",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "LOFFE",
         "name": "Balo đựng chó mèo phi hành gia LOFFE Panoramic",
         "price": [525000],
@@ -1698,7 +1698,7 @@
     },
     {
         "productid": "122",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "LOFFE",
         "name": "Balo đựng chó mèo trong suốt hình động vật LOFFE Animal Backpack",
         "price": [495000],
@@ -1712,7 +1712,7 @@
     },
     {
         "productid": "123",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "IRIS OHYAMA",
         "name": "Chuồng mèo 2 tầng nan sắt sàn cố định IRIS PCSC902",
         "price": [3500000],
@@ -1726,7 +1726,7 @@
     },
     {
         "productid": "124",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "AUPET",
         "name": "Lồng vận chuyển chó mèo có tay kéo AUPET Pet Kennel",
         "price": [1050000],
@@ -1740,11 +1740,11 @@
     },
     {
         "productid": "125",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "AIMIGOU",
         "name": "Nhà cây cho mèo Cat Tree QQ80021B",
         "price": [1980000],
-        "discount": "1800000",
+        "discount": 1800000,
         "image": ["../library/products/cat/CT_CA_sp6-1.jpg", "../library/products/cat/CT_CA_sp6-2.jpg", "../library/products/cat/CT_CA_sp6-3.jpg"],
         "weight": "6.5kg",
         "colors": "",
@@ -1754,7 +1754,7 @@
     },
     {
         "productid": "126",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "AIMIGOU",
         "name": "Nhà cây cho mèo Cat Tree QQ80357-5",
         "price": [1980000],
@@ -1768,7 +1768,7 @@
     },
     {
         "productid": "127",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "AIMIGOU",
         "name": "Nhà cây cho mèo Cat Tree QQ80534",
         "price": [4730000],
@@ -1782,7 +1782,7 @@
     },
     {
         "productid": "128",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "AIMIGOU",
         "name": "Nhà cây cho mèo Cat Tree QQ80764",
         "price": [5500000],
@@ -1796,7 +1796,7 @@
     },
     {
         "productid": "129",
-        "category": "c-ca",
+        "category": "c_ca",
         "label": "RITCHELL",
         "name": "Chuồng gỗ cho mèo 3 tầng RICHELL RC07",
         "price": [5690000],
@@ -1810,7 +1810,7 @@
     },
     {
         "productid": "130",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Bàn cào móng cho mèo dạng cong lượn sóng",
         "price": [350000],
@@ -1824,7 +1824,7 @@
     },
     {
         "productid": "131",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Bàn cào móng cho mèo hình bàn chân",
         "price": [250000],
@@ -1838,7 +1838,7 @@
     },
     {
         "productid": "132",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Bàn cào móng cho mèo kèm ổ QQ80337",
         "price": [300000],
@@ -1852,7 +1852,7 @@
     },
     {
         "productid": "133",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo kèm đồ chơi QQ60064A",
         "price": [400000],
@@ -1866,7 +1866,7 @@
     },
     {
         "productid": "134",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo kèm đồ chơi QQ801501",
         "price": [400000],
@@ -1880,7 +1880,7 @@
     },
     {
         "productid": "135",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo kèm đồ chơi QQ801504",
         "price": [400000],
@@ -1894,7 +1894,7 @@
     },
     {
         "productid": "136",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen loại 1 QQ60144",
         "price": [480000],
@@ -1908,7 +1908,7 @@
     },
     {
         "productid": "137",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen QQ60014",
         "price": [350000],
@@ -1922,7 +1922,7 @@
     },
     {
         "productid": "138",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen QQ60136",
         "price": [280000],
@@ -1937,7 +1937,7 @@
     {
 
         "productid": "139",
-        "category": "c-toy",
+        "category": "c_toy",
         "label": "AIMIGOU",
         "name": "Trụ cào móng cho mèo màu đỏ đen QQ60137",
         "price": [350000],
@@ -1951,7 +1951,7 @@
     },
     {
         "productid": "140",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "TRIXIE",
         "name": "Bột khử mùi nước tiểu và phân mèo TRIXIE Katzen-Streudeo",
         "price": [150000],
@@ -1965,7 +1965,7 @@
     },
     {
         "productid": "141",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "IRIS",
         "name": "Cát vệ sinh cho mèo than hoạt tính IRIS Charcoal SNS70",
         "price": [160000],
@@ -1979,7 +1979,7 @@
     },
     {
         "productid": "142",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "IRIS",
         "name": "Cát vệ sinh cho mèo siêu vón IRIS KFAG100",
         "price": [160000],
@@ -1993,7 +1993,7 @@
     },
     {
         "productid": "143",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "TRIXIE",
         "name": "Cát vệ sinh thủy tinh cho mèo TRIXIE Silikatstreu",
         "price": [160000],
@@ -2007,7 +2007,7 @@
     },
     {
         "productid": "144",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "CAT'S BEST",
         "name": "Cát vệ sinh hữu cơ cho mèo CAT'S BEST Original",
         "price": [120000],
@@ -2021,7 +2021,7 @@
     },
     {
         "productid": "145",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "CAT'S BEST",
         "name": "Cát vệ sinh hữu cơ cho mèo CAT'S BEST Sensitive",
         "price": [210000],
@@ -2035,7 +2035,7 @@
     },
     {
         "productid": "146",
-        "category": "c-sa",
+        "category": "c_sa",
         "label": "CAT'S BEST",
         "name": "Cát vệ sinh hữu cơ cho mèo CAT'S BEST Smart Peppets",
         "price": [120000],
