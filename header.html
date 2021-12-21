@@ -14,47 +14,53 @@
     <link rel="stylesheet" href="./css/chat-box.css">
     <style>
         .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-@media only screen and (max-width: 950px) {
-
-
-
-}
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        @media only screen and (max-width: 950px) {}
     </style>
 </head>
 
@@ -74,13 +80,13 @@
                             <a href="Dog-Product.html">Chó <i class="fa fa-caret-down"></i></a>
                             <div class="side-submenu--content">
                                 <img src="./library/dog-195x195-shopcircle.png " alt=" ">
-                                <a href="Dog-Product.html?category=food">Thức ăn</a>
-                                <a href="Dog-Product.html?category=clothes">Quần áo</a>
-                                <a href="Dog-Product.html?category=ds">Vòng cổ, dây dắt, rọ mõm</a>
-                                <a href="Dog-Product.html?category=co">Dụng cụ ăn uống</a>
-                                <a href="Dog-Product.html?category=ca">Mỹ phẩm, dụng cụ làm đẹp</a>
-                                <a href="Dog-Product.html?category=toy">Chuồng, giường, nhà, túi</a>
-                                <a href="Dog-Product.html?category=be">Đồ chơi, phụ kiện huấn luyện</a>
+                                <a href="Dog-Product.html?category=d-fo">Thức ăn</a>
+                                <a href="Dog-Product.html?category=d-cl">Quần áo</a>
+                                <a href="Dog-Product.html?category=d-ds">Vòng cổ, dây dắt, rọ mõm</a>
+                                <a href="Dog-Product.html?category=d-co">Dụng cụ ăn uống</a>
+                                <a href="Dog-Product.html?category=d-ca">Mỹ phẩm, dụng cụ làm đẹp</a>
+                                <a href="Dog-Product.html?category=d-toy">Chuồng, giường, nhà, túi</a>
+                                <a href="Dog-Product.html?category=d-be">Đồ chơi, phụ kiện huấn luyện</a>
                             </div>
                         </div>
 
@@ -108,34 +114,34 @@
                 </div>
                 <a><input class="typeForSeach " type="text " placeholder="Nhập để tìm kiếm "><i class="fa fa-search "></i>
                 </a>
-                <button style="margin-left:30px; background-color:#db7093; border:none" type = "button" class="menu-btn" id = "cart-btn">
-                        <i class = "fas fa-shopping-cart"></i>
-                        <!-- <span id = "cart-count-info" style="background-color:wheat;top:7px;right:439px; color:black">0</span> -->
-                        <span id = "cart-count-info" style="background-color:wheat;top:7px;right:29%; color:black;"></span>
+                <a href="giohang.html" style="margin-left:30px; background-color:#db7093; border:none" class="menu-btn" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <!-- <span id = "cart-count-info" style="background-color:wheat;top:7px;right:439px; color:black">0</span> -->
+
+                    <div class="countProductsInCart2"><span id="cart-count-info" style="background-color:wheat;top:7px;right:29%; color:black;">0</span></div>
                     <span style="text-align: center; font-size:15px">Giỏ hàng</span>
-                </button>
-                
+                </a>
+
                 <a href="sign-in.html" class="menu-btn">
                     <i class="fas fa-user-circle "></i>
                     <span style="text-align: center;">Đăng nhập</span>
                 </a>
             </div>
         </nav>
-        
+
         <div class="header-bottom" id="header-bottom">
             <div class="header_bottom--top">
                 <div class="logo">
-                    <a href="#"><img class="logo-img" src="./library/Logo.png" alt=""></a>
+                    <a href="Home.html"><img class="logo-img" src="./library/Logo.png" alt=""></a>
                 </div>
                 <div class="others">
                     <li><input type="text" placeholder="Nhập để tìm kiếm"><a href=""><i class="fa fa-search"></i></a></li>
-                    <li>
-                        <button style="margin-left:30px; background-color:white; border:none" type = "button"  class="btn-card menu-btn" id = "cart-btn">
-                            <i class = "fas fa-shopping-cart"></i>
-                            <!-- <span id = "cart-count-info">0</span> -->
-                            <span id = "cart-count-info"></span>
-                        <span style="text-align: center; font-size:15px">Giỏ hàng</span>
-                    </button>
+                    <li class="countProductsInCart1">
+                        <a href="giohang.html" style="margin-left:30px; background-color:white; border:none" class="btn-card menu-btn" id="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count-info">0</span>
+                            <span style="text-align: center; font-size:15px">Giỏ hàng</span>
+                        </a>
                     </li>
                     <li>
                         <a href="sign-in.html" class="btn-user menu-btn">
@@ -152,45 +158,45 @@
 
             </div>
             <div class="header_bottom--menu">
-                <li><a href="#">Trang chủ</a> </li>
+                <li><a href="Home.html">Trang chủ</a> </li>
                 <li>
                     <a href="Dog-Product.html">Chó</a>
                     <ul class="sub-menu">
                         <img src="./library/dog-195x195-shopcircle.png" alt="">
-                        <li><a href="Dog-Product.html?category=food">Thức ăn</a></li>
-                        <li><a href="Dog-Product.html?category=clothes">Quần áo</a></li>
-                        <li><a href="Dog-Product.html?category=co">Vòng cổ, dây dắt, rọ mõm</a></li>
-                        <li><a href="Dog-Product.html?category=ds">Dụng cụ ăn uống</a></li>
-                        <li><a href="Dog-Product.html?category=be">Mỹ phẩm, dụng cụ làm đẹp</a></li>
-                        <li><a href="Dog-Product.html?category=ca">Chuồng, giường, nhà, túi</a></li>
-                        <li><a href="Dog-Product.html?category=toy">Đồ chơi, phụ kiện huấn luyện</a></li>
+                        <li><a href="Dog-Product.html?category=d-fo">Thức ăn</a></li>
+                        <li><a href="Dog-Product.html?category=d-cl">Quần áo</a></li>
+                        <li><a href="Dog-Product.html?category=d-co">Vòng cổ, dây dắt, rọ mõm</a></li>
+                        <li><a href="Dog-Product.html?category=d-ds">Dụng cụ ăn uống</a></li>
+                        <li><a href="Dog-Product.html?category=d-be">Mỹ phẩm, dụng cụ làm đẹp</a></li>
+                        <li><a href="Dog-Product.html?category=d-ca">Chuồng, giường, nhà, túi</a></li>
+                        <li><a href="Dog-Product.html?category=d-toy">Đồ chơi, phụ kiện huấn luyện</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Mèo</a>
+                    <a href="Cat-Product.html">Mèo</a>
                     <ul class="sub-menu">
                         <img src="./library/cat-195x195-shopcircle.png" alt="">
-                        <li><a href="#">Thức ăn</a></li>
-                        <li><a href="#">Quần áo</a></li>
-                        <li><a href="#">Vòng cổ, dây dắt, rọ mõm</a></li>
-                        <li><a href="#">Dụng cụ ăn uống</a></li>
-                        <li><a href="#">Mỹ phẩm, dụng cụ làm đẹp</a></li>
-                        <li><a href="#">Chuồng, giường, nhà, túi</a></li>
-                        <li><a href="#">Đồ chơi, phụ kiện huấn luyện</a></li>
-                        <li><a href="#">Cát vệ sinh</a></li>
+                        <li><a href="Cat-Product.html?category=c_fo">Thức ăn</a></li>
+                        <li><a href="Cat-Product.html?category=c_cl">Quần áo</a></li>
+                        <li><a href="Cat-Product.html?category=c_co">Vòng cổ, dây dắt, rọ mõm</a></li>
+                        <li><a href="Cat-Product.html?category=c_ds">Dụng cụ ăn uống</a></li>
+                        <li><a href="Cat-Product.html?category=c_be">Mỹ phẩm, dụng cụ làm đẹp</a></li>
+                        <li><a href="Cat-Product.html?category=c_ca">Chuồng, giường, nhà, túi</a></li>
+                        <li><a href="Cat-Product.html?category=c_toy">Đồ chơi, phụ kiện huấn luyện</a></li>
+                        <li><a href="Cat-Product.html?category=c_sa">Cát vệ sinh</a></li>
                     </ul>
                 </li>
                 <li><a href="service.html">Dịch vụ</a> </li>
-                <li><a href="#">Tin tức</a> </li>
+                <li><a href="MarpetNews.html">Tin tức</a> </li>
             </div>
         </div>
     </div>
     <img src="./library/back-to-top-icon-png-0.png" class="" onclick="topFunction()" id="topBtn" title="Go to top">
     <!-- Khi nhấp vào thì chuyển qua trang messenger fb của shop -->
-    <a href="https://m.me/107421025083727" target="blank"><img style="z-index:99" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2"></img>
+    <a href="https://m.me/107421025083727" target="blank"><img style="z-index:9999999999999" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2"></img>
     </a>
     <!-- Khi nhấp vào thì mở ô chat box để gửi tn -->
-    <img src="./library/sms-3.png" class="open-button-1" onclick="openForm()" style="z-index:99"></img>
+    <img src="./library/sms-3.png" class="open-button-1" onclick="openForm()" style="z-index:9999999999999"></img>
 
     <div class="chat-popup" id="myForm">
 
@@ -215,15 +221,15 @@
         </form>
     </div>
     <!-- The Modal -->
-<div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
     </div>
-  
-  </div>
     <!-- <script>
         window.onscroll = function() {
             scrollFunction()
@@ -239,50 +245,56 @@
         }
     </script> -->
     <script>
-        window.onload=function(){
-        // Get the modal
+        window.onload = function() {
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+
+                modal.style.display = "block";
+
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+            }
+            // Get the modal
         var modal = document.getElementById("myModal");
-        
+
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-        
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks the button, open the modal 
-        
-          modal.style.display = "block";
-        
-        
+
+
+
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
-          modal.style.display = "none";
-         }
+            modal.style.display = "none";
         }
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
+
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
+<<<<<<< HEAD
         </script>
         <script src="./js/dog-product.js"></script>
+        <script src="./js/cat-product.js"></script>
+=======
+    </script>
+    <script src="./js/dog-product.js"></script>
+>>>>>>> 685b7920039a7b707fe98ce8918ba38f3afdd955
 </body>
 
 </html>
