@@ -1,521 +1,531 @@
-[
-    {
-        "category":"food",
+[{
+        "productid": "1",
+        "category": "food",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó con cỡ nhỏ ROYAL CANIN Mini Puppy",
-        "price": "185.000 ₫",
-        "image": "../library/products/dog/DG_FO_sp1.jpg"
+        "price": [185000, 200000, 300000],
+        "colors": ["red", "blue", "green"],
+        "image": ["./library/products/dog/DG_FO_sp1.jpg", "./library/products/dog/DG_FO_sp2.jpg", "./library/products/dog/DG_CA_sp1.jpg"],
+        "weights": "",
+        "description": "Thức ăn cho chó Poodle con cỡ nhỏ ROYAL CANIN Poodle Puppy dành riêng cho tất cả các giống chó Teacup, Tiny Poodle, Toy Poodle, Standard Poodle dưới 10 tháng tuổi",
+        "purpose": "Thức ăn cho chó Poodle con ROYAL CANIN Poodle Puppy với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó Poodle trong giai đoạn mới cai sữa. Sản phẩm được chế biến theo công thức hỗ trợ phát triển toàn diện, tăng sức đề kháng của chó con. Đồng thời tăng khả năng tư duy, vận động của chó con, đẩy nhanh quá trình phát triển võng mạc của chó. <br/> Sản phẩm được chế biến làm mượt lông, dưỡng da cho chó Poodle. PINCH thúc đẩy sự hình thành axit amide, giúp bảo vệ da khỏi các tác nhân gây hại. OMEGA 3 và 6: kích thích tuyến bã nhờn dưới da tiết dầu. <br/> Tăng sức đề kháng cho chó con. Chất chống oxy hóa giúp chó con tăng khả năng miễn dịch, giúp cho con lớn lên khỏe mạnh. <br/> Hạt thức ăn hình vuông được chế biến đặc biệt giảm nguy cơ hình thành sỏi thận ở chó. Kích thước hạt phù hợp cỡ răng của chó, thông qua việc cọ xát vào răng giúp bảo vệ răng miệng cho chó. Size hạt phù hợp cấu tạo khoang miệng của chó, thuận lợi cho tiêu hóa. </br> Thành phần bao gồm lòng trắng trứng và các vi sinh vật giúp nhuận tràng, tốt cho hệ tiêu hóa. Đặc biệt 90% protein L.I.P hỗ trợ chó hấp thu chất dinh dưỡng, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
+        "instruct": "Thức ăn hạt cho chó Poodle con ROYAL CANIN Poodle Puppy tạo thói quen ăn uống cho chó con. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
+
     },
 
     {
-        "category":"food",
+        "productid": "2",
+        "category": "clothes",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó Poodle con ROYAL CANIN  Poodle Puppy",
-        "price":"155.000 ₫",
-        "image": "../library/products/dog/DG_FO_sp2.jpg",
-        "description":"Thức ăn cho chó Poodle con ROYAL CANIN Poodle Puppy dành riêng cho tất cả các giống chó Teacup, Tiny Poodle, Toy Poodle, Standard Poodle dưới 10 tháng tuổi",
+        "price": [155000, 300000],
+        "colors": "",
+        "image": ["../library/products/dog/DG_FO_sp2.jpg", "../library/products/dog/DG_FO_sp2.jpg"],
+        "weights": ["500g", "1kg"],
+        "description": "Thức ăn cho chó Poodle con ROYAL CANIN Poodle Puppy dành riêng cho tất cả các giống chó Teacup, Tiny Poodle, Toy Poodle, Standard Poodle dưới 10 tháng tuổi",
         "purpose": "Thức ăn cho chó Poodle con ROYAL CANIN Poodle Puppy với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó Poodle trong giai đoạn mới cai sữa. Sản phẩm được chế biến theo công thức hỗ trợ phát triển toàn diện, tăng sức đề kháng của chó con. Đồng thời tăng khả năng tư duy, vận động của chó con, đẩy nhanh quá trình phát triển võng mạc của chó. <br/> Sản phẩm được chế biến làm mượt lông, dưỡng da cho chó Poodle. PINCH thúc đẩy sự hình thành axit amide, giúp bảo vệ da khỏi các tác nhân gây hại. OMEGA 3 và 6: kích thích tuyến bã nhờn dưới da tiết dầu. <br/> Tăng sức đề kháng cho chó con. Chất chống oxy hóa giúp chó con tăng khả năng miễn dịch, giúp cho con lớn lên khỏe mạnh. <br/> Hạt thức ăn hình vuông được chế biến đặc biệt giảm nguy cơ hình thành sỏi thận ở chó. Kích thước hạt phù hợp cỡ răng của chó, thông qua việc cọ xát vào răng giúp bảo vệ răng miệng cho chó. Size hạt phù hợp cấu tạo khoang miệng của chó, thuận lợi cho tiêu hóa. </br> Thành phần bao gồm lòng trắng trứng và các vi sinh vật giúp nhuận tràng, tốt cho hệ tiêu hóa. Đặc biệt 90% protein L.I.P hỗ trợ chó hấp thu chất dinh dưỡng, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
-        "instruct":"Thức ăn hạt cho chó Poodle con ROYAL CANIN Poodle Puppy tạo thói quen ăn uống cho chó con. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
+        "instruct": "Thức ăn hạt cho chó Poodle con ROYAL CANIN Poodle Puppy tạo thói quen ăn uống cho chó con. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
     },
 
     {
-        "category":"food",
+        "productid": "3",
+        "category": "food",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult",
-        "price":"130.000 ₫",
+        "price": "130.000 ₫",
         "image": "../library/products/dog/DG_FO_sp3-1.jpg",
-        "description":"Thức ăn cho chó Poodle  trưởng thành ROYAL CANIN  Poodle Adult dành riêng cho tất cả các giống chó Teacup, Tiny Poodle, Toy Poodle, Standard Poodle từ 10 tháng tuổi trở lên.",
-        "purpose":"ROYAL CANIN Poodle Adult với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó Poodle, đặc trị các vấn đề về răng và lông ở chó Poodle. PINCH: kích thích hình thành tế bào da, giúp da luôn khỏe mạnh và tránh các bệnh về da thường gặp. OMEGA 3 và 6: kích thích tuyến bã nhờn dưới da tiết dầu, tránh các tác nhân gây hại cho da. <br/>Hạt thức ăn cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult có dạng hình vuông. Được chế biến đặc biệt giảm khả năng tạo mảng bám trên răng. Kích thước hạt phù hợp cấu tạo khoang miệng của chó. Thông qua việc ma sát với răng giúp chó tự làm sạch răng miệng. Thành phần thức ăn kết hợp với ion có sẵn trong nước bọt làm giảm vi khuẩn sinh ra trên răng. Cung cấp canxi làm chắc khỏe răng. <br/> Thành phần bao gồm lòng trắng trứng và các vi sinh vật giúp nhuận tràng, tốt cho hệ tiêu hóa. Đặc biệt 90% protein L.I.P hỗ trợ chó hấp thu chất dinh dưỡng, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
-        "instruct":"Thức ăn hạt cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult tạo thói quen ăn uống cho chó con. Dựa theo tuổi của cho, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
+        "description": "Thức ăn cho chó Poodle  trưởng thành ROYAL CANIN  Poodle Adult dành riêng cho tất cả các giống chó Teacup, Tiny Poodle, Toy Poodle, Standard Poodle từ 10 tháng tuổi trở lên.",
+        "purpose": "ROYAL CANIN Poodle Adult với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó Poodle, đặc trị các vấn đề về răng và lông ở chó Poodle. PINCH: kích thích hình thành tế bào da, giúp da luôn khỏe mạnh và tránh các bệnh về da thường gặp. OMEGA 3 và 6: kích thích tuyến bã nhờn dưới da tiết dầu, tránh các tác nhân gây hại cho da. <br/>Hạt thức ăn cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult có dạng hình vuông. Được chế biến đặc biệt giảm khả năng tạo mảng bám trên răng. Kích thước hạt phù hợp cấu tạo khoang miệng của chó. Thông qua việc ma sát với răng giúp chó tự làm sạch răng miệng. Thành phần thức ăn kết hợp với ion có sẵn trong nước bọt làm giảm vi khuẩn sinh ra trên răng. Cung cấp canxi làm chắc khỏe răng. <br/> Thành phần bao gồm lòng trắng trứng và các vi sinh vật giúp nhuận tràng, tốt cho hệ tiêu hóa. Đặc biệt 90% protein L.I.P hỗ trợ chó hấp thu chất dinh dưỡng, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
+        "instruct": "Thức ăn hạt cho chó Poodle trưởng thành ROYAL CANIN Poodle Adult tạo thói quen ăn uống cho chó con. Dựa theo tuổi của cho, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
 
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "ZENITH",
         "name": "Thức ăn cho chó con hạt mềm ZENITH Puppy Chicken Potato",
-        "price":"200.000 ₫",
+        "price": "200.000 ₫",
         "image": "../library/products/dog/DG_FO_sp4-1.jpg",
-        "description":"Thức ăn cho chó con hạt mềm ZENITH  Puppy Chicken Potato được chế biến từ thịt cừu tươi, thịt nạc gà rút xương, gạo lứt, yến mạch và dầu cá hồi. Với các thành phần tươi sạch, giàu dinh dưỡng, Zenith Puppy hạt mềm, cung cấp độ ẩm cao và lượng muối thấp, thơm ngon, dễ nhai, dễ tiêu hóa và tốt cho sức khỏe chó con.",
-        "purpose":"Cung cấp chất dinh dưỡng thiết yếu cho sự phát triển của cún con <br/> Tăng cường sức đề kháng, bảo vệ cún con khỏi rủi ro bệnh tật <br/> Tăng cường sức khỏe đường ruột, tốt cho hệ tiêu hóa còn non nớt <br/> Thành phần tươi sạch, dễ hấp thu, giảm thiểu mùi phân và mùi cơ thể <br/> Cho cún con một làn da khỏe mạnh và bộ lông mềm mượt<br/>"
+        "description": "Thức ăn cho chó con hạt mềm ZENITH  Puppy Chicken Potato được chế biến từ thịt cừu tươi, thịt nạc gà rút xương, gạo lứt, yến mạch và dầu cá hồi. Với các thành phần tươi sạch, giàu dinh dưỡng, Zenith Puppy hạt mềm, cung cấp độ ẩm cao và lượng muối thấp, thơm ngon, dễ nhai, dễ tiêu hóa và tốt cho sức khỏe chó con.",
+        "purpose": "Cung cấp chất dinh dưỡng thiết yếu cho sự phát triển của cún con <br/> Tăng cường sức đề kháng, bảo vệ cún con khỏi rủi ro bệnh tật <br/> Tăng cường sức khỏe đường ruột, tốt cho hệ tiêu hóa còn non nớt <br/> Thành phần tươi sạch, dễ hấp thu, giảm thiểu mùi phân và mùi cơ thể <br/> Cho cún con một làn da khỏe mạnh và bộ lông mềm mượt<br/>"
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "ANF",
         "name": "Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb ",
-        "price":"130.000 ₫",
+        "price": "130.000 ₫",
         "image": "../library/products/dog/DG_FO_sp5-1.jpg",
-        "description":"Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb dùng cho mọi giống chó ở mọi lứa tuổi. <br/> Sản phẩm sử dụng nguyên liệu hữu cơ tự nhiên với 6 không nổi trội: không gây đột biến gen, không chứa thuốc kháng sinh, không chứa thuốc trừ sâu, không chứa hóc môn, không chứa màu nhân tạo, không chứa chất bảo quản hóa học.",
-        "purpose":"Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb với thịt cừu là nguồn đạm động vật rất phù hợp với các thành phần tự nhiên và thành phần nông sản hữu cơ, cung cấp dinh dưỡng cho chó đầy đủ nhất. <br/> Có hiệu quả với thú cưng có làn da nhạy cảm với chất đạm của động vật. <br/> Chứa nhiều hơn 40% chất chống oxy hóa thiên nhiên. <br/> Giúp tăng cường hệ miễn dịch cũng như giảm thiểu dị ứng gây ra do thức ăn. <br/> Giúp giảm các hiện tượng như kích ứng, viêm da atopic…",
-        "instruct":"Một ngày cho ăn chia ra 2 đến 4 lần. Liều lượng cho ăn có thể khác nhau tùy theo giống loài, tần suất hoạt động và thời tiết. <br/> Thức ăn hạt cho chó vị thịt cừu ANF Organic 6 Free Lamb phù hợp với tất cả các giống chó trong mọi lứa tuổi. Luôn đảm bảo có bát nước sạch bên cạnh thú cưng của bạn mỗi khi chúng ăn."
+        "description": "Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb dùng cho mọi giống chó ở mọi lứa tuổi. <br/> Sản phẩm sử dụng nguyên liệu hữu cơ tự nhiên với 6 không nổi trội: không gây đột biến gen, không chứa thuốc kháng sinh, không chứa thuốc trừ sâu, không chứa hóc môn, không chứa màu nhân tạo, không chứa chất bảo quản hóa học.",
+        "purpose": "Thức ăn cho chó vị thịt cừu ANF Organic 6 Free Lamb với thịt cừu là nguồn đạm động vật rất phù hợp với các thành phần tự nhiên và thành phần nông sản hữu cơ, cung cấp dinh dưỡng cho chó đầy đủ nhất. <br/> Có hiệu quả với thú cưng có làn da nhạy cảm với chất đạm của động vật. <br/> Chứa nhiều hơn 40% chất chống oxy hóa thiên nhiên. <br/> Giúp tăng cường hệ miễn dịch cũng như giảm thiểu dị ứng gây ra do thức ăn. <br/> Giúp giảm các hiện tượng như kích ứng, viêm da atopic…",
+        "instruct": "Một ngày cho ăn chia ra 2 đến 4 lần. Liều lượng cho ăn có thể khác nhau tùy theo giống loài, tần suất hoạt động và thời tiết. <br/> Thức ăn hạt cho chó vị thịt cừu ANF Organic 6 Free Lamb phù hợp với tất cả các giống chó trong mọi lứa tuổi. Luôn đảm bảo có bát nước sạch bên cạnh thú cưng của bạn mỗi khi chúng ăn."
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "ANF",
         "name": "Thức ăn cho chó vị thịt vịt ANF Organic 6 Free Duck",
-        "price":"95.000 ₫",
+        "price": "95.000 ₫",
         "image": "../library/products/dog/DG_FO_sp6-1.jpg",
-        "description":"Thức ăn cho chó vị thịt vịt ANF Organic 6 Free Duck phù hợp với tất cả các giống chó trong mọi lứa tuổi. <br/> Sản phẩm sử dụng nguyên liệu hữu cơ tự nhiên với 6 không nổi trội: không gây đột biến gen, không chứa thuốc kháng sinh, không chứa thuốc trừ sâu, không chứa hóc môn, không chứa màu nhân tạo, không chứa chất bảo quản hóa học.",
-        "purpose":"Thức ăn hạt cho chó vị thịt vịt ANF Organic 6 Free Duck bao gồm thịt vịt là nguồn protein cao cấp tuyệt vời chứa các axit amin thiết yếu cân bằng dinh dưỡng cho chó. <br/> Thịt vịt cũng chứa nhiều sắt, kẽm, đồng, vitamin B1, B2, B6, B12… <br/> Nhờ áp dụng phương pháp nghiền nhỏ trực tiếp thịt vịt thay vì sử dụng bột giúp giữ nguyên vị thịt và bảo toàn các chất dinh dưỡng bên trong. <br/> Chứa nhiều hơn 40% chất chống oxy hóa thiên nhiên, nhờ vậy giúp tăng cường hệ miễn dịch cũng như giảm thiểu dị ứng gây ra do thức ăn. Giúp giảm các hiện tượng như kích ứng, viêm da atopic…",
-        "instruct":"Một ngày cho ăn chia ra 2 đến 4 lần. Liều lượng cho ăn có thể khác nhau tùy theo giống loài, tần suất hoạt động và thời tiết."  
+        "description": "Thức ăn cho chó vị thịt vịt ANF Organic 6 Free Duck phù hợp với tất cả các giống chó trong mọi lứa tuổi. <br/> Sản phẩm sử dụng nguyên liệu hữu cơ tự nhiên với 6 không nổi trội: không gây đột biến gen, không chứa thuốc kháng sinh, không chứa thuốc trừ sâu, không chứa hóc môn, không chứa màu nhân tạo, không chứa chất bảo quản hóa học.",
+        "purpose": "Thức ăn hạt cho chó vị thịt vịt ANF Organic 6 Free Duck bao gồm thịt vịt là nguồn protein cao cấp tuyệt vời chứa các axit amin thiết yếu cân bằng dinh dưỡng cho chó. <br/> Thịt vịt cũng chứa nhiều sắt, kẽm, đồng, vitamin B1, B2, B6, B12… <br/> Nhờ áp dụng phương pháp nghiền nhỏ trực tiếp thịt vịt thay vì sử dụng bột giúp giữ nguyên vị thịt và bảo toàn các chất dinh dưỡng bên trong. <br/> Chứa nhiều hơn 40% chất chống oxy hóa thiên nhiên, nhờ vậy giúp tăng cường hệ miễn dịch cũng như giảm thiểu dị ứng gây ra do thức ăn. Giúp giảm các hiện tượng như kích ứng, viêm da atopic…",
+        "instruct": "Một ngày cho ăn chia ra 2 đến 4 lần. Liều lượng cho ăn có thể khác nhau tùy theo giống loài, tần suất hoạt động và thời tiết."
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó trưởng thành cỡ nhỏ ROYAL CANIN Mini Adult",
-        "price":"155.000 ₫",
+        "price": "155.000 ₫",
         "image": "../library/products/dog/DG_FO_sp7-1.jpg",
-        "description":"Thức ăn cho chó ROYAL CANIN  Mini Adult từ 10 tháng tuổi trở lên. Với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó trưởng thành thuộc các giống cỡ nhỏ. <br/> ROYAL CANIN Mini Adult được nghiên cứu để cung cấp dinh dưỡng theo nhu cầu thực tế của chó. Cung cấp năng lượng theo nhu cầu dinh dưỡng của chó. Duy trì da và lông khỏe mạnh: EPA, DHA. Kiểm soát cân nặng lý tưởng cho chó: L-Carnitine",
-        "purpose":"Thức ăn cho chó ROYAL CANIN Mini Adult là dạng viên có hình dạng phù hợp với cấu tạo răng của chó, giảm nguy cơ hình thành mảng bám răng ở chó. Kích thước hạt phù hợp cỡ răng của chó, thông qua việc cọ xát vào răng giúp bảo vệ răng miệng cho chó. <br/> Duy trì hệ tiêu hóa khỏe mạnh. Men tiêu hóa L.I.P hỗ trợ hấp thu chất dinh dưỡng cho chó, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Đường tự nhiên FOS: cân bằng hệ vi sinh đường ruột. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
-        "instruct":"Thức ăn hạt cho chó trưởng thành cỡ nhỏ ROYAL CANIN Mini Adult tạo thói quen ăn uống cho chó. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
+        "description": "Thức ăn cho chó ROYAL CANIN  Mini Adult từ 10 tháng tuổi trở lên. Với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó trưởng thành thuộc các giống cỡ nhỏ. <br/> ROYAL CANIN Mini Adult được nghiên cứu để cung cấp dinh dưỡng theo nhu cầu thực tế của chó. Cung cấp năng lượng theo nhu cầu dinh dưỡng của chó. Duy trì da và lông khỏe mạnh: EPA, DHA. Kiểm soát cân nặng lý tưởng cho chó: L-Carnitine",
+        "purpose": "Thức ăn cho chó ROYAL CANIN Mini Adult là dạng viên có hình dạng phù hợp với cấu tạo răng của chó, giảm nguy cơ hình thành mảng bám răng ở chó. Kích thước hạt phù hợp cỡ răng của chó, thông qua việc cọ xát vào răng giúp bảo vệ răng miệng cho chó. <br/> Duy trì hệ tiêu hóa khỏe mạnh. Men tiêu hóa L.I.P hỗ trợ hấp thu chất dinh dưỡng cho chó, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Đường tự nhiên FOS: cân bằng hệ vi sinh đường ruột. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
+        "instruct": "Thức ăn hạt cho chó trưởng thành cỡ nhỏ ROYAL CANIN Mini Adult tạo thói quen ăn uống cho chó. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng có thể tham khảo trên bao bì. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "ROYAL CANIN",
         "name": "Thức ăn cho chó trưởng thành cỡ vừa ROYAL CANIN Medium Aldult",
-        "price":"155.000 ₫",
+        "price": "155.000 ₫",
         "image": "../library/products/dog/DG_FO_sp8.jpg",
-        "description":"Thức ăn cho chó trưởng thành cỡ vừa ROYAL CANIN  Medium Adult dành cho những chú chó trưởng thành 12 tháng tuổi trở lên. Với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó trưởng thành.",
-        "purpose":"Thần phần bao gồm anbumin: thành phần quan trọng cấu tạo một số cơ quan trong cơ thể. Axit béo thiết yếu: bổ sung năng lượng, bảo vệ da và lông. Khoáng chất: giảm nguy cơ mắc các bệnh về da, giúp xương khớp khỏe mạnh. Vitamin: có tác dụng chống oxy hóa, nâng cao sức đề kháng. Xenlulose: hỗ trợ tiêu hóa, thúc đẩy sự hấp thu các chất dinh dưỡng, cân bằng hệ vi sinh đường ruột. Tốt cho da và lông. Omega3: có tác dụng hỗ trợ da lông phát triển khỏe mạnh. Kích thích chó ăn ngon: thức ăn có mùi thơm hấp dẫn, kích thích chó ăn nhiều hơn. <br/> Thức ăn cho chó trưởng thành cỡ vừa ROYAL CANIN Medium Adult có dạng viên phù hợp với cấu tạo răng của chó, giảm nguy cơ hình thành mảng bám răng ở chó. Kích thước hạt phù hợp cỡ răng, thông qua việc cọ xát vào răng giúp bảo vệ răng miệng cho chó. Hạt hình tròn giúp khuyến khích chó nhai kĩ hơn, do đó làm chậm quá trình ăn, tránh bị khó tiêu. <br/> Thành phần bao gồm men tiêu hóa, albumin và probiotic giúp nhuận tràng, tốt cho hệ tiêu hóa. Men tiêu hóa L.I.P hỗ trợ hấp thu chất dinh dưỡng cho chó, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
-        "instruct":"Thức ăn hạt cho chó trưởng thành cỡ vừa ROYAL CANIN Medium Adult tạo thói quen ăn uống cho chó. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng tham khảo trên bao bì sản phẩm. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
-        
+        "description": "Thức ăn cho chó trưởng thành cỡ vừa ROYAL CANIN  Medium Adult dành cho những chú chó trưởng thành 12 tháng tuổi trở lên. Với công thức đặc chế riêng cho nhu cầu dinh dưỡng của chó trưởng thành.",
+        "purpose": "Thần phần bao gồm anbumin: thành phần quan trọng cấu tạo một số cơ quan trong cơ thể. Axit béo thiết yếu: bổ sung năng lượng, bảo vệ da và lông. Khoáng chất: giảm nguy cơ mắc các bệnh về da, giúp xương khớp khỏe mạnh. Vitamin: có tác dụng chống oxy hóa, nâng cao sức đề kháng. Xenlulose: hỗ trợ tiêu hóa, thúc đẩy sự hấp thu các chất dinh dưỡng, cân bằng hệ vi sinh đường ruột. Tốt cho da và lông. Omega3: có tác dụng hỗ trợ da lông phát triển khỏe mạnh. Kích thích chó ăn ngon: thức ăn có mùi thơm hấp dẫn, kích thích chó ăn nhiều hơn. <br/> Thức ăn cho chó trưởng thành cỡ vừa ROYAL CANIN Medium Adult có dạng viên phù hợp với cấu tạo răng của chó, giảm nguy cơ hình thành mảng bám răng ở chó. Kích thước hạt phù hợp cỡ răng, thông qua việc cọ xát vào răng giúp bảo vệ răng miệng cho chó. Hạt hình tròn giúp khuyến khích chó nhai kĩ hơn, do đó làm chậm quá trình ăn, tránh bị khó tiêu. <br/> Thành phần bao gồm men tiêu hóa, albumin và probiotic giúp nhuận tràng, tốt cho hệ tiêu hóa. Men tiêu hóa L.I.P hỗ trợ hấp thu chất dinh dưỡng cho chó, cân bằng hệ vi sinh đường ruột, giảm bớt lượng phân và mùi nhẹ hơn. Gia tăng số lượng lợi khuẩn, bảo vệ đường ruột khỏi vi khuẩn có hại.",
+        "instruct": "Thức ăn hạt cho chó trưởng thành cỡ vừa ROYAL CANIN Medium Adult tạo thói quen ăn uống cho chó. Dựa theo tuổi của chó, cần cho ăn một ngày 3 lần vào các giờ cố định. Cho ăn tại một chỗ để tạo thói quen tốt cho chó. Nên cho chó ăn thức ăn chế biến riêng, không cho ăn thức ăn thừa của người. Vì thức ăn của người có nhiều thành phần khiến chó bị rối loạn tiêu hóa, dễ bị bệnh béo phì. Bảo đảm cung cấp đủ nước uống cho chó. Nếu thấy nước bị chó làm bẩn, cần thay nước mới ngay lập tức. <br/> Khi muốn đổi thức ăn mới cho chó, có thể trộn lẫn thức ăn cũ và mới khi cho ăn. Tăng dần tỉ lệ trong vòng 7 ngày. Đột ngột thay đổi loại thức ăn mới có thể gây mất cân bằng hệ tiêu hóa. Chó dễ bị khó tiêu và đi ngoài. <br/> Công thức phân chia lượng thức ăn theo cân nặng tham khảo trên bao bì sản phẩm. Hạn sử dụng 18 tháng kể từ ngày sản xuất."
+
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "IRIS",
         "name": "Pate cho chó vị thịt bò IRIS One Care Beef",
-        "price":"130.000 ₫",
+        "price": "130.000 ₫",
         "image": "../library/products/dog/DG_FO_sp9.jpg",
-        "description":"Pate cho chó vị thịt bò IRIS  One Care Beef là sản phẩm dành cho tất cả giống chó. Với thành phần hoàn toàn từ tự nhiên và thịt bò.",
-        "purpose":"Đặc biệt với công thức chế biến riêng tạo nên khẩu phần ăn ngon miệng cho thú cưng. <br/> Bổ sung Protein đảm bảo một sức khỏe toàn diện hơn.<br/> Tạo nên cảm giác thèm ăn cho cún cưng. <br/> Pate cho chó vị thịt bò IRIS One Care Beef làm hài lòng cả những chú chó kén ăn nhất.</br>"
+        "description": "Pate cho chó vị thịt bò IRIS  One Care Beef là sản phẩm dành cho tất cả giống chó. Với thành phần hoàn toàn từ tự nhiên và thịt bò.",
+        "purpose": "Đặc biệt với công thức chế biến riêng tạo nên khẩu phần ăn ngon miệng cho thú cưng. <br/> Bổ sung Protein đảm bảo một sức khỏe toàn diện hơn.<br/> Tạo nên cảm giác thèm ăn cho cún cưng. <br/> Pate cho chó vị thịt bò IRIS One Care Beef làm hài lòng cả những chú chó kén ăn nhất.</br>"
     },
     {
-        "category":"food",
+        "category": "food",
         "label": "JERHIGH",
         "name": " Pate cho chó vị thịt gà JERHIGH Chicken Grilled Gravy",
-        "price":"130.000 ₫",
+        "price": "130.000 ₫",
         "image": "../library/products/dog/DG_FO_sp10.jpg",
-        "description":"Pate cho chó vị thịt gà JERHIGH  Chicken Grilled Gravy dành cho tất cả các giống chó.",
-        "purpose":"JERHIGH Chicken Grilled Gravy mang lại những giá trị dinh dưỡng vô giá cho thú cưng. Bổ sung năng lượng sau mỗi bữa ăn chính giúp cún cưng phát triển cân bằng và toàn diện. Bạn có thể cho cún con ăn trực tiếp hoặc trộn đều với thức ăn khô. Phù hợp với tất cả các giống chó, kể cả những chú cún biếng ăn nhất. JERHIGH Chicken Grilled Gravy vị gà nướng tẩm nước sốt giúp xương và răng chắc khỏe. <br/> Canxi và vitamin D giúp cho xương và răng chắc khỏe và tăng cường cơ bắp. Đảm bảo cho các vận động của thú cưng diễn ra linh hoạt và uyển chuyển hơn. Giảm thiểu tỷ lệ mắc bệnh về xương khớp ở chó. Đồng thời hỗ trợ tiêu hóa, thúc đẩy quá trình trao đổi chất và hấp thụ năng lượng. JERHIGH Chicken Grilled Gravy được đóng gói bao bì trọng lượng 120g. Rất tiện lợi cho việc sử dụng, bảo quản và mang theo. Khẩu phần thức ăn được chia dựa theo cân nặng của thú cưng.",
-        "nutrition":"Pate cho chó vị thịt gà JERHIGH Chicken Grilled Gravy với quy trình sản xuất khép kín chuyên nghiệp. Nguyên liệu được truy xuất nguồn gốc rõ ràng và kiểm nghiệm bởi các chuyên gia. Các thành phần bao gồm: Thịt gà, bột biến tính, vị gà nướng. Gluten lúa mì, chất tạo đông Gum, Canxi. Muối, đường, vị thịt, vitamin D3. Nước sốt gia vị gà nướng chắc chắn mang lại cho thú cưng cảm giác ngon miệng ngoài sức mong đợi của bạn."
+        "description": "Pate cho chó vị thịt gà JERHIGH  Chicken Grilled Gravy dành cho tất cả các giống chó.",
+        "purpose": "JERHIGH Chicken Grilled Gravy mang lại những giá trị dinh dưỡng vô giá cho thú cưng. Bổ sung năng lượng sau mỗi bữa ăn chính giúp cún cưng phát triển cân bằng và toàn diện. Bạn có thể cho cún con ăn trực tiếp hoặc trộn đều với thức ăn khô. Phù hợp với tất cả các giống chó, kể cả những chú cún biếng ăn nhất. JERHIGH Chicken Grilled Gravy vị gà nướng tẩm nước sốt giúp xương và răng chắc khỏe. <br/> Canxi và vitamin D giúp cho xương và răng chắc khỏe và tăng cường cơ bắp. Đảm bảo cho các vận động của thú cưng diễn ra linh hoạt và uyển chuyển hơn. Giảm thiểu tỷ lệ mắc bệnh về xương khớp ở chó. Đồng thời hỗ trợ tiêu hóa, thúc đẩy quá trình trao đổi chất và hấp thụ năng lượng. JERHIGH Chicken Grilled Gravy được đóng gói bao bì trọng lượng 120g. Rất tiện lợi cho việc sử dụng, bảo quản và mang theo. Khẩu phần thức ăn được chia dựa theo cân nặng của thú cưng.",
+        "nutrition": "Pate cho chó vị thịt gà JERHIGH Chicken Grilled Gravy với quy trình sản xuất khép kín chuyên nghiệp. Nguyên liệu được truy xuất nguồn gốc rõ ràng và kiểm nghiệm bởi các chuyên gia. Các thành phần bao gồm: Thịt gà, bột biến tính, vị gà nướng. Gluten lúa mì, chất tạo đông Gum, Canxi. Muối, đường, vị thịt, vitamin D3. Nước sốt gia vị gà nướng chắc chắn mang lại cho thú cưng cảm giác ngon miệng ngoài sức mong đợi của bạn."
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Yếm cho chó kèm dây dắt Ambaby 1JXS043",
-        "price":"255.000đ",
-        "image":"../library/products/dog/DG_CL_sp10-blue.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Yếm cho chó kèm dây dắt Ambaby 1JXS043",
+        "price": "255.000đ",
+        "image": "../library/products/dog/DG_CL_sp10-blue.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Mũ cho chó AMBABY PET 1JXS081",
-        "price":"155.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp2-grey.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Mũ cho chó AMBABY PET 1JXS081",
+        "price": "155.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp2-grey.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Mũ sừng nai cho chó AMBABY PET",
-        "price":"155.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp3-beige.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Mũ sừng nai cho chó AMBABY PET",
+        "price": "155.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp3-beige.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Quần áo cho chó mèo AMBABY PET 2JXF162",
-        "price":"245.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp6-pink.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Quần áo cho chó mèo AMBABY PET 2JXF162",
+        "price": "245.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp6-pink.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Quần áo cho chó đầm công chúa AMBABY PET",
-        "price":"245.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp9.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Quần áo cho chó đầm công chúa AMBABY PET",
+        "price": "245.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp9.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Quần áo cho chó AMBABY PET 2JXF164",
-        "price":"245.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp7-blue.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Quần áo cho chó AMBABY PET 2JXF164",
+        "price": "245.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp7-blue.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Quần áo cho chó AMBABY PET 2JXF109",
-        "price":"180.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp4-blue.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Quần áo cho chó AMBABY PET 2JXF109",
+        "price": "180.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp4-blue.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Quần áo cho chó AMBABY PET 2JXF218",
-        "price":"245.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp8-pink.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Quần áo cho chó AMBABY PET 2JXF218",
+        "price": "245.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp8-pink.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Quần áo cho chó AMBABY PET 2JXF112",
-        "price":"245.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp5-blue.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Quần áo cho chó AMBABY PET 2JXF112",
+        "price": "245.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp5-blue.jpg"
     },
     {
-        "category":"clothes",
-        "label":"Ambaby",
-        "name":"Mũ cho chó AMBABY PET 1JXS003",
-        "price":"155.000 ₫",
-        "image":"../library/products/dog/DG_CL_sp2-grey.jpg"
+        "category": "clothes",
+        "label": "Ambaby",
+        "name": "Mũ cho chó AMBABY PET 1JXS003",
+        "price": "155.000 ₫",
+        "image": "../library/products/dog/DG_CL_sp2-grey.jpg"
     },
     {
-        "category":"co",
-        "label":"HAND IN HAND",
-        "name":"Xích cho chó kèm vòng cổ HAND IN HAND Reflective Collar Leash",
-        "price":"200.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp10-red.jpg"
+        "category": "co",
+        "label": "HAND IN HAND",
+        "name": "Xích cho chó kèm vòng cổ HAND IN HAND Reflective Collar Leash",
+        "price": "200.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp10-red.jpg"
     },
     {
-        "category":"co",
-        "label":"DELE",
-        "name":"Dây dắt chó đi dạo tự cuốn DELE 006 Retractable Leash",
-        "price":"175.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp3-blue.jpg"
+        "category": "co",
+        "label": "DELE",
+        "name": "Dây dắt chó đi dạo tự cuốn DELE 006 Retractable Leash",
+        "price": "175.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp3-blue.jpg"
     },
     {
-        "category":"co",
-        "label":"PAW",
-        "name":"Vòng cổ cho chó cỡ nhỏ PAW bằng da đính cườm cao cấp",
-        "price":"170.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp6-1.jpg"
+        "category": "co",
+        "label": "PAW",
+        "name": "Vòng cổ cho chó cỡ nhỏ PAW bằng da đính cườm cao cấp",
+        "price": "170.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp6-1.jpg"
     },
     {
-        "category":"co",
-        "label":"PAW",
-        "name":"Rọ mõm chó hình mỏ vịt PAW Aduck",
-        "price":"75.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp5-3.jpg"
+        "category": "co",
+        "label": "PAW",
+        "name": "Rọ mõm chó hình mỏ vịt PAW Aduck",
+        "price": "75.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp5-3.jpg"
     },
     {
-        "category":"co",
-        "label":"PAW",
-        "name":"Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ",
-        "price":"75.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp4-1.jpg"
+        "category": "co",
+        "label": "PAW",
+        "name": "Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ",
+        "price": "75.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp4-1.jpg"
     },
     {
-        "category":"co",
-        "label":"HAND IN HAND",
-        "name":"Dây dắt cho chó cường lực vải dù loại dài HAND IN HAND Knitting Lead With Buffering Spring",
-        "price":"190.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp1-grey.jpg"
+        "category": "co",
+        "label": "HAND IN HAND",
+        "name": "Dây dắt cho chó cường lực vải dù loại dài HAND IN HAND Knitting Lead With Buffering Spring",
+        "price": "190.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp1-grey.jpg"
     },
     {
-        "category":"co",
-        "label":"HAND IN HAND",
-        "name":"Dây dắt cho chó cường lực HAND IN HAND",
-        "price":"170.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp2-blue.jpg"
+        "category": "co",
+        "label": "HAND IN HAND",
+        "name": "Dây dắt cho chó cường lực HAND IN HAND",
+        "price": "170.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp2-blue.jpg"
     },
     {
-        "category":"co",
-        "label":"TOUCH DOG",
-        "name":"Xích cho chó đai ngực cỡ to",
-        "price":"325.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp8.jpg"
+        "category": "co",
+        "label": "TOUCH DOG",
+        "name": "Xích cho chó đai ngực cỡ to",
+        "price": "325.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp8.jpg"
     },
     {
-        "category":"co",
-        "label":"HAND IN HAND",
-        "name":"Xích cho chó đai ngực cỡ bé HAND IN HAND",
-        "price":"100.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp7-pink.jpg"
+        "category": "co",
+        "label": "HAND IN HAND",
+        "name": "Xích cho chó đai ngực cỡ bé HAND IN HAND",
+        "price": "100.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp7-pink.jpg"
     },
     {
-        "category":"co",
-        "label":"TOUCH DOG",
-        "name":"Xích cho chó kèm vòng cổ cỡ nhỏ TOUCH DOG",
-        "price":"195.000 ₫",
-        "image":"../library/products/dog/DG_CO_sp9-yellow.jpg"
+        "category": "co",
+        "label": "TOUCH DOG",
+        "name": "Xích cho chó kèm vòng cổ cỡ nhỏ TOUCH DOG",
+        "price": "195.000 ₫",
+        "image": "../library/products/dog/DG_CO_sp9-yellow.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Bình uống nước cho chó mèo gài chuồng BOBO",
-        "price":"80.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp7-1.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Bình uống nước cho chó mèo gài chuồng BOBO",
+        "price": "80.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp7-1.jpg"
     },
     {
-        "category":"ds",
-        "label":"SAWYER PET",
-        "name":"Bát ăn cho chó mèo nhựa mềm SAWYER PET",
-        "price":"40.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp4-1.jpg"
+        "category": "ds",
+        "label": "SAWYER PET",
+        "name": "Bát ăn cho chó mèo nhựa mềm SAWYER PET",
+        "price": "40.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp4-1.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
-        "price":"35.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp2.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
+        "price": "35.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp2.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl",
-        "price":"135.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp5.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl",
+        "price": "135.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp5.jpg"
     },
     {
-        "category":"ds",
-        "label":"SAWYER PET",
-        "name":"Bát ăn cho chó mèo bằng cao su SAWYER PET Silicone Bowl",
-        "price":"60.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp1-1.jpg"
+        "category": "ds",
+        "label": "SAWYER PET",
+        "name": "Bát ăn cho chó mèo bằng cao su SAWYER PET Silicone Bowl",
+        "price": "60.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp1-1.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Vòi uống nước cho chó mèo gài chuồng BOBO",
-        "price":"80.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp10.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Vòi uống nước cho chó mèo gài chuồng BOBO",
+        "price": "80.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp10.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Bình uống nước đi dạo BOBO cho chó mèo",
-        "price":"90.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp8-1.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Bình uống nước đi dạo BOBO cho chó mèo",
+        "price": "90.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp8-1.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
-        "price":"155.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp3-yellow.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Bát ăn cho chó mèo bằng nhựa BOBO Plastic Bowl",
+        "price": "155.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp3-yellow.jpg"
     },
     {
-        "category":"ds",
-        "label":"BOBO",
-        "name":"Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl 3057",
-        "price":"175.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp6.jpg"
+        "category": "ds",
+        "label": "BOBO",
+        "name": "Bát ăn inox cho chó mèo BOBO Melamine Inox Bowl 3057",
+        "price": "175.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp6.jpg"
     },
     {
-        "category":"ds",
-        "label":"PAW",
-        "name":"Dụng cụ ăn uống cho chó mèo PAW tự động thông minh",
-        "price":"245.000 ₫",
-        "image":"../library/products/both/BOTH_DS_sp9-green.jpg"
+        "category": "ds",
+        "label": "PAW",
+        "name": "Dụng cụ ăn uống cho chó mèo PAW tự động thông minh",
+        "price": "245.000 ₫",
+        "image": "../library/products/both/BOTH_DS_sp9-green.jpg"
     },
     {
-        "category":"be",
-        "label":"BBN",
-        "name":"Sữa tắm cho chó trị ve rận BBN Killing Mites Shampoo",
-        "price":"150.000 ₫",
-        "image":"../library/products/dog/DG_BE_sp1.jpg"
+        "category": "be",
+        "label": "BBN",
+        "name": "Sữa tắm cho chó trị ve rận BBN Killing Mites Shampoo",
+        "price": "150.000 ₫",
+        "image": "../library/products/dog/DG_BE_sp1.jpg"
     },
     {
-        "category":"be",
-        "label":"JOYCE & DOLLS",
-        "name":"Sữa tắm cho chó khử mùi JOYCE & DOLLS 102 Deodorizing Formula",
-        "price":"230.000 ₫",
-        "image":"../library/products/dog/DG_BE_sp2.jpg"
+        "category": "be",
+        "label": "JOYCE & DOLLS",
+        "name": "Sữa tắm cho chó khử mùi JOYCE & DOLLS 102 Deodorizing Formula",
+        "price": "230.000 ₫",
+        "image": "../library/products/dog/DG_BE_sp2.jpg"
     },
     {
-        "category":"be",
-        "label":"PERFECT COAT",
-        "name":"Sữa tắm trị ve rận cho chó PERFECT COAT 8in1 Flea Tick",
-        "price":"225.000 đ",
-        "image":"../library/products/dog/DG_BE_sp11.jpg"
+        "category": "be",
+        "label": "PERFECT COAT",
+        "name": "Sữa tắm trị ve rận cho chó PERFECT COAT 8in1 Flea Tick",
+        "price": "225.000 đ",
+        "image": "../library/products/dog/DG_BE_sp11.jpg"
     },
     {
-        "category":"be",
-        "label":"JOYCE & DOLLS",
-        "name":"Sữa tắm khô cho chó mèo JOYCE & DOLLS Waterless Cleansing Foam",
-        "price":"180.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp6-1.jpg"
+        "category": "be",
+        "label": "JOYCE & DOLLS",
+        "name": "Sữa tắm khô cho chó mèo JOYCE & DOLLS Waterless Cleansing Foam",
+        "price": "180.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp6-1.jpg"
     },
     {
-        "category":"be",
-        "label":"BBN",
-        "name":"Sữa tắm chó mèo mùi hương khoai môn BBN Taro Silky",
-        "price":"180.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp5.jpg"
+        "category": "be",
+        "label": "BBN",
+        "name": "Sữa tắm chó mèo mùi hương khoai môn BBN Taro Silky",
+        "price": "180.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp5.jpg"
     },
     {
-        "category":"be",
-        "label":"JOYCE & DOLLS",
-        "name":"Sữa tắm cho mèo lông dài JOYCE & DOLLS 102 Long Hair",
-        "price":"225.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp4.jpg"
+        "category": "be",
+        "label": "JOYCE & DOLLS",
+        "name": "Sữa tắm cho mèo lông dài JOYCE & DOLLS 102 Long Hair",
+        "price": "225.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp4.jpg"
     },
     {
-        "category":"be",
-        "label":"DELE",
-        "name":"Lược chải lông chó mèo bấm nút DELE M006 Round Head",
-        "price":"140.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp3-1.jpg"
+        "category": "be",
+        "label": "DELE",
+        "name": "Lược chải lông chó mèo bấm nút DELE M006 Round Head",
+        "price": "140.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp3-1.jpg"
     },
     {
-        "category":"be",
-        "label":"CODOS",
-        "name":"Tông đơ cắt lông chó mèo chạy pin CODOS 3100",
-        "price":"540.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp7-1.jpg"
+        "category": "be",
+        "label": "CODOS",
+        "name": "Tông đơ cắt lông chó mèo chạy pin CODOS 3100",
+        "price": "540.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp7-1.jpg"
     },
     {
-        "category":"be",
-        "label":"PAW",
-        "name":"Bộ kéo cắt tỉa lông chó mèo chuyên dụng TOBY Pet Scissors",
-        "price":"1.500.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp1-1.jpg"
+        "category": "be",
+        "label": "PAW",
+        "name": "Bộ kéo cắt tỉa lông chó mèo chuyên dụng TOBY Pet Scissors",
+        "price": "1.500.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp1-1.jpg"
     },
     {
-        "category":"be",
-        "label":"PAW",
-        "name":"Kềm cắt bấm kèm dũa móng chó mèo PAW Nail Clipper & File",
-        "price":"110.000 ₫",
-        "image":"../library/products/both/BOTH_BE_sp2.jpg"
+        "category": "be",
+        "label": "PAW",
+        "name": "Kềm cắt bấm kèm dũa móng chó mèo PAW Nail Clipper & File",
+        "price": "110.000 ₫",
+        "image": "../library/products/both/BOTH_BE_sp2.jpg"
     },
     {
-        "category":"ca",
-        "label":"AUPET",
-        "name":"Chuồng chó mèo bằng sắt mái chóp AUPET Conical Dog Cage",
-        "price":"1.450.000 ₫",
-        "image":"../library/products/dog/DG_CA_sp1-green.jpg"
+        "category": "ca",
+        "label": "AUPET",
+        "name": "Chuồng chó mèo bằng sắt mái chóp AUPET Conical Dog Cage",
+        "price": "1.450.000 ₫",
+        "image": "../library/products/dog/DG_CA_sp1-green.jpg"
     },
     {
-        "category":"ca",
-        "label":"IRIS OHYAMA",
-        "name":"Chuồng chó mèo nan sắt sàn cố định IRIS PCSC-901",
-        "price":"1.850.000 ₫",
-        "image":"../library/products/dog/DG_CA_sp2-black.jpg"
+        "category": "ca",
+        "label": "IRIS OHYAMA",
+        "name": "Chuồng chó mèo nan sắt sàn cố định IRIS PCSC-901",
+        "price": "1.850.000 ₫",
+        "image": "../library/products/dog/DG_CA_sp2-black.jpg"
     },
     {
-        "category":"ca",
-        "label":"AUPET",
-        "name":"Lồng vận chuyển chó mèo AUPET BP27 Pet Kennel",
-        "price":"600.000 ₫",
-        "image":"../library/products/dog/DG_CA_sp3.jpg"
+        "category": "ca",
+        "label": "AUPET",
+        "name": "Lồng vận chuyển chó mèo AUPET BP27 Pet Kennel",
+        "price": "600.000 ₫",
+        "image": "../library/products/dog/DG_CA_sp3.jpg"
     },
     {
-        "category":"ca",
-        "label":"AUPET",
-        "name":"Lồng vận chuyển chó mèo cỡ đại AUPET Travel Box Kennel",
-        "price":"1.800.000 ₫",
-        "image":"../library/products/dog/DG_CA_sp4-1.jpg"
+        "category": "ca",
+        "label": "AUPET",
+        "name": "Lồng vận chuyển chó mèo cỡ đại AUPET Travel Box Kennel",
+        "price": "1.800.000 ₫",
+        "image": "../library/products/dog/DG_CA_sp4-1.jpg"
     },
     {
-        "category":"ca",
-        "label":"RICHELL",
-        "name":"Chuồng gỗ cho chó mèo 2 tầng RICHELL RC09",
-        "price":"4.690.000 ₫",
-        "image":"../library/products/dog/DG_CA_sp5.jpg"
+        "category": "ca",
+        "label": "RICHELL",
+        "name": "Chuồng gỗ cho chó mèo 2 tầng RICHELL RC09",
+        "price": "4.690.000 ₫",
+        "image": "../library/products/dog/DG_CA_sp5.jpg"
     },
     {
-        "category":"ca",
-        "label":"IRIS OHYAMA",
-        "name":"Chuồng chó mèo lắp ghép đa năng 2 ngăn IRIS PCS1400",
-        "price":"2.650.000 đ",
-        "image":"../library/products/dog/DG_CA_sp6-1.jpg"
+        "category": "ca",
+        "label": "IRIS OHYAMA",
+        "name": "Chuồng chó mèo lắp ghép đa năng 2 ngăn IRIS PCS1400",
+        "price": "2.650.000 đ",
+        "image": "../library/products/dog/DG_CA_sp6-1.jpg"
     },
     {
-        "category":"ca",
-        "label":"BOBBYPET",
-        "name":"Nệm cho chó mèo BOBBY PET DS14OB",
-        "price":"455.000 đ",
-        "image":"../library/products/dog/DG_CA_sp7-orange.jpg"
+        "category": "ca",
+        "label": "BOBBYPET",
+        "name": "Nệm cho chó mèo BOBBY PET DS14OB",
+        "price": "455.000 đ",
+        "image": "../library/products/dog/DG_CA_sp7-orange.jpg"
     },
     {
-        "category":"ca",
-        "label":"BOBBYPET",
-        "name":"Ổ đệm cho chó mèo hình lều BOBBY PET 16CT003",
-        "price":"495.000 đ",
-        "image":"../library/products/dog/DG_CA_sp8.jpg"
+        "category": "ca",
+        "label": "BOBBYPET",
+        "name": "Ổ đệm cho chó mèo hình lều BOBBY PET 16CT003",
+        "price": "495.000 đ",
+        "image": "../library/products/dog/DG_CA_sp8.jpg"
     },
     {
-        "category":"ca",
-        "label":"BOBBYPET",
-        "name":"Balo đựng chó mèo phi hành gia LOFFEE Outdoor Transparent",
-        "price":"535.000 đ",
-        "image":"../library/products/dog/DG_CA_sp9-pink.jpg"
+        "category": "ca",
+        "label": "BOBBYPET",
+        "name": "Balo đựng chó mèo phi hành gia LOFFEE Outdoor Transparent",
+        "price": "535.000 đ",
+        "image": "../library/products/dog/DG_CA_sp9-pink.jpg"
     },
     {
-        "category":"ca",
-        "label":"BOBBYPET",
-        "name":"Balo đựng chó mèo phi hành gia LOFFE Bubble Bag",
-        "price":"535.000 đ",
-        "image":"../library/products/dog/DG_CA_sp10-red.jpg"
+        "category": "ca",
+        "label": "BOBBYPET",
+        "name": "Balo đựng chó mèo phi hành gia LOFFE Bubble Bag",
+        "price": "535.000 đ",
+        "image": "../library/products/dog/DG_CA_sp10-red.jpg"
     },
     {
-        "category":"toy",
-        "label":"ELITE",
-        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình thú",
-        "price":"50.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp8-brown.jpg"
+        "category": "toy",
+        "label": "ELITE",
+        "name": "Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình thú",
+        "price": "50.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp8-brown.jpg"
     },
     {
-        "category":"toy",
-        "label":"PAW",
-        "name":"Đồ chơi cho chó kêu chút chít PAW hình bánh Hamburger",
-        "price":"50.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp9.jpg"
+        "category": "toy",
+        "label": "PAW",
+        "name": "Đồ chơi cho chó kêu chút chít PAW hình bánh Hamburger",
+        "price": "50.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp9.jpg"
     },
     {
-        "category":"toy",
-        "label":"ELITE",
-        "name":"Đồ chơi cho chó chút chít ELITE size L",
-        "price":"140.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp3-1.jpg"
+        "category": "toy",
+        "label": "ELITE",
+        "name": "Đồ chơi cho chó chút chít ELITE size L",
+        "price": "140.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp3-1.jpg"
     },
     {
-        "category":"toy",
-        "label":"BOBO",
-        "name":"Đĩa bay cho chó BOBO Pet Frisbee Thương hiệu BOBO",
-        "price":"110.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp1-1.jpg"
+        "category": "toy",
+        "label": "BOBO",
+        "name": "Đĩa bay cho chó BOBO Pet Frisbee Thương hiệu BOBO",
+        "price": "110.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp1-1.jpg"
     },
     {
-        "category":"toy",
-        "label":"PAW",
-        "name":"Đồ chơi cho chó gặm bằng cao su PAW Rubber Dog Toy Jingle Knobby Dumbbell",
-        "price":"95.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp4.jpg"
+        "category": "toy",
+        "label": "PAW",
+        "name": "Đồ chơi cho chó gặm bằng cao su PAW Rubber Dog Toy Jingle Knobby Dumbbell",
+        "price": "95.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp4.jpg"
     },
     {
-        "category":"toy",
-        "label":"IKEA",
-        "name":"Đồ chơi chó nhồi bông IKEA Gosig Golden",
-        "price":"545.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp10-1.jpg"
+        "category": "toy",
+        "label": "IKEA",
+        "name": "Đồ chơi chó nhồi bông IKEA Gosig Golden",
+        "price": "545.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp10-1.jpg"
     },
     {
-        "category":"toy",
-        "label":"ELITE",
-        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình động vật",
-        "price":"50.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp7-orange.jpg"
+        "category": "toy",
+        "label": "ELITE",
+        "name": "Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình động vật",
+        "price": "50.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp7-orange.jpg"
     },
     {
-        "category":"toy",
-        "label":"ELITE",
-        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con gà",
-        "price":"50.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp5.jpg"
+        "category": "toy",
+        "label": "ELITE",
+        "name": "Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con gà",
+        "price": "50.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp5.jpg"
     },
     {
-        "category":"toy",
-        "label":"PAW",
-        "name":"Đồ chơi cho chó bằng cao su PAW hình tròn in dấu bàn chân",
-        "price":"55.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp2.jpg"
+        "category": "toy",
+        "label": "PAW",
+        "name": "Đồ chơi cho chó bằng cao su PAW hình tròn in dấu bàn chân",
+        "price": "55.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp2.jpg"
     },
     {
-        "category":"toy",
-        "label":"ELITE",
-        "name":"Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con hươu",
-        "price":"50.000 đ",
-        "image":"../library/products/dog/DG_TOY&ACC_sp6-1.jpg"
+        "category": "toy",
+        "label": "ELITE",
+        "name": "Đồ chơi cho chó kêu chút chít bằng cao su ELITE hình con hươu",
+        "price": "50.000 đ",
+        "image": "../library/products/dog/DG_TOY&ACC_sp6-1.jpg"
     }
 ]

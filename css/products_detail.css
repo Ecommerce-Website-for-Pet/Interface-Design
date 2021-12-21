@@ -37,6 +37,19 @@ body {
     flex-direction: row;
 }
 
+.products_gallery-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.products_detail-img {
+    margin-left: 50px;
+}
+
+.products_detail-img img {
+    width: 400px;
+}
+
 .products_gallery-right {
     width: 450px;
     margin-left: 30px;
@@ -48,12 +61,13 @@ body {
 }
 
 .products_infor {
-    margin-left: 25px;
+    margin-left: 50px;
     width: 650px;
 }
 
 .weight-option {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -93,7 +107,7 @@ body {
 }
 
 .color-option button {
-    width: 100px;
+    width: 30px;
     height: 30px;
     text-align: center;
     padding: 5px 15px;
@@ -113,6 +127,11 @@ body {
 
 .color-option {
     display: flex;
+    flex-direction: column;
+}
+
+.btn_color {
+    display: flex;
     flex-direction: row;
 }
 
@@ -128,8 +147,9 @@ body {
 
 .btn_add-to-cart {
     padding: 15px;
-    background-color: #da1f24;
-    color: white;
+    background-color: wheat;
+    color: black;
+    border-radius: 50%;
     font-weight: 700;
     font-size: 18px;
     position: relative;
@@ -150,34 +170,7 @@ body {
 }
 
 .btn_add-to-cart:hover {
-    background-color: #8f0e12;
-}
-
-.btn_add-to-wishlist {
-    padding: 15px;
-    background-color: palevioletred;
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    box-sizing: border-box;
-    touch-action: manipulation;
-    user-select: none;
-    border: 0;
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 300px;
-}
-
-.btn_add-to-wishlist:hover {
-    background-color: rgb(250, 107, 131);
+    background-color: rgb(216, 112, 147, 0.5);
 }
 
 .quantity-dropdown {
@@ -209,8 +202,8 @@ body {
 
 
 /* .quantity_select {
-            border: gray solid 1px;
-        } */
+    width: 50%;
+} */
 
 .stock {
     font-weight: 700;
@@ -223,19 +216,34 @@ body {
     color: #b93505;
     font-size: 24px;
     font-weight: 700;
+    margin-left: 5px;
 }
 
 .products_price {
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.brand_name {
+    margin-left: 5px;
 }
 
 .button_select-weight {
     margin-top: 20px;
 }
 
+.button_select-color {
+    display: flex;
+    flex-direction: column;
+}
+
 .products_name {
     font-weight: 600;
     font-size: 30px;
+}
+
+.products_detail {
+    display: flex;
+    flex-direction: row;
 }
 
 .products_detail-tabs {
@@ -262,6 +270,7 @@ body {
 .products_description-container {
     margin: 10px 0;
     background-color: white;
+    border: rgb(216, 214, 214) solid 0.5px;
 }
 
 .products_description-text {
@@ -270,6 +279,31 @@ body {
 
 .products_description-text p {
     text-align: justify;
+}
+
+.description_right img {
+    width: 300px;
+    position: relative;
+    margin-top: -107px;
+    z-index: 2;
+}
+
+.description_right div {
+    width: 300px;
+    background-color: rgb(247, 195, 212);
+    height: 437px;
+    margin: -70px 10px 0 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.description_right p {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 30px;
+    z-index: 3;
 }
 
 .mySlides {
