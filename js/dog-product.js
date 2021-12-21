@@ -1,19 +1,10 @@
 var xmlhttp = new XMLHttpRequest();
-<<<<<<< HEAD
 var url = "../json/products.json";
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
         myFunction(myArr);
     }
-=======
-var url = "./json/products.json";
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    var myArr = JSON.parse(this.responseText);
-    myFunction(myArr);
-  }
->>>>>>> 51c4f218153102a1dfc28805e5f842dee972330d
 };
 // xmlhttp.onreadystatechange = function () {
 //   if (this.readyState == 4 && this.status == 200) {
@@ -25,106 +16,63 @@ xmlhttp.open("GET", url, true); //ra lệnh
 xmlhttp.send(); //thực hiên
 
 function myFunction(arr) {
-<<<<<<< HEAD
     var div = "";
     var i;
     var href = window.location.href;
     var link = new Array();
-    link = href.split('/');
-    var name = link[link.length - 1]
-        // alert(ten);
+    link = href.split("/");
+    var name = link[link.length - 1];
     if (name == "Dog-Product.html") {
         for (i = 0; i < arr.length; i++) {
-            div +=
-                // '<div class="products"><div class="product-item"><div class="product-top"><img src="'+ arr[i].image + ' "alt=""><button type = "button" class = "add-to-cart-btn"><i class = "fas fa-shopping-cart"></i>Thêm vào giỏ</button><button type = "button" class = "view-product-detail-btn"><i class = "fas fa-shopping-cart"></i>Xem chi tiết</button></div><div class="product-info"><div class="product-label"> '+ arr[i].label +'</div><br/><div class="product-name">'+ arr[i].name +'</div><br/><div class="product-price"> '+ arr[i].price +'</div></div></div></div></div>'
-                '<div class="products" onclick="gotoChiTiet(' + arr[i].productid + ')"><div class="product-item"><div class="product-top"><img src="' +
-                arr[i].image +
-                ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
-                arr[i].label +
-                '</div><br/><div class="product-name">' +
-                arr[i].name +
-                '</div><br/><div class="product-price"> ' +
-                arr[i].price +
-                "</div></div></div></div></div>";
+            if (arr[i].category.charAt(0) == 'd') {
+                var d = '';
+                var open_del = '';
+                var close_del = '';
+                if (arr[i].discount != "") {
+                    d = 'đ';
+                    open_del = '<del>';
+                    close_del = '</del>';
+                }
+                div +=
+                    '<div class="products"><div class="product-item"><div class="product-top"><img src="' +
+                    arr[i].image[0] +
+                    ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
+                    arr[i].label +
+                    '</div><br/><div class="product-name">' +
+                    arr[i].name +
+                    '</div><br/><div class="product-price">' + open_del +
+                    arr[i].price[0] +
+                    " đ" + close_del + "</div><div class='product-discount' >" + arr[i].discount + ' ' + d + "</div></div></div></div></div>";
+            }
+
         }
         document.getElementById("product").innerHTML = div;
         return 0;
     }
     for (i = 0; i < arr.length; i++) {
         if (arr[i].category == category) {
+            var d = '';
+            var open_del = '';
+            var close_del = '';
+            if (arr[i].discount != "") {
+                d = 'đ';
+                open_del = '<del>';
+                close_del = '</del>';
+            }
             div +=
-                // '<div class="products"><div class="product-item"><div class="product-top"><img src="'+ arr[i].image + ' "alt=""><button type = "button" class = "add-to-cart-btn"><i class = "fas fa-shopping-cart"></i>Thêm vào giỏ</button><button type = "button" class = "view-product-detail-btn"><i class = "fas fa-shopping-cart"></i>Xem chi tiết</button></div><div class="product-info"><div class="product-label"> '+ arr[i].label +'</div><br/><div class="product-name">'+ arr[i].name +'</div><br/><div class="product-price"> '+ arr[i].price +'</div></div></div></div></div>'
                 '<div class="products"><div class="product-item"><div class="product-top"><img src="' +
-                arr[i].image +
-                ' "alt=""><button type = "button" class = "add-to-cart-btn">Thêm vào giỏ</button><button type = "button" onclick="gotoChiTiet(' + arr[i].productid + ')" class = "view-product-detail-btn">Xem chi tiết</button></div><div class="product-info"><div class="product-label"> ' +
+                arr[i].image[0] +
+                ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
                 arr[i].label +
                 '</div><br/><div class="product-name">' +
                 arr[i].name +
-                '</div><br/><div class="product-price"> ' +
-                arr[i].price +
-                "</div></div></div></div></div>";
+                '</div><br/><div class="product-price">' + open_del +
+                arr[i].price[0] +
+                " đ" + close_del + "</div><div class='product-discount' >" + arr[i].discount + d + "</div></div></div></div></div>";
         }
+
         document.getElementById("product").innerHTML = div;
     }
-=======
-  var div = "";
-  var i;
-  var href = window.location.href;
-  var link = new Array();
-  link = href.split("/");
-  var name = link[link.length - 1];
-  if (name == "Dog-Product.html") {
-    for (i = 0; i < arr.length; i++) {
-      if(arr[i].category.charAt(0) == 'd'){
-        var d = '';
-        var open_del = '';
-        var close_del = '';
-        if(arr[i].discount!=""){
-          d='đ';
-          open_del = '<del>';
-          close_del = '</del>';
-        }
-        div +=
-        '<div class="products"><div class="product-item"><div class="product-top"><img src="' +
-        arr[i].image[0] +
-        ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
-        arr[i].label +
-        '</div><br/><div class="product-name">' +
-        arr[i].name +
-        '</div><br/><div class="product-price">' + open_del +
-        arr[i].price[0] +
-        " đ" + close_del + "</div><div class='product-discount' >"+ arr[i].discount + ' ' + d +"</div></div></div></div></div>";
-      }
-      
-    }
-    document.getElementById("product").innerHTML = div;
-    return 0;
-  }
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i].category == category) {
-      var d = '';
-        var open_del = '';
-        var close_del = '';
-        if(arr[i].discount!=""){
-          d='đ';
-          open_del = '<del>';
-          close_del = '</del>';
-        }
-        div +=
-        '<div class="products"><div class="product-item"><div class="product-top"><img src="' +
-        arr[i].image[0] +
-        ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
-        arr[i].label +
-        '</div><br/><div class="product-name">' +
-        arr[i].name +
-        '</div><br/><div class="product-price">' + open_del +
-        arr[i].price[0] +
-        " đ" + close_del + "</div><div class='product-discount' >"+ arr[i].discount + d +"</div></div></div></div></div>";
-    }
-
-    document.getElementById("product").innerHTML = div;
-  }
->>>>>>> 51c4f218153102a1dfc28805e5f842dee972330d
 }
 
 //Function Đi đến chi tiết
