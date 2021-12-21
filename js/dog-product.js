@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "../json/products.json";
+var url = "./json/products.json";
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
@@ -34,7 +34,7 @@ function myFunction(arr) {
                     close_del = '</del>';
                 }
                 div +=
-                    '<div class="products"><div class="product-item"><div class="product-top"><img src="' +
+                    '<div class="products"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
                     arr[i].image[0] +
                     ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
                     arr[i].label +
@@ -60,7 +60,7 @@ function myFunction(arr) {
                 close_del = '</del>';
             }
             div +=
-                '<div class="products"><div class="product-item"><div class="product-top"><img src="' +
+                '<div class="products" ><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
                 arr[i].image[0] +
                 ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
                 arr[i].label +

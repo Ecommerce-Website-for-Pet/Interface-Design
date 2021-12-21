@@ -35,12 +35,20 @@ function render_products_gallery(arr) {
 
             div += '</div></div></div><div class="products_infor"><div class="products_infor-summary" id="products_infor-summary"><h1 class="products_name">' + arr[i].name + '</h1><span class="sub-title-products" style="color: #da1f24;">Thương hiệu</span><a href="" class="brand_name">' + arr[i].label + '</a></div>';
 
-            div += '<div class="products_buybox-wrapper"><div class="products_buybox-options"><div class="products_price"><div><label>Giá bán:</label><span class="price-amount"><span class="price">' + arr[i].price[0] + '</span><span style="color: #b93505; font-weight: 700;">đ</span></span></div></div><div class="availability"><div class="stock">Còn hàng</div></div><div class="button_select-weight"><div class="weight-option">'
+            div += '<div class="products_buybox-wrapper"><div class="products_buybox-options"><div class="products_price">'
 
-            if (arr[i].weights != "") {
+            if (arr[i].discount != "") {
+                div += '<div class"price-original"><label>Giá bán:</label><span class="price-amount"><del><span class="price">' + arr[i].price[0] + '</span><span style="color: #b93505; font-weight: 700;">đ</span></del></div><div class="price-discount"><label>Giá khuyến mãi:</label><span class="price-amount"><span class="price">' + arr[i].discount + '</span><span style="color: #b93505; font-weight: 700;"> đ</span></span></div>'
+            } else {
+                div += '<div class"price-original"><label>Giá bán:</label><span class="price-amount"><span class="price">' + arr[i].price[0] + '</span><span style="color: #b93505; font-weight: 700;">đ</span></span></div>'
+            }
+
+            div += '</div><div class="availability"><div class="stock">Còn hàng</div></div><div class="button_select-weight"><div class="weight-option">'
+
+            if (arr[i].weight != "") {
                 div += '<div class="weight-label"><label>Chọn trọng lượng (Select weight)</label></div>'
-                for (j = 0; j < arr[i].weights.length; j++) {
-                    div += '<button>' + arr[i].weights[j] + ' - ' + arr[i].price[j] + ' đ</button>';
+                for (j = 0; j < arr[i].weight.length; j++) {
+                    div += '<button>' + arr[i].weight[j] + ' - ' + arr[i].price[j] + ' đ</button>';
                 }
             }
 
@@ -63,7 +71,16 @@ function render_products_gallery(arr) {
 
             // alert(arr[i].colors[0])
 
-            div += '</div></div></div></div><div class="products_buybox"><form action="" class="cart"><div class="quantity_select" style="float: left;"><div class="quantity-dropdown"><label for="quantity">Số lượng</label><select name="quantity" id="quantity" title="Chọn số lượng" class="qty_select"><option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option></select><button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button></div></div></form></div></div></div></div></div><div class="products_detail"><div class="products_detail-description"><ul class="products_detail-tabs"><li class="tab-active"><p>Mô tả</p></li></ul><div class="products_description-container"><div class="products_description"><div class="products_description-text"><h3 class="products_description-title">Mô tả</h3><p id="description">' + arr[i].description + '</p><br><h3 class="products_description-title">Mục đích</h3><p>' + arr[i].purpose + '</p><br><h3 class="products_description-title">Hướng dẫn sử dụng</h3><p>' + arr[i].instruct + '</p></div></div></div></div> <div class="description_right"><img src="./library/cattt.gif" alt=""><div></div><p>Products you can trust</p></div></div></div></div>'
+            div += '</div></div></div><div class="products_buybox"><form action="" class="cart"><div class="quantity_select" style="float: left;"><div class="quantity-dropdown"><label for="quantity">Số lượng</label><select name="quantity" id="quantity" title="Chọn số lượng" class="qty_select"><option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option></select><button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button></div></div></form></div></div></div></div></div></div><div class="products_detail"><div class="products_detail-description"><ul class="products_detail-tabs"><li class="tab-active"><p>Mô tả</p></li></ul><div class="products_description-container"><div class="products_description"><div class="products_description-text"><h3 class="products_description-title">Mô tả</h3><p id="description">' + arr[i].description + '</p>';
+
+            if (arr[i].benefit != "") {
+                div += '<br><h3 class="products_description-title">Lợi ích</h3><p>' + arr[i].benefit + '</p>'
+            }
+            if (arr[i].instruction != "") {
+                div += '<br><h3 class="products_description-title">Hướng dẫn sử dụng</h3><p>' + arr[i].instruction + '</p>'
+            }
+
+            div += '</div></div></div></div> <div class="description_right"><img src="./library/cattt.gif" alt=""><div></div><p>Products you can trust</p></div></div></div></div>'
             document.getElementById("container").innerHTML = div;
             break;
         }
