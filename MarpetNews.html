@@ -46,19 +46,36 @@
             margin: 0 20px 20px 20px;
         }
         
-        .top-news h2 {
-            margin-top: 5px;
-            margin-bottom: 10px;
-            font-size: 36px;
-        }
-        
         div {
             display: block;
         }
         
         .title {
             color: palevioletred;
-            width: fit-content;
+            text-align: center;
+        }
+        
+        .title-box {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        
+        .title-box h2 {
+            letter-spacing: 5px;
+            color: palevioletred;
+            margin-right: -10px;
+            font-weight: 800;
+        }
+        
+        .title-box hr {
+            width: 200px;
+            height: 2px;
+            background-color: palevioletred;
+            border: none;
+            margin: 15px 10px;
         }
         
         .bigImg {
@@ -71,7 +88,7 @@
         
         .news-box {
             display: flex;
-            margin-bottom: 15px;
+            margin: 0 30px 25px 30px;
         }
         
         .bigImg span {
@@ -95,7 +112,7 @@
             float: right;
             width: 40%;
             height: 100%;
-            margin-left: 15px;
+            margin-left: 30px;
         }
         
         .news-box ul {
@@ -112,6 +129,10 @@
         .ul-box {
             height: 100%;
             margin: 0 20px;
+        }
+        
+        .ul-box li:hover {
+            box-shadow: 0px 0px 25px 2px rgb(173, 173, 173);
         }
         
         .ul-box a {
@@ -155,9 +176,22 @@
         
         .subnews {
             width: 100%;
-            margin: 0 10px;
+            margin: 0 30px;
             display: flex;
             flex-direction: column;
+        }
+        
+        .subnews:hover {
+            box-shadow: 0px 0px 25px 2px rgb(173, 173, 173);
+        }
+        
+        .subnews span {
+            margin: 20px 0;
+        }
+        
+        .subnews span:hover {
+            text-decoration: palevioletred underline;
+            color: palevioletred;
         }
         
         .subnews img {
@@ -256,12 +290,6 @@
                 text-align: left;
             }
             .ul-box {
-                margin-left: 0px;
-            }
-            .top-news h2 {
-                font-size: 28px;
-            }
-            .ul-box {
                 height: 100%;
                 margin: 0 20px;
                 width: 460px;
@@ -289,7 +317,9 @@
     <div class="news_container">
         <div class="top-news">
             <div class="title-box">
+                <hr>
                 <h2 class="title">TIN NỔI BẬT</h2>
+                <hr>
             </div>
             <div class="news-box">
                 <div class="bigImg">
@@ -325,9 +355,13 @@
                 </div>
             </div>
         </div>
-        <div style="height: 3px; background-color: palevioletred;
-        margin: 50px 200px ;"></div>
+        <br>
         <div class="bottom-news" style="margin-top: 20px;">
+            <div class="title-box">
+                <hr>
+                <h2 class="title">TIN LIÊN QUAN</h2>
+                <hr>
+            </div>
             <div class="more-news">
                 <div class="subnews" ng-repeat="new in news">
                     <a href="subnew.html?subNewId={{new.newid}}">
