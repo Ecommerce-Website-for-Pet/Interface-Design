@@ -699,3 +699,113 @@ img {
     background-position-x: -2.8rem;
   }
   
+  /*  */
+
+  .myColor:focus{
+    border:5px solid black;
+}
+
+.color-choose div {
+    display: inline-block;
+  }
+  
+  .color-choose input[type="radio"] {
+    display: none;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  }
+  
+  /* .color-choose input[type="radio"]#red + label span {
+    background-color: #C91524;
+  }
+  .color-choose input[type="radio"]#blue + label span {
+    background-color: #314780;
+  }
+  .color-choose input[type="radio"]#black + label span {
+    background-color: #323232;
+  } */
+  
+  .color-choose input[type="radio"]:checked + label span {
+    background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/cp0/264095575_619518032639422_7688074280601778347_n.png?_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_ohc=wMaHPXVm6BcAX9bD7EZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKaKZAQnwYlFteQaqgvz_bgcDTS69TIkKhVoAi5wwcpyA&oe=61E7F8D9");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    /* border:3px solid #db7093; */
+    /* border:3px solid black; */
+  }
+
+/*  */
+
+.weight-choose div {
+    display: inline-block;
+    /* display: block; */
+  }
+  
+  .weight-choose input[type="radio"] {
+    display: none;
+  }
+  
+  .weight-choose input[type="radio"] + label span {
+    /* display: inline-block; */
+    /* width: 40px; */
+    /* height: 40px; */
+    /* margin: -1px 4px 0 0; */
+    /* vertical-align: middle; */
+    /* cursor: pointer; */
+
+    /* border-radius: 50%; */
+
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    padding: 5px 15px;
+    touch-action: manipulation;
+    background-color: white;
+    color: gray;
+    border: 1px solid #ddd;
+    box-shadow: 0 0.1rem 0 0 #ddd;
+    ;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 8px 4px 0;
+    position: relative;
+    user-select: none;
+  }
+  
+  .weight-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  }
+  
+  /* .weight-choose input[type="radio"]#red + label span {
+    background-color: #C91524;
+  }
+  .weight-choose input[type="radio"]#blue + label span {
+    background-color: #314780;
+  }
+  .weight-choose input[type="radio"]#black + label span {
+    background-color: #323232;
+  } */
+  
+  .weight-choose input[type="radio"]:checked + label span {
+    /* background-image: url(../library/check-icn.svg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    border:3px solid #db7093;
+  }
