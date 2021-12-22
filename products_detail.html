@@ -62,9 +62,8 @@
 
                 <div class="products_infor">
                     <div class="products_infor-summary" id="products_infor-summary">
-                        <h1 class="products_name"></h1>
-                        <span class="sub-title-products" style="color: #da1f24;">Thương hiệu</span>
                         <a href="" class="brand_name"></a>
+                        <h1 class="products_name"></h1>
                     </div>
 
                     <!-- đây -->
@@ -75,8 +74,8 @@
                                 <div class="price-original">
                                     <label>Giá bán:</label>
                                     <span class="price-amount">
-                                         <span class="price"></span>
-                                    <span style="color: #b93505; font-weight: 700;"></span>
+                                         <span class="price" style="color: #818181"></span>
+                                    <span style="color: #818181; font-weight: 700;"></span>
                                     </span>
                                 </div>
                                 <div class="price-discount">
@@ -90,11 +89,11 @@
 
 
                             <div class="availability">
-                                <div class="stock">Còn hàng</div>
+                                <div class="stock">Tình trạng: Còn hàng</div>
                             </div>
                             <div class="button_select-weight">
                                 <div class="weight-label">
-                                    <label>Chọn trọng lượng (Select weight)</label>
+                                    <label>Chọn trọng lượng</label>
                                 </div>
                                 <div class="weight-option">
 
@@ -106,11 +105,11 @@
                                 </div>
                                 <div class="button_select-color">
                                     <div class="color-label">
-                                        <label>Chọn màu sắc (Select color)</label>
+                                        <label>Chọn màu sắc</label>
                                     </div>
                                     <div class="color-option">
                                         <div class="btn_color">
-                                            <button></button>
+                                            <button class="btn_color-select"></button>
                                         </div>
                                     </div>
 
@@ -121,28 +120,28 @@
                                     <div class="quantity_select" style="float: left;">
                                         <div class="quantity-dropdown">
                                             <label for="quantity">Số lượng</label>
-                                            <select name="quantity" id="quantity" title="Chọn số lượng" class="qty_select">
-        <option value="1" selected="selected">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-    </select>
+                                            <fieldset data-quantity>
+                                                <legend>Change quantity</legend>
+                                              </fieldset>
                                             <button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button>
-                                            <button type="submit" name="add-to-wishlist" class="btn_add-to-wishlist">Sản phẩm yêu thích</button>
                                         </div>
                                     </div>
                                 </form>
+                                <script type="module">
+                                    import QuantityInput from './js/quantity.js';
+
+                                    // Set up quantity forms
+                                    (function(){
+                                    let quantities = document.querySelectorAll('[data-quantity]');
+
+                                    if (quantities instanceof Node) quantities = [quantities];
+                                    if (quantities instanceof NodeList) quantities = [].slice.call(quantities);
+                                    if (quantities instanceof Array) {
+                                        quantities.forEach(div => (div.quantity = new QuantityInput(div, 'Down', 'Up')));
+                                    }
+                                    })();
+
+                                </script>
                             </div>
 
                         </div>
@@ -153,7 +152,7 @@
                 <div class="products_detail-description">
                     <ul class="products_detail-tabs">
                         <li class="tab-active">
-                            <p>Mô tả</p>
+                            <p>Thông tin chi tiết sản phẩm</p>
                         </li>
                     </ul>
                     <div class="products_description-container">
@@ -175,7 +174,7 @@
                 <div class="description_right">
                     <img src="./library/cattt.gif" alt="">
                     <div>
-                        <p>Products you can trust</p>
+                        <p>MarPet <br/> tự tin làm <br/> bạn hài lòng</p>
                     </div>
                 </div>
             </div>
