@@ -750,8 +750,8 @@ img {
 /*  */
 
 .weight-choose div {
-    /* display: inline-block; */
-    display: block;
+    display: inline-block;
+    /* display: block; */
   }
   
   .weight-choose input[type="radio"] {

@@ -58,7 +58,7 @@ function render_products_gallery(arr) {
             if (arr[i].colors != "") {
                 div += '<div style="margin-bottom:8px" class="weight-label"><label>Chọn màu sắc (Select color)</label></div><div class="color-choose">';
 
-                div+='<div><input data-image="' + arr[i].colors[0] + '" type="radio" id="' + arr[i].colors[0] + '" name="color" value="' + arr[i].colors[0] + '" checked><label for="' + arr[i].colors[0] + '"><span></span></label></div>';
+                div+='<div><input data-image="' + arr[i].colors[0] + '" type="radio" id="' + arr[i].colors[0] + '" name="color" value="' + arr[i].colors[0] + '" checked><label for="' + arr[i].colors[0] + '"><span style="background-color: ' + arr[i].colors[0] + '"></span></label></div>';
                 
                 for (j = 1; j < arr[i].colors.length; j++) {
                     // div += '<input type="radio" name="chung" class="myColor" style="background-color: ' + arr[i].colors[j] + '"></input></div>';
@@ -77,7 +77,7 @@ function render_products_gallery(arr) {
 
             // alert(arr[i].colors[0])
 
-            div += '</div></div></div><div class="products_buybox"><form action="" class="cart"><div class="quantity_select" style="float: left;"><div class="quantity-dropdown"><label for="quantity">Số lượng</label> <fieldset data-quantity><legend>Change quantity</legend></fieldset><button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button></div></div></form></div></div></div></div></div><div class="products_detail"><div class="products_detail-description"><div class="products_description-container"><ul class="products_detail-tabs"><li class="tab-active"><p>Thông tin chi tiết sản phẩm</p></li></ul><div class="products_description"><div class="products_description-text"><h3 class="products_description-title">Mô tả</h3><p id="description">' + arr[i].description + '</p>';
+            div += '</div></div></div><div class="products_buybox"><form action="" class="cart"><div class="quantity_select" style="float: left;"><div class="quantity-dropdown"><label for="quantity">Số lượng</label> <fieldset data-quantity><legend>Change quantity</legend></fieldset><a type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</a></div></div></form></div></div></div></div></div><div class="products_detail"><div class="products_detail-description"><div class="products_description-container"><ul class="products_detail-tabs"><li class="tab-active"><p>Thông tin chi tiết sản phẩm</p></li></ul><div class="products_description"><div class="products_description-text"><h3 class="products_description-title">Mô tả</h3><p id="description">' + arr[i].description + '</p>';
 
             if (arr[i].benefit != "") {
                 div += '<br><h3 class="products_description-title">Lợi ích</h3><p>' + arr[i].benefit + '</p>'
