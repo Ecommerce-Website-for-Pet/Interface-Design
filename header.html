@@ -113,7 +113,9 @@
                     </div>
                 </div>
                 <a><input class="typeForSeach " type="text " placeholder="Nhập để tìm kiếm "><i class="fa fa-search "></i>
+                   
                 </a>
+                
                 <a href="giohang.html" style="margin-left:30px; background-color:#db7093; border:none" class="menu-btn" id="cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     <!-- <span id = "cart-count-info" style="background-color:wheat;top:7px;right:439px; color:black">0</span> -->
@@ -135,7 +137,22 @@
                     <a href="Home.html"><img class="logo-img" src="./library/Logo.png" alt=""></a>
                 </div>
                 <div class="others">
-                    <li><input type="text" placeholder="Nhập để tìm kiếm"><a href=""><i class="fa fa-search"></i></a></li>
+                    <li><input onkeyup="searchFunc()" id="menu__search" type="text" placeholder="Nhập để tìm kiếm"><i class="fa fa-search" onclick="gotoSearchDetail()"></i></li>
+                    <ul id="search__list">
+                        <li class="menu__item">
+                            <img src="./library/products/dog/DG_CA_sp1-red.jpg" width="150px" alt="">
+                            <span>
+                                <span>mot mot mot mot</span>
+                                <br>
+                                <span>1034Đ</span>
+                            </span>
+                        </li>
+                       
+                        
+                    </ul>
+                    
+                    <script src="./js/searchHeader.js"></script>
+
                     <li class="countProductsInCart1">
                         <a href="giohang.html" style="margin-left:30px; background-color:white; border:none" class="btn-card menu-btn" id="cart-btn">
                             <i class="fas fa-shopping-cart"></i>
