@@ -39,7 +39,7 @@ function myFunction(arr) {
                     ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
                     arr[i].label +
                     '</div><br/><div class="product-name">' +
-                    arr[i].name +
+                    arr[i].name +   
                     '</div><br/><div class="product-price">' + open_del +
                     arr[i].price[0] +
                     " đ" + close_del + "</div><div class='product-discount' >" + arr[i].discount + ' ' + d + "</div></div></div></div></div>";
