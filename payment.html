@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarPet</title>
+    <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+        }
+        .left {
+            width: 39%;
+            border: 2px solid wheat;
+            height: 450px;
+        }
+        .right {
+            width: 59%;
+        }
+        .left h2, .right h2 {
+            text-align: center;
+        }
+        .left h2 {
+            background-color: wheat;
+        }
+        .right h2 {
+            border-bottom: 1.5px solid palevioletred;
+            color: palevioletred;
+        }
+        .note {
+            font-size: 11px;
+            margin-left: 21px;
+            font-style: italic;
+        }
+        .form_container {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+        .right-col1 {
+            width: 50%;
+            /* margin-right: 20px; */
+        }
+        .form_row, .note {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .form_row label {
+            font-weight: bold;
+        }
+        .form_row input, .form_row textarea {
+            border-color: #cecece;
+            border-radius: 0px;
+            border-width: 1px;
+            border-style: solid;
+        }
+        .form_row input {
+            height: 20px;
+        }
+        #paycod, #paybanking {
+            font-weight: normal;
+            font-size: 13px;
+        }
+        ::-webkit-input-placeholder { 
+            font-size: 13px;
+            font-style: italic;
+        }
+        input[type=submit] {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: wheat;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .cart {
+            font-size: 13px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .cart ::-webkit-scrollbar-thumb {
+            background: wheat !important; 
+        }
+        .cart_row {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 10px;
+        }
+        .cart_row img {
+            width: 80px;
+        }
+        .cart_row-name {
+            display: flex;
+            flex-direction: column;
+        }
+        .cart_row-name {
+            width: 55%;
+        }
+        .quantity {
+            line-height: 80px;
+        }
+        .modifier {
+            color: #aaaaaa;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .price {
+            font-weight: bold;
+            line-height: 80px;
+        }
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            font-size: 14px;
+        }
+        .detail-col {
+            display: flex;
+            flex-direction: column;
+        }
+        .detail-col span {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- chèn html header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- phần nội dung -->
+    <div class="content">
+        <div class="left">
+            <h2>GIỎ HÀNG</h2>
+            <div class="cart">
+                <div class="cart_row">
+                    <span class="quantity">1 x</span>
+                    <img src="https://cdn11.bigcommerce.com/s-iakwzr7rs7/product_images/attribute_rule_images/14225_thumb_1580246010.jpg" alt="">
+                    <div class="cart_row-name">
+                        <span class="product">Smart Litter Odor Control Unscented Clumping Cat Litter</span>
+                        <span class="modifier">Size 15 lb</span>
+                    </div>
+                    <span class="price">20.000 VND</span>
+                </div>
+                <div class="cart_row">
+                    <span class="quantity">1 x</span>
+                    <img src="https://cdn11.bigcommerce.com/s-iakwzr7rs7/product_images/attribute_rule_images/14225_thumb_1580246010.jpg" alt="">
+                    <div class="cart_row-name">
+                        <span class="product">Smart Litter Odor Control Unscented Clumping Cat Litter</span>
+                        <span class="modifier">Size 15 lb</span>
+                    </div>
+                    <span class="price">20.000 VND</span>
+                </div>
+                <div class="cart_row">
+                    <span class="quantity">1 x</span>
+                    <img src="https://cdn11.bigcommerce.com/s-iakwzr7rs7/product_images/attribute_rule_images/14225_thumb_1580246010.jpg" alt="">
+                    <div class="cart_row-name">
+                        <span class="product">Smart Litter Odor Control Unscented Clumping Cat Litter</span>
+                        <span class="modifier">Size 15 lb</span>
+                    </div>
+                    <span class="price">20.000 VND</span>
+                </div>
+                <div class="cart_row">
+                    <span class="quantity">1 x</span>
+                    <img src="https://cdn11.bigcommerce.com/s-iakwzr7rs7/product_images/attribute_rule_images/14225_thumb_1580246010.jpg" alt="">
+                    <div class="cart_row-name">
+                        <span class="product">Smart Litter Odor Control Unscented Clumping Cat Litter</span>
+                        <span class="modifier">Size 15 lb</span>
+                    </div>
+                    <span class="price">20.000 VND</span>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="detail-col">
+                    <span>Tổng cộng:</span>
+                    <span>Phí vận chuyển:</span>
+                    <span>Thành tiền:</span>
+                </div>
+                <div class="detail-col">
+                    <span>80.000 VND</span>
+                    <span>20.000 VND</span>
+                    <span>100.000 VND</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h2>THÔNG TIN ĐẶT HÀNG</h2>
+            <form action="">
+                <div class="form_container">
+                    <div class="right-col1">
+                        <input type="checkbox" name="" id="">&emsp13; Nhập địa chỉ đã đăng ký<br/>
+                        <span class="note">Áp dụng với khách hàng thành viên</span>
+                        <div class="form_row">
+                            <label for="name">1. Họ tên</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form_row">
+                            <label for="email">2. Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="form_row">
+                            <label for="phone">3. Số điện thoại</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="form_row">
+                            <label for="add">4. Địa chỉ</label>
+                            <textarea name="add" id="add" cols="30" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="right-col2">
+                        <div class="form_row">
+                            <label for="payment">Hình thức thanh toán</label>
+                            <div>
+                                <input type="radio" name="payment" id="paymentcod">
+                                <label for="payment" id="paycod">Thanh toán khi nhận hàng</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="paymentbank">
+                                <label for="payment" id="paybanking">Chuyển khoản</label>
+                            </div>
+                        </div>
+                        <div class="form_row"><textarea name="note" id="form-note" cols="30" rows="2" placeholder="Ghi chú..."></textarea></div>
+                    </div>
+                </div>
+                <input type="submit" value="HOÀN TẤT ĐẶT HÀNG">
+            </form>
+        </div>
+    </div>
+
+    <!-- chèn html footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- function để chèn html -->
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- js mở chatbox và quay về đầu trang -->
+    <script src="./js/chatBox&returnTop-btn.js"></script>
+    <!-- js khi kéo xuống thì hiện 1 thanh nav cố định ở đầu trang web  -->
+    <script src="./js/flat-menu.js"></script>
+</body>
+
+</html>
