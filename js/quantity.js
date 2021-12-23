@@ -10,6 +10,7 @@ export default class QuantityInput {
     this.input.value = 1;
     this.input.type = 'number';
     this.input.name = 'quantity';
+    this.input.id = 'soluongsanpham';
     this.input.pattern = '[0-9]+';
 
     // Get text for buttons
