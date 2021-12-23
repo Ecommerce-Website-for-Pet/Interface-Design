@@ -17,7 +17,17 @@
 
 <body>
     <!-- chèn html header -->
-    <div w3-include-html="header.html"></div>
+    <div id="header"></div>
+    <script>
+        load("header.html");
+
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("header").innerHTML = req.responseText;
+        }
+    </script>
 
     <!-- phần nội dung -->
     <div class="content">
@@ -29,7 +39,7 @@
                     <h2>Siêu chính hãng</h2>
                     <p>100% thức ăn nhập khẩu</p>
                     <p> Sản phẩm chất lượng cao với thương hiệu đa dạng</p>
-                    <a href="#"><button class="btn_in_homepage" type="button">Ghé ngay</button></a>
+                    <a href="Dog-Product.html?category=d_fo"><button class="btn_in_homepage" type="button">Ghé ngay</button></a>
                 </div>
             </div>
 
@@ -53,7 +63,7 @@
                 <hr>
             </div>
             <div class="highlight-cate-container">
-                <a href="" class="highlight-cate">
+                <a href="Cat-Product.html?category=c_fo" class="highlight-cate">
                     <img class="prize" src="./library/prize-2.png" alt="">
                     <div class="img-container">
                         <img src="./library/hightlight-cate-2-removebg-preview.png" alt="">
@@ -69,7 +79,7 @@
                     <div class="highlight-cate-title">Thức ăn cho chó</div>
                     <div class="highlight-cate-act">Ghé thăm</div>
                 </a>
-                <a href="" class="highlight-cate">
+                <a href="Cat-Product.html?category=c_toy" class="highlight-cate">
                     <img class="prize" src="./library/prize-3.png" alt="">
                     <div class="img-container">
                         <img src="./library/hightlight-cate-3-removebg-preview.png" alt="">
@@ -190,35 +200,35 @@
                             <h2>&#8226; Blog</h2>
                             <p><i> "Chuyên mục mở rộng kiến thức"</i></p>
                         </div>
-                        <a href=""><button class="btn_in_blog btn_in_homepage">Tìm hiểu thêm</button></a>
+                        <a href="MarpetNews.html"><button class="btn_in_blog btn_in_homepage">Tìm hiểu thêm</button></a>
                     </div>
                     <div class="homepage-blog--bottom">
                         <div class=" blog-item">
                             <div class="shadow">
-                                <a href="#"><img src="./library/bl1.jpg" alt=""></a>
+                                <a href="news1.html"><img src="./library/bl1.jpg" alt=""></a>
                                 <div class="blog-item-title">
                                     <h4>
-                                        <a href="#">Cách tự chữa viêm da cho chó mèo tại nhà</a>
+                                        <a href="news1.html">Cách tự chữa viêm da cho chó mèo tại nhà</a>
                                     </h4>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="shadow">
-                                <a href="#"><img src="./library/cun-mang-thai.png" alt=""></a>
+                                <a href="news2.html"><img src="./library/cun-mang-thai.png" alt=""></a>
                                 <div class="blog-item-title">
                                     <h4>
-                                        <a href="#">Chế độ dinh dưỡng cho cún mang thai</a>
+                                        <a href="news2.html">Chế độ dinh dưỡng cho cún mang thai</a>
                                     </h4>
                                 </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="shadow">
-                                <a href="#"><img src="./library/blg05701.jpg" alt=""></a>
+                                <a href="news3.html"><img src="./library/blg05701.jpg" alt=""></a>
                                 <div class="blog-item-title">
                                     <h4>
-                                        <a href="#">Tắm cho mèo an toàn tại nhà</a>
+                                        <a href="news3.html">Tắm cho mèo an toàn tại nhà</a>
                                     </h4>
                                 </div>
                             </div>
@@ -259,7 +269,17 @@
     </script>
 
     <!-- chèn html footer -->
-    <div w3-include-html="footer.html"></div>
+    <div id="footer"></div>
+    <script>
+        load("footer.html");
+
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("footer").innerHTML = req.responseText;
+        }
+    </script>
 
     <!-- function để chèn html -->
     <script>
