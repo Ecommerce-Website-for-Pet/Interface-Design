@@ -71,7 +71,7 @@
             max-height: 150px;
             height: auto;
             width: 50%;
-            position: absolute;
+            position: relative;
             z-index: 2;
             top: 45%;
             left: 30%;
@@ -177,6 +177,44 @@
         
         .signup_container span {
             color: red;
+        }
+        
+        @media screen and (max-width:780px) {
+            .signup_form {
+                width: 300px;
+                padding: 50px;
+            }
+        }
+        
+        @media screen and (max-width:650px) {
+            .signup_form {
+                width: 250px;
+                padding: 40px;
+            }
+        }
+        
+        @media screen and (max-width:500px) {
+            .signup_form {
+                width: 200px;
+                padding: 20px;
+            }
+            .signup_form-row {
+                margin-top: 20px;
+            }
+        }
+        
+        @media screen and (max-width:414px) {
+            .signup_form {
+                width: 200px;
+                padding: 20px;
+            }
+            .signup_form-row {
+                margin-top: 20px;
+            }
+            .signup_form-row small {
+                font-size: 11px;
+                margin-bottom: 3px;
+            }
         }
     </style>
 </head>
@@ -305,7 +343,7 @@
     <script src="./js/footer.js"></script>
 
     <script src="./js/demogiohang.js"></script>
-
+    <script src="./js/searchHeader.js"></script>
 </body>
 
 
