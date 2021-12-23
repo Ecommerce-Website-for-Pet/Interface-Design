@@ -139,6 +139,7 @@ h1 {
 @media screen and (max-width: 780px) {
     .header-page img {
         width: 100%;
+        height: auto;
     }
     .header-page {
         flex-direction: column;
@@ -157,5 +158,28 @@ h1 {
     }
     .white h1 {
         margin-top: 15px;
+    }
+    .color {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .header-page-text h1, .header-page-text hr, .header-page-text span {
+        margin-left: 35px;
+    }
+    .content {
+        padding: 25px 20px;
+    }
+    .price  {
+        padding: 0;
+    }
+    .content-text, .header-text {
+        text-align: justify;
+    }
+    .price .content-text {
+        margin: 15px;
+    }
+    .price h1 {
+        font-size: 22px;
     }
 }
