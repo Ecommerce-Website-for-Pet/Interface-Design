@@ -247,7 +247,6 @@
     <script>
         var slideIndex = 0;
         showSlides();
-
         function showSlides() {
             var i;
             var slides = document.getElementsByClassName("slide-container");
@@ -267,8 +266,6 @@
             setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
     </script>
-
-    <!-- chèn html footer -->
     <div id="footer"></div>
     <script>
         load("footer.html");
@@ -280,7 +277,6 @@
             document.getElementById("footer").innerHTML = req.responseText;
         }
     </script>
-
     <!-- function để chèn html -->
     <script>
         w3.includeHTML();
@@ -291,6 +287,7 @@
     <script src="./js/flat-menu.js"></script>
     <script src="./js/dog-product.js"></script>
     <script src="./js/searchHeader.js"></script>
+    <script src="./js/searchdetails.js"></script>
 </body>
 
 </html>
