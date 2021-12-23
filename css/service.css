@@ -1,28 +1,28 @@
-* {
-    font-family: SVN-Poppins;
-}
 .header-page {
     text-align: center;
     height: 230px;
     display: flex;
-    background-color: palevioletred;
-    position: relative;
+    flex-direction: row-reverse;
 }
 .header-page img {
     height: 230px;
-    position: absolute;
-    right: 0;
+    width: 65%;
 }
 .header-page-text hr {
     border: none;
     height: 1px;
     background-color: white;
     margin: 10px auto;
+    margin-left: 0px;
+    width: 65%;
 }
 .header-page-text {
     color: white;
-    margin-left: 40px;
-    margin-top: 30px;
+    padding-left: 40px;
+    padding-top: 30px;
+    width: 35%;
+    background-color: palevioletred;
+    text-align: left;
 }
 .contact {
     color: palevioletred;
@@ -37,6 +37,8 @@
     width: 60%;
     text-align: center;
     margin: 30px auto;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 .content {
     padding: 30px 100px;
@@ -61,6 +63,8 @@ h1 {
 }
 .content-text {
     font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
 }
 .white span {
     width: 45%;
@@ -83,6 +87,8 @@ h1 {
     width: 20%;
     color: white;
     border-radius: 20px;
+    padding: 2px;
+    margin-bottom: 20px;
     filter: drop-shadow(2px 2px 2px palevioletred);
 }
 .box h2 {
@@ -92,17 +98,10 @@ h1 {
     font-size: 14px;
     margin: 10px 10px;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 950px) {
     .content {
         display: block;
         text-align: center;
-    }
-    .header-page img {
-        /*width: 100%;
-        height: auto;
-        left: auto;
-        bottom: 0;*/
-        display: none;
     }
     .content-text {
         margin-left: auto;
@@ -117,5 +116,70 @@ h1 {
         width: 50%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .price h1 {
+        color: white;
+        background-color: palevioletred;
+        margin-bottom: 20px;
+    }
+    .price {
+        border: 1px dotted palevioletred;
+        padding: 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .header-page-text {
+        margin-left: 12px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .header-page img {
+        width: 100%;
+        height: auto;
+    }
+    .header-page {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .header-page-text {
+        background-color: palevioletred;
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 0;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .header-page-text h1, .header-page-text hr, .header-page-text span {
+        margin-left: 140px;
+    }
+    .white h1 {
+        margin-top: 15px;
+    }
+    .color {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .header-page-text h1, .header-page-text hr, .header-page-text span {
+        margin-left: 35px;
+    }
+    .content {
+        padding: 25px 20px;
+    }
+    .price  {
+        padding: 0;
+    }
+    .content-text, .header-text {
+        text-align: justify;
+    }
+    .price .content-text {
+        margin: 15px;
+    }
+    .price h1 {
+        font-size: 22px;
     }
 }

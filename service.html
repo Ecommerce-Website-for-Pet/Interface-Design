@@ -21,12 +21,13 @@
             margin-top: 20px;
         }
         .module-header h2 {
-            letter-spacing: 5px;
+            letter-spacing: 3px;
             color: palevioletred;
             margin-right: -10px;
+            margin-bottom: 10px;
         }
         .module-header hr {
-            width: 200px;
+            width: 250px;
             height: 2px;
             background-color: palevioletred;
             border: none;
@@ -61,7 +62,8 @@
         .img-banner {
             position: relative;
             z-index: 1;
-            margin-top: -120px;
+            margin-top: -150px;
+            width: 100%;
         }
         .text-banner {
             color: black;
@@ -69,6 +71,56 @@
             margin: 17px auto;
             z-index: 2;
             position: relative;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+        @media screen and (max-width: 850px) {
+            /*.img-banner {
+                margin-top: -60px;
+            }
+            .text-banner {
+                margin: 10px auto;
+            }*/
+        }
+        @media screen and (max-width: 800px) {
+            .box-container {
+                flex-direction: column;
+            }
+            .box {
+                margin-bottom: 30px;
+                width: 400px;
+                height: 350px;
+            }
+            .box img {
+                width: 400px;
+            }
+            .box-container a {
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            .img-banner {
+                margin-top: -100px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .img-banner {
+                margin-top: -80px;
+            }
+        }
+        @media screen and (max-width: 520px) {
+            .module-header hr {
+                width: 50px;
+                margin: 15px 18px;
+            }
+            .text-banner {
+                font-size: 14px;
+            }
+            .img-banner {
+                margin-top: -60px;
+            }
         }
     </style>
 </head>
@@ -91,7 +143,7 @@
     <div class="content">
         <div class="module-header">
             <hr/>
-            <h2 class="intro">NHỮNG DỊCH VỤ TẠI MARPET</h2>
+            <h2 class="intro">DỊCH VỤ TẠI MARPET</h2>
             <hr/>
         </div>
         <div class="box-container">
@@ -111,7 +163,7 @@
                 <span>Trở thành ngôi nhà thứ hai cho thú cưng của bạn</span>
             </div></a>
         </div>
-        <h4 class="text-banner">TẠI MARPET, CHÚNG TÔI COI THÚ CƯNG CỦA BẠN NHƯ THÚ CƯNG CỦA CHÚNG TÔI</h4>
+        <h4 class="text-banner">TẠI MARPET, CHÚNG TÔI COI THÚ CƯNG CỦA BẠN <br> NHƯ THÚ CƯNG CỦA CHÚNG TÔI</h4>
         <img style="margin-left:auto;margin-right:auto;display:block" class="img-banner" src="https://www.heartlandpets.net/wp-content/uploads/1970/01/breedbanner-1200x398.jpg" alt="">
     </div>
 
@@ -142,6 +194,6 @@
     <script src="./js/footer.js"></script>
     
     <script src="./js/demogiohang.js"></script>
-
+    <script src="./js/searchHeader.js"></script>
 </body>
 </html>
