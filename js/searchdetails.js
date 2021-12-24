@@ -130,6 +130,9 @@ function searchFunction(arr) {
 
   document.getElementById("showsearch").innerHTML = div;
 }
+function decode_utf8(){
+  return
+}
 let btn = document.querySelector("#menu__search");
   document.querySelector("#menu__search").addEventListener("keydown", (e) => {
       if (e.key == "Enter") {
