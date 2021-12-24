@@ -71,7 +71,7 @@
             <span class="announce-content">Tặng ngay voucher giảm 15% tổng hóa đơn cho khách hàng lần đầu mua sắm tại MarPet</span>
         </div>
         <!-- -----------------thanh menu cố định------------- -->
-        <nav class="slide-down-bar" id="slide-down-bar">
+        <nav class="slide-down-bar" id="slide-down-bar" style="z-index: 99999999;">
             <div class="flat-menu">
                 <div class="dropdown-menu">
                     <a><i class="fas fa-bars "></i></a>
@@ -137,16 +137,8 @@
                 <div class="others">
                     <li class="thanh-tim-kiem">
                         <input onkeyup="searchFunc()" id="menu__search" type="text" placeholder="Nhập để tìm kiếm"><i class="fa fa-search" id="myBtnSearch" onclick="gotoSearchDetail()"></i>
-                        <ul id="search__list">
+                        <ul id="search__list"></ul>
                     </li>
-
-
-
-
-                    </ul>
-
-                  
-
                     <li class="countProductsInCart1">
                         <a href="giohang.html" style="margin-left:30px; background-color:white;" class="btn-card menu-btn" id="cart-btn">
                             <i class="fas fa-shopping-cart"></i>
