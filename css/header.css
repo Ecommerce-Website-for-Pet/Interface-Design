@@ -205,7 +205,6 @@ a {
 #menu__search {
     position: relative;
 }
-
 #search__list {
     position: absolute;
     top: 120px;
@@ -598,7 +597,6 @@ a {
 .header-mobile-bottom>a {
     width: 80%;
 }
-
 .side-mobile-menu-container {
     position: fixed;
     z-index: 999999999999;
@@ -706,5 +704,10 @@ a {
         background-color: white;
         border-bottom: 1px solid black;
         z-index: 999999;
+    }
+}
+@media only screen and (max-width:600px) {
+    .search{
+        width: 50%;
     }
 }
