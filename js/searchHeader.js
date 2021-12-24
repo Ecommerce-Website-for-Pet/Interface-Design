@@ -59,21 +59,22 @@ function loadSearch(arr) {
   document.getElementById("search__list").innerHTML = div;
 }
 
-// function gotoDetail(id) {
-//   window.location.href = "products_detail.html?productid=" + id;
-// }
+function gotoDetail(id) {
+  window.location.href = "products_detail.html?productid=" + id;
+}
 
-// function gotoSearchDetail() {
-//   let menusearch = document.querySelector("#menu__search").value;
-//   window.location.href = "Showsearch.html?search=" + menusearch;
-// }
-// let btn = document.querySelector("#menu__search");
-//   document.querySelector("#menu__search").addEventListener("keydown", (e) => {
-//       if (e.key == "Enter") {
-//           document.getElementById("myBtnSearch").click();
-//       } 
-//   });
-//   btn.addEventListener("click", () => {
-//       const keyEvent = new KeyboardEvent("keydown", { key: "Enter" });       
-//       document.body.dispatchEvent(keyEvent);
-//   });
+function gotoSearchDetail() {
+  let menusearch = document.querySelector("#menu__search").value;
+  window.location.href = "Showsearch.html?search=" + menusearch;
+}
+
+let btn = document.querySelector("#menu__search");
+  document.querySelector("#menu__search").addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+          document.getElementById("myBtnSearch").click();
+      } 
+  });
+  btn.addEventListener("click", () => {
+      const keyEvent = new KeyboardEvent("keydown", { key: "Enter" });       
+      document.body.dispatchEvent(keyEvent);
+  });

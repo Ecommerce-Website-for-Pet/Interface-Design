@@ -24,7 +24,7 @@ var url = "./json/products.json";
 xmlhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     var myArr = JSON.parse(this.responseText);
-    loadSearch(myArr);
+    loadSearchMobile(myArr);
   }
 };
 
@@ -55,7 +55,6 @@ function loadSearchMobile(arr) {
       "</span>" +
       "</li>";
   }
-
   document.getElementById("search__list--mobile").innerHTML = div;
 }
 
