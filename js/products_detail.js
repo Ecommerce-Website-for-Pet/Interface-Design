@@ -96,7 +96,8 @@ function render_products_gallery(arr) {
                 })
             }
             onLoadCartNumbers();
-            displayCart();
+            // displayCart(); // nháp
+            // displayCartInPayment(); // nháp
             break;
         }
 
@@ -108,7 +109,8 @@ function render_products_gallery(arr) {
 }
 
 onLoadCartNumbers();
-            displayCart();
+displayCart();
+// displayCartInPayment();
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers')
     if (productNumbers) {
@@ -182,9 +184,10 @@ function setItems(product){
     let productInfo = {
         productid: product.productid,
         // image: product.image[0],
-        // name: product.name,
+        name: product.name,
+        thuocTinh:"",
         // price: product.price[0],
-        quantity:parseInt(document.getElementById('soluongsanpham').value)
+        quantity:parseInt(document.getElementById('soluongsanpham').value) // id 'soluongsanpham' là id của input số lượng ở <fieldset>
     }
     if (product.weight != "") {
         // productInfo["weight"] = product.weight ;
@@ -193,7 +196,8 @@ function setItems(product){
             for(i = 0; i < khoiLuong.length; i++) {
                 if(khoiLuong[i].checked){
                     productInfo["weight"] = product.weight[i];
-                    productInfo["name"] = product.name+" ("+product.weight[i]+")";
+                    productInfo["thuocTinh"] = product.weight[i];
+                    // productInfo["name"] = product.name+" ("+product.weight[i]+")";
                     if(product.discount==""){
                         productInfo["price"] = product.price[i];
                     }
@@ -211,9 +215,10 @@ function setItems(product){
               
             for(i = 0; i < mauSac.length; i++) {
                 if(mauSac[i].checked){
-                    productInfo["colors"] = product.colors[i];
                     productInfo["image"] = product.image[i];
-                    productInfo["name"] = product.name+" ("+product.colors[i]+")";
+                    productInfo["colors"] = product.colors[i];
+                    productInfo["thuocTinh"] = product.colors[i];
+                    // productInfo["name"] = product.name+" ("+product.colors[i]+")";
                 }
                 
             }
@@ -226,13 +231,13 @@ function setItems(product){
     }
     else{
         if(product.discount==""){
-            productInfo["price"] = product.price;
+            productInfo["price"] = product.price[0];
         }
         else{
             productInfo["price"] = product.discount;
         }
         productInfo["image"] = product.image[0];
-        productInfo["name"] = product.name;
+        // productInfo["name"] = product.name;
     }
     // addToCartList(productInfo);
     saveProductInStorage(productInfo);
@@ -318,6 +323,7 @@ function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products");
+    // let productContainerInPayment = document.querySelector(".cart");
     // let productContainer=document.querySelectorAll(".products");
     let cartCost = localStorage.getItem('totalCost');
 
@@ -326,16 +332,65 @@ function displayCart() {
         let productContainer2 = document.querySelector(".gioHangTrong");
         productContainer2.style.display="none";
         productContainer.innerHTML = '';
+        // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
-            productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'"><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+            if(item.thuocTinh!=""){
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+            }
+            
+            else{
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+            }
         });
         productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+cartCost+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
+
+        // Object.values(cartItems).map(item => {
+        //     productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><img src="'+item.image+'" alt=""><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier">Size 15 lb</span></div><span class="price">'+item.price+' VND</span></div>';
+        // });
     }
     else{
         let productContainer2 = document.querySelector(".products-container");
         productContainer2.style.display="none";
     }
 }
+
+
+// đừng xóa này nha, lỡ cần á :)))
+// function displayCartInPayment() {
+//     let cartItems = localStorage.getItem("productsInCart");
+//     cartItems = JSON.parse(cartItems);
+//     let productContainerInPayment = document.querySelector(".cart");
+//     let calculateCostInPayment = document.querySelector(".detail-col-query");
+//     const cartCost = parseInt(localStorage.getItem('totalCost'));
+//     const shippingFee = parseInt(20000);
+//     const totalPayable=cartCost+shippingFee;
+//     if (cartItems && productContainerInPayment) {
+//         productContainerInPayment.innerHTML = '';
+//         calculateCostInPayment.innerHTML = '';
+//         // productContainerInPayment.innerHTML = '';
+//         Object.values(cartItems).map(item => {
+//             if(item.thuocTinh!=""){
+//                 productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+' ('+item.thuocTinh+')</span><span class="modifier">'+item.thuocTinh+'</span></div><span class="price">'+item.price*item.quantity+' VND</span></div>';
+//             }
+            
+//             else{
+//                 productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier"></span></div><span class="price">'+item.price*item.quantity+' VND</span></div>';
+//             }
+//         });
+//         calculateCostInPayment.innerHTML += '<span>'+cartCost+' VND</span><span>'+shippingFee+' VND</span><span>'+totalPayable+' VND</span>';
+//     }
+//     else{
+        
+//     }
+// }
+
+
+
+
+
+
+
+
 // function vippro(productid)
 //     {
 //         // let productNumbers=localStorage.getItem('cartNumbers')

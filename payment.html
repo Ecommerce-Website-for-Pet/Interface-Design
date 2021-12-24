@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarPet</title>
+    <title>Thanh toán</title>
     <link rel="icon" type="image/x-icon" href="./library/logoko-01.png">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/09f1ff1e12.js" crossorigin="anonymous"></script>
@@ -158,7 +158,7 @@
         <div class="left">
             <h2>GIỎ HÀNG</h2>
             <div class="cart">
-                <div class="cart_row">
+                <!-- <div class="cart_row">
                     <span class="quantity">1 x</span>
                     <img src="https://cdn11.bigcommerce.com/s-iakwzr7rs7/product_images/attribute_rule_images/14225_thumb_1580246010.jpg" alt="">
                     <div class="cart_row-name">
@@ -193,7 +193,7 @@
                         <span class="modifier">Size 15 lb</span>
                     </div>
                     <span class="price">20.000 VND</span>
-                </div>
+                </div> -->
             </div>
             <div class="detail">
                 <div class="detail-col">
@@ -201,10 +201,10 @@
                     <span>Phí vận chuyển:</span>
                     <span>Thành tiền:</span>
                 </div>
-                <div class="detail-col">
-                    <span>80.000 VND</span>
+                <div class="detail-col detail-col-query">
+                    <!-- <span>80.000 VND</span>
                     <span>20.000 VND</span>
-                    <span>100.000 VND</span>
+                    <span>100.000 VND</span> -->
                 </div>
             </div>
         </div>
@@ -269,6 +269,34 @@
     <!-- function để chèn html -->
     <script>
         w3.includeHTML();
+        
+    </script>
+    <script>
+        let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    let productContainerInPayment = document.querySelector(".cart");
+    let calculateCostInPayment = document.querySelector(".detail-col-query");
+    const cartCost = parseInt(localStorage.getItem('totalCost'));
+    const shippingFee = parseInt(20000);
+    const totalPayable=cartCost+shippingFee;
+    if (cartItems && productContainerInPayment) {
+        productContainerInPayment.innerHTML = '';
+        calculateCostInPayment.innerHTML = '';
+        // productContainerInPayment.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            if(item.thuocTinh!=""){
+                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+' ('+item.thuocTinh+')</span><span class="modifier">'+item.thuocTinh+'</span></div><span class="price">'+item.price*item.quantity+' VND</span></div>';
+            }
+            
+            else{
+                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier"></span></div><span class="price">'+item.price*item.quantity+' VND</span></div>';
+            }
+        });
+        calculateCostInPayment.innerHTML += '<span>'+cartCost+' VND</span><span>'+shippingFee+' VND</span><span>'+totalPayable+' VND</span>';
+    }
+    else{
+        
+    }
     </script>
     <!-- js mở chatbox và quay về đầu trang -->
     <script src="./js/chatBox&returnTop-btn.js"></script>
