@@ -6,7 +6,6 @@ div#showsearch {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* height: 30%; */
     margin-bottom: 10px;
     cursor: pointer;
     margin-left: 20px;
@@ -36,12 +35,8 @@ div#showsearch {
     transform-style: preserve-3d; 
     transform: scale(1.02);
     transition: all ease 0.3s;
-    /* box-shadow: 1px 1px rgb(251, 255, 183); */
 }
-/* img{
-    max-width: 200px;
-    height: 200px;
-} */
+
 .product-info a{
     display: block;
     text-decoration: none;
@@ -96,5 +91,15 @@ div#showsearch {
 }
 .errorpage img{
     width: 600px;
+}
+@media only screen and (max-width: 600px) {
+    .errorpage{
+        font-size: 12px;
+    }
+    .errorpage img{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 

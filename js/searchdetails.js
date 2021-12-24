@@ -101,11 +101,11 @@ function loadSearch(arr) {
       '" width="150px" alt="">' +
       "<span>" +
       "<span>" +
-      arr[i].name +
+      arr[i].label +
       "</span>" +
       "<br>" +
       "<span>" +
-      arr[i].price[0] +
+      arr[i].name +
       "</span>" +
       "</span>" +
       "</li>";
