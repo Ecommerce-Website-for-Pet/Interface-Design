@@ -209,7 +209,9 @@ a {
 .thanh-tim-kiem {
     position: relative;
 }
-
+#search__list--mobile{
+    width: 300px;
+}
 #search__list {
     position: absolute;
     margin-top: 5px;

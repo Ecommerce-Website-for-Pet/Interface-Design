@@ -1,14 +1,13 @@
-
 var xmlhttp = new XMLHttpRequest();
 var url = "./json/products.json";
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myArr = JSON.parse(this.responseText);
-        searchFunction(myArr);
-        searchFunc(myArr);
-        searchFunc_detailpage(myArr);
-        loadSearch(myArr);
-    }
+xmlhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    var myArr = JSON.parse(this.responseText);
+    searchFunction(myArr);
+    searchFunc(myArr);
+    searchFunc_detailpage(myArr);
+    loadSearch(myArr);
+  }
 };
 xmlhttp.open("GET", url, true); //ra lệnh
 xmlhttp.send(); //thực hiên
@@ -30,35 +29,62 @@ function searchFunc() {
   });
 }
 function searchFunc_detailpage() {
-    let menusearch = search;
-  
-    let menuitems = Array.from(document.querySelectorAll(".products"));
-  
-    menusearch = menusearch.toLowerCase();
-    var dem = 0;
-    menuitems.forEach(function (el) {
-      let text = el.innerText.toLowerCase();
-  
-      if (text.indexOf(menusearch) > -1) {
-        document.querySelector("#showsearch").style.display = "flex";
-        el.style.display = "flex";
-      } else {
-        el.style.display = "none";
-        dem = dem + 1;
-      }
-  
-      if (menusearch == "" || menusearch == "undefined") {
-        el.style.display = "none";
-        document.getElementById("showsearch").innerHTML =
+  let menusearch = search;
+
+  let menuitems = Array.from(document.querySelectorAll(".products"));
+
+  menusearch = menusearch.toLowerCase();
+  var dem = 0;
+  menuitems.forEach(function (el) {
+    let text = el.innerText.toLowerCase();
+
+    if (text.indexOf(menusearch) > -1) {
+      document.querySelector("#showsearch").style.display = "flex";
+      el.style.display = "flex";
+    } else {
+      el.style.display = "none";
+      dem = dem + 1;
+    }
+
+    if (menusearch == "" || menusearch == "undefined") {
+      el.style.display = "none";
+      document.getElementById("showsearch").innerHTML =
         "<div class='errorpage'><img src='./library/banner-about.jpg' alt=''><h3>Không tìm thấy sản phẩm</h3></div>";
-      }
-      if (dem === document.querySelectorAll(".products").length) {
-          document.getElementById("showsearch").innerHTML =
+    }
+    if (dem === document.querySelectorAll(".products").length) {
+      document.getElementById("showsearch").innerHTML =
         "<div class='errorpage'><img src='./library/banner-about.jpg' alt=''><h3>Không tìm thấy sản phẩm</h3></div>";
+    }
+  });
+}
+function utf8Decode(utf8String) {
+  if (typeof utf8String != "string")
+    throw new TypeError("parameter ‘utf8String’ is not a string");
+  // note: decode 3-byte chars first as decoded 2-byte strings could appear to be 3-byte char!
+  const unicodeString = utf8String
+    .replace(
+      /[\u00e0-\u00ef][\u0080-\u00bf][\u0080-\u00bf]/g, // 3-byte chars
+      function (c) {
+        // (note parentheses for precedence)
+        var cc =
+          ((c.charCodeAt(0) & 0x0f) << 12) |
+          ((c.charCodeAt(1) & 0x3f) << 6) |
+          (c.charCodeAt(2) & 0x3f);
+        return String.fromCharCode(cc);
       }
-    });
-    
-  }
+    )
+    .replace(
+      /[\u00c0-\u00df][\u0080-\u00bf]/g, // 2-byte chars
+      function (c) {
+        // (note parentheses for precedence)
+        var cc =
+          ((c.charCodeAt(0) & 0x1f) << 6) | (c.charCodeAt(1) & 0x3f);
+        return String.fromCharCode(cc);
+      }
+    );
+  return unicodeString;
+}
+var search = utf8Decode(unescape(getUrlParams().search));
 
 function loadSearch(arr) {
   var i;
@@ -130,16 +156,14 @@ function searchFunction(arr) {
 
   document.getElementById("showsearch").innerHTML = div;
 }
-function decode_utf8(){
-  return
-}
+
 let btn = document.querySelector("#menu__search");
-  document.querySelector("#menu__search").addEventListener("keydown", (e) => {
-      if (e.key == "Enter") {
-          document.getElementById("myBtnSearch").click();
-      } 
-  });
-  btn.addEventListener("click", () => {
-      const keyEvent = new KeyboardEvent("keydown", { key: "Enter" });       
-      document.body.dispatchEvent(keyEvent);
-  });
+document.querySelector("#menu__search").addEventListener("keydown", (e) => {
+  if (e.key == "Enter") {
+    document.getElementById("myBtnSearch").click();
+  }
+});
+btn.addEventListener("click", () => {
+  const keyEvent = new KeyboardEvent("keydown", { key: "Enter" });
+  document.body.dispatchEvent(keyEvent);
+});
