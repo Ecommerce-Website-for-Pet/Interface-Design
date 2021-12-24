@@ -1,16 +1,13 @@
-html,
-body {
-    padding: 0;
-    margin: 0;
-}
-
 .container {
-    font-family: SVN-Poppins;
-    margin: 20px;
+    margin: auto;
+    max-width: 1300px;
+    margin-bottom: 30px;
+    min-width: 300px;
+    padding: 0px 15px;
 }
 
-span {
-    font-weight: bold;
+.highlight {
+    font-weight: 600;
 }
 
 .step {
@@ -19,12 +16,16 @@ span {
 }
 
 .title {
+    margin-top: 2.25rem;
+    margin-bottom: .75rem;
+    font-size: 22px;
+    word-spacing: 2px;
     font-weight: bold;
 }
 
 .notice {
     color: palevioletred;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .welcome {
@@ -47,9 +48,10 @@ p {
     margin: 10px 0;
 }
 
-a#link {
+#link {
     color: palevioletred;
-    font-weight: bold;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .step a {
@@ -58,7 +60,19 @@ a#link {
 }
 
 .step a:hover {
-    margin-left: 15px;
-    text-decoration: underline;
-    color: palevioletred;
+    color: red!important;
+}
+
+@media only screen and (max-width: 1328px) {
+    .container {
+        width: 1170px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .container {
+        width: 90%;
+        padding: 0px 15px;
+    }
 }

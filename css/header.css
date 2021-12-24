@@ -205,15 +205,20 @@ a {
 #menu__search {
     position: relative;
 }
+
+.thanh-tim-kiem {
+    position: relative;
+}
+
 #search__list {
     position: absolute;
-    top: 120px;
-    left: 280px;
+    margin-top: 5px;
+    left: 25px;
     z-index: 10;
     background-color: #fdfdfd;
     box-shadow: 0px 1px 20px rgba(104, 104, 104, 0.7);
     display: none;
-    width: 440px;
+    width: 80%;
     max-height: 300px;
     overflow-y: scroll;
 }
@@ -226,7 +231,7 @@ a {
 
 #search__list li:hover {
     cursor: pointer;
-    background-color: rgb(245, 222, 179,0.3);
+    background-color: rgb(245, 222, 179, 0.3);
     font-weight: bold;
     color: #db7083;
 }
@@ -234,14 +239,17 @@ a {
 #search__list li img {
     margin-right: 10px;
 }
-#search__list img{
+
+#search__list img {
     width: 70px;
 }
+
 #search__list li {
-    margin:5px;
+    margin: 5px;
     font-size: 14px;
 }
-#search__label{
+
+#search__label {
     margin-bottom: 20px;
 }
 
