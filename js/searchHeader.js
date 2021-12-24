@@ -5,12 +5,6 @@ function searchFunc() {
 
   menusearch.value = menusearch.value.toLowerCase();
 
-  // let menusearch = document.querySelector("#menu__search");
-
-  //   let menuitems = Array.from(document.querySelectorAll(".menu__item"));
-  //   // console.log(menuitems);
-  //   menusearch.value = menusearch.value.toLowerCase();
-  // alert('hello')
   menuitems.forEach(function (el) {
     let text = el.innerText.toLowerCase();
     if (text.indexOf(menusearch.value) > -1) {
@@ -42,12 +36,22 @@ function loadSearch(arr) {
   var div = "";
   for (i = 0; i < arr.length; i++) {
     div +=
-      ' <li onclick="gotoDetail('+ "'" +arr[i].productid + "'" +')" class="menu__item">' +
-      '<img src="'+ arr[i].image[0] +'" width="150px" alt="">' +
+      ' <li onclick="gotoDetail(' +
+      "'" +
+      arr[i].productid +
+      "'" +
+      ')" class="menu__item">' +
+      '<img src="' +
+      arr[i].image[0] +
+      '" width="150px" alt="">' +
       "<span>" +
-      "<span>" + arr[i].name + "</span>" +
-      "<br>" +
-      "<span>" + arr[i].price[0] + "</span>" +
+      "<span>" +
+      arr[i].label +
+      "</span>" +
+      "<br/>" +
+      "<span>" +
+      arr[i].name +
+      "</span>" +
       "</span>" +
       "</li>";
   }
@@ -55,12 +59,21 @@ function loadSearch(arr) {
   document.getElementById("search__list").innerHTML = div;
 }
 
-function gotoDetail(id){
+function gotoDetail(id) {
   window.location.href = "products_detail.html?productid=" + id;
 }
-// products_detail.html?productid=2
 
-function gotoSearchDetail(){
+function gotoSearchDetail() {
   let menusearch = document.querySelector("#menu__search").value;
-  window.location.href = "search.html?search=" + menusearch;
+  window.location.href = "Showsearch.html?search=" + menusearch;
 }
+let btn = document.querySelector("#menu__search");
+  document.querySelector("#menu__search").addEventListener("keydown", (e) => {
+      if (e.key == "Enter") {
+          document.getElementById("myBtnSearch").click();
+      } 
+  });
+  btn.addEventListener("click", () => {
+      const keyEvent = new KeyboardEvent("keydown", { key: "Enter" });       
+      document.body.dispatchEvent(keyEvent);
+  });

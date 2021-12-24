@@ -115,6 +115,7 @@ function onLoadCartNumbers() {
         // document.querySelector('.cart span').textContent=productNumbers;
         document.querySelector('.countProductsInCart1 span').textContent = productNumbers;
         document.querySelector('.countProductsInCart2 span').textContent = productNumbers;
+        document.querySelector('.countProductsInCart3 span').textContent = productNumbers;
 
     } else {
 
@@ -129,10 +130,12 @@ function cartNumbers(product){
         localStorage.setItem('cartNumbers', productNumbers+1);
         document.querySelector('.countProductsInCart1 span').textContent=productNumbers+1;
         document.querySelector('.countProductsInCart2 span').textContent=productNumbers+1;
+        document.querySelector('.countProductsInCart3 span').textContent=productNumbers+1;
     } else {
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.countProductsInCart1 span').textContent=1;
         document.querySelector('.countProductsInCart2 span').textContent=1;
+        document.querySelector('.countProductsInCart3 span').textContent=1;
     }
     setItems(product);
 }
@@ -320,11 +323,17 @@ function displayCart() {
 
     // console.log(cartItems);
     if (cartItems && productContainer) {
+        let productContainer2 = document.querySelector(".gioHangTrong");
+        productContainer2.style.display="none";
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'"><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
         });
-        productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">Tổng tiền</h4><h4 class="basketTotal">'+cartCost+'đ</h4></div>';
+        productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">Tổng tiền</h4><h4 class="basketTotal">'+cartCost+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
+    }
+    else{
+        let productContainer2 = document.querySelector(".products-container");
+        productContainer2.style.display="none";
     }
 }
 // function vippro(productid)

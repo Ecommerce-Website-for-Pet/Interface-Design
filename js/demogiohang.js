@@ -46,6 +46,7 @@ function onLoadCartNumbers(){
         // document.querySelector('.cart span').textContent=productNumbers;
         document.querySelector('.countProductsInCart1 span').textContent=productNumbers;
         document.querySelector('.countProductsInCart2 span').textContent=productNumbers;
+        document.querySelector('.countProductsInCart3 span').textContent=productNumbers;
 
     } else {
         
@@ -60,10 +61,12 @@ function cartNumbers(product){
         localStorage.setItem('cartNumbers', productNumbers+1);
         document.querySelector('.countProductsInCart1 span').textContent=productNumbers+1;
         document.querySelector('.countProductsInCart2 span').textContent=productNumbers+1;
+        document.querySelector('.countProductsInCart3 span').textContent=productNumbers+1;
     } else {
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.countProductsInCart1 span').textContent=1;
         document.querySelector('.countProductsInCart2 span').textContent=1;
+        document.querySelector('.countProductsInCart3 span').textContent=1;
     }
     setItems(product);
 }
