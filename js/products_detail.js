@@ -38,18 +38,18 @@ function render_products_gallery(arr) {
             div += '<div class="products_buybox-wrapper"><div class="products_buybox-options"><div class="products_price">'
 
             if (arr[i].discount != "") {
-                div += '<div class"price-original" style="color: #b4b4b4"><del><label>Giá bán:</label><span class="price-amount"><span style="color: #b4b4b4" class="price" >' + arr[i].price[0] + '</span><span style="font-weight: 700;">đ</span></del></div><div class="price-discount"><label>Giá khuyến mãi:</label><span class="price-amount"><span class="price">' + arr[i].discount + '</span><span style="color: #b93505; font-weight: 700;"> đ</span></span></div>'
+                div += '<div class"price-original" style="color: #b4b4b4"><del><label>Giá bán:</label><span class="price-amount"><span style="color: #b4b4b4" class="price" >' +formatNumber( arr[i].price[0]) + '</span><span style="font-weight: 700;">đ</span></del></div><div class="price-discount"><label>Giá khuyến mãi:</label><span class="price-amount"><span class="price">' + formatNumber(arr[i].discount) + '</span><span style="color: #b93505; font-weight: 700;"> đ</span></span></div>'
             } else {
-                div += '<div class"price-original"><label>Giá bán:</label><span class="price-amount"><span class="price">' + arr[i].price[0] + '</span><span style="color: #b93505; font-weight: 700;">đ</span></span></div>'
+                div += '<div class"price-original"><label>Giá bán:</label><span class="price-amount"><span class="price">' + formatNumber(arr[i].price[0]) + '</span><span style="color: #b93505; font-weight: 700;">đ</span></span></div>'
             }
 
             div += '</div><div class="availability"><div class="stock">Tình trạng: Còn hàng</div></div><div class="button_select-weight">'
             if (arr[i].weight != "") {
                 div += '<div class="weight-label"><label>Chọn trọng lượng</label></div><div class="weight-choose">'
-                div+='<div><input data-image="' + arr[i].weight[0] + '" type="radio" id="' + arr[i].weight[0] + '" name="weight" value="' + arr[i].weight[0] + '" checked><label for="' + arr[i].weight[0] + '"><span>' + arr[i].weight[0] + ' - ' + arr[i].price[0] + ' đ</span></label></div>';
+                div+='<div><input data-image="' + arr[i].weight[0] + '" type="radio" id="' + arr[i].weight[0] + '" name="weight" value="' + arr[i].weight[0] + '" checked><label for="' + arr[i].weight[0] + '"><span>' + arr[i].weight[0] + ' - ' + formatNumber( arr[i].price[0]) + ' đ</span></label></div>';
                 for (j = 1; j < arr[i].weight.length; j++) {
                     // div += '<button>' + arr[i].weight[j] + ' - ' + arr[i].price[j] + ' đ</button>';
-                    div += '<div><input data-image="' + arr[i].weight[j] + '" type="radio" id="' + arr[i].weight[j] + '" name="weight" value="' + arr[i].weight[j] + '"><label for="' + arr[i].weight[j] + '"><span>' + arr[i].weight[j] + ' - ' + arr[i].price[j] + ' đ</span></label></div>';
+                    div += '<div><input data-image="' + arr[i].weight[j] + '" type="radio" id="' + arr[i].weight[j] + '" name="weight" value="' + arr[i].weight[j] + '"><label for="' + arr[i].weight[j] + '"><span>' + arr[i].weight[j] + ' - ' + formatNumber(arr[i].price[j]) + ' đ</span></label></div>';
                 }
             }
 
@@ -223,7 +223,7 @@ function setItems(product){
                         productInfo["price"] = product.price[i];
                     }
                     else{
-                        productInfo["price"] = product.discount;
+                        productInfo["price"] =product.discount;
                     }
                 }
                 
@@ -328,18 +328,18 @@ function setItems(product){
                 
             }
             if(product.discount==""){
-                productInfo["price"] = product.price[0];
+                productInfo["price"] = formatNumber(product.price[0]);
             }
             else{
-                productInfo["price"] = product.discount;
+                productInfo["price"] = formatNumber(product.discount);
             }
     }
     else{
         if(product.discount==""){
-            productInfo["price"] = product.price[0];
+            productInfo["price"] = formatNumber(product.price[0]);
         }
         else{
-            productInfo["price"] = product.discount;
+            productInfo["price"] = formatNumber(product.discount);
         }
         productInfo["image"] = product.image[0];
         // productInfo["name"] = product.name;
@@ -450,11 +450,11 @@ function displayCart() {
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
             }
             
             else{
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
             }
         });
         productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+cartCost+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
@@ -467,6 +467,10 @@ function displayCart() {
         let productContainer2 = document.querySelector(".products-container");
         productContainer2.style.display="none";
     }
+}
+function formatNumber(num) {
+    var n = Number(num);
+    return n.toLocaleString("vi");
 }
 
 
