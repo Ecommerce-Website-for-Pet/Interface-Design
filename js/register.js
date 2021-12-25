@@ -1,100 +1,217 @@
-// var emailArr=[];
-// var passwordArr=[];
-// function register(){
-//     var email = document.getElementById("reEmail").value;
-//     var password = document.getElementById('repw').value;
-//     var rewritepw = document.getElementById("rerwp").value;
-//     if(email==""){
-//         document.getElementById('reEmail').style.border="1px solid red";
-//     }
-// }
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
-const form = document.getElementById('register_form');
-const email = document.getElementById('reEmail');
-const password = document.getElementById('repw');
-const rewritepw = document.getElementById('rerwp');
-const fullname = document.getElementById('fullname');
-const phonenumber = document.getElementById('phonenumber');
-const address = document.getElementById('address');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
 
-    checkInputs();
-});
+  const firebaseConfig = {
+      apiKey: "AIzaSyBU4aYYdHbmmm4o-XCtHn1mNtNAVtEv1uc",
+      authDomain: "marpet-s-users.firebaseapp.com",
+      databaseURL: "https://marpet-s-users-default-rtdb.firebaseio.com/",
+      projectId: "marpet-s-users",
+      storageBucket: "marpet-s-users.appspot.com",
+      messagingSenderId: "404346603551",
+      appId: "1:404346603551:web:5d0e0de6f4b4479556ed2a"
+  };
+  //install
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getDatabase(app);
 
-function checkInputs() {
-    const emailValue = email.value.trim();
-    const pwValue = password.value.trim();
-    const rewritepwValue = rewritepw.value.trim();
-    const nameValue = fullname.value.trim();
-    const phoneValue = phonenumber.value.trim();
-    const addressValue = address.value.trim();
+  // đây
+  const form = document.getElementById('register_form');
 
-    if (emailValue === "") {
-        //show error
-        //show error class
-        setErrorFor(email, "Nhập Email");
-    } else if (!isEmail(emailValue)) {
-        setErrorFor(email, "Email không hợp lệ");
-    } else {
-        //add success class
-        setSuccessFor(email);
-    }
+  form.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-    if (pwValue === "") {
-        setErrorFor(password, "Nhập mật khẩu");
-    } else {
-        setSuccessFor(password);
-    }
+      const email = document.getElementById('reEmail');
+      const pw = document.getElementById('repw');
+      const rewritepw = document.getElementById('rerwp');
+      const name = document.getElementById('fullname');
+      const phone = document.getElementById('phonenumber');
+      const address = document.getElementById('address');
 
-    if (rewritepwValue === "") {
-        setErrorFor(rewritepw, "Vui lòng nhập lại mật khẩu");
-    } else if (rewritepwValue !== pwValue) {
-        setErrorFor(rewritepw, "Mật khẩu không đúng");
-    } else {
 
-        setSuccessFor(rewritepw);
-    }
-    if (nameValue === "") {
-        setErrorFor(fullname, "Nhập Họ và Tên");
-    } else {
+      if (checkInputs(email, pw, rewritepw, name, phone, address)) {
+          createUserWithEmailAndPassword(auth, email.value, pw.value)
+              .then((userCredential) => {
+                  // Signed in 
+                  const user = userCredential.user;
+                  //  ...
+                  alert("Đăng ký thành công");
+                  set(ref(db, 'users/' + name.value), {
+                      username: name.value,
+                      email: email.value,
+                      phonenumber: phone.value,
+                      address: address.value
+                  });
 
-        setSuccessFor(fullname);
-    }
+                  //  
+              })
+              .catch((error) => {
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+                  //   ..
+                  alert(errorCode + errorMessage);
+              });
+      }
 
-    if (phoneValue === "") {
-        setErrorFor(phonenumber, "Nhập số điện thoại");
-    } else {
+  });
 
-        setSuccessFor(phonenumber);
-    }
+  function checkEmail(email) {
+      if (email.value === "") {
+          //show error
+          //show error class
+          setErrorFor(email, "Nhập Email");
+          return false
+      } else if (!isEmail(email.value)) {
+          setErrorFor(email, "Email không hợp lệ");
+          return false
+      } else {
+          //add success class
+          setSuccessFor(email);
+          return true;
+      }
+  }
 
-    if (addressValue === "") {
-        setErrorFor(address, "Nhập địa chỉ");
-    } else {
+  function checkPassword(password) {
+      if (password === "") {
+          setErrorFor(password, "Nhập mật khẩu");
+          return false
+      } else if (password.value.length < 6) {
+          setErrorFor(password, "Mật khẩu phải có 6 ký tự");
+          return false
+      } else {
+          setSuccessFor(password);
+          return true
+      }
+  }
 
-        setSuccessFor(address);
-    }
+  function checkRewritePW(rewritepw, pw) {
+      if (rewritepw.value === "") {
+          setErrorFor(rewritepw, "Vui lòng nhập lại mật khẩu");
+          return false
+      } else if (rewritepw.value !== pw.value) {
+          setErrorFor(rewritepw, "Mật khẩu không đúng");
+          return false
+      } else {
 
-}
+          setSuccessFor(rewritepw);
+          return true
+      }
+  }
 
-function setErrorFor(input, message) {
-    const formRow = input.parentElement; //.signup_form-input
-    const small = formRow.querySelector('small');
+  function checkName(name) {
+      if (name.value === "") {
+          setErrorFor(name, "Nhập Họ và Tên");
+          return false
+      } else {
 
-    //add error message inside small
-    small.innerText = message;
+          setSuccessFor(name);
+          return true
+      }
+  }
 
-    //add error class
-    formRow.className = 'signup_form-row error';
-}
+  function checkPhone(phone) {
+      if (phone.value === "") {
+          setErrorFor(phone, "Nhập số điện thoại");
+          return false
+      } else {
 
-function setSuccessFor(input) {
-    const formRow = input.parentElement;
-    formRow.className = 'signup_form-row success';
-}
+          setSuccessFor(phone);
+          return true
+      }
+  }
 
-function isEmail(email) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
+  function checkAddress(address) {
+      if (address.value === "") {
+          setErrorFor(address, "Nhập địa chỉ");
+          return false
+      } else {
+
+          setSuccessFor(address);
+          return true
+      }
+  }
+
+  function checkInputs(email, pw, rewritepw, name, phone, address) {
+      let emailValid = checkEmail(email)
+      let pwValid = checkPassword(pw)
+      let rewritepwValid = checkRewritePW(rewritepw, pw)
+      let nameValid = checkName(name)
+      let phoneValid = checkPhone(phone)
+      let addressValid = checkAddress(address)
+
+      if (!emailValid || !pwValid || !rewritepwValid || !nameValid || !phoneValid || !addressValid) {
+          return false
+      }
+      return true;
+
+  }
+
+  function setErrorFor(input, message) {
+      const formRow = input.parentElement; //.signup_form-input
+      const small = formRow.querySelector('small');
+
+      //add error message inside small
+      small.innerText = message;
+
+      //add error class
+      formRow.className = 'signup_form-row error';
+  }
+
+  function setSuccessFor(input) {
+      const formRow = input.parentElement;
+      formRow.className = 'signup_form-row success';
+  }
+
+  function isEmail(email) {
+      return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+  }
+
+
+  //register function
+  //   document.getElementById('reBtn').addEventListener('click', function writeUserData(reEmail, fullname, phonenumber, address) {
+  //       fullname = document.getElementById('fullname').value;
+  //       reEmail = document.getElementById('reEmail').value;
+  //       phonenumber = document.getElementById('phonenumber').value;
+  //       address = document.getElementById('address').value;
+  //       set(ref(db, 'users/' + fullname), {
+  //           username: fullname,
+  //           email: reEmail,
+  //           phonenumber: phonenumber,
+  //           address: address 
+  //       });
+  //   })
+
+
+  //   document.getElementById('reBtn').addEventListener('click', function() {
+  //       const email = document.getElementById('reEmail').value;
+  //       const password = document.getElementById('repw').value;
+  //       //   const rewritepw = document.getElementById('rerwp').value;
+  //       //   const fullname = document.getElementById('fullname').value;
+  //       //   const phonenumber = document.getElementById('phonenumber').value;
+  //       //   const address = document.getElementById('address').value;
+
+
+  //       createUserWithEmailAndPassword(auth, email, password)
+  //           .then((userCredential) => {
+  //               // Signed in 
+  //               const user = userCredential.user;
+  //               //  ...
+  //               alert("Đăng ký thành công");
+  //               set(ref(db, 'users/' + fullname), {
+  //                   username: fullname,
+  //                   email: reEmail,
+  //                   phonenumber: phonenumber,
+  //                   address: address
+  //               });
+  //           })
+  //           .catch((error) => {
+  //               const errorCode = error.code;
+  //               const errorMessage = error.message;
+  //               //   ..
+  //               alert(errorCode + errorMessage);
+  //           });
+  //   })
