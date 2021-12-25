@@ -83,10 +83,13 @@ body{
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 10px;
     cursor: pointer;
-
+    justify-content: flex-start;
+    margin-right: 32px;
+}
+.product{
+    margin-right: 32px;
 }
 .products:hover{
     background-color: white;
