@@ -8,6 +8,7 @@
     flex-direction: column;
     float: left;
     margin-top: -1px;
+    justify-content: flex-start;
 }
 .wrapper a{
     text-decoration: none;
@@ -82,9 +83,13 @@ body{
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 10px;
     cursor: pointer;
+    justify-content: flex-start;
+    margin-right: 32px;
+}
+.product{
+    margin-right: 32px;
 }
 .products:hover{
     background-color: white;
