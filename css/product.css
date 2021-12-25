@@ -60,7 +60,7 @@ body{
     text-align: center;
     width: 200px;
     height: auto;
-    flex-basis: 30%;
+    margin: auto;
     padding: 10px;
 }
 .product-item:hover{
@@ -85,13 +85,10 @@ body{
     flex-wrap: wrap;
     margin-bottom: 10px;
     cursor: pointer;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .product {
-    margin-right: auto;
-}
-.products > .product:last-child {
-    margin-left: 0px;
+    width: 32%;
 }
 .products:hover{
     background-color: white;
@@ -230,7 +227,12 @@ body{
     .container{
         margin-left: 0px;
     }
-    .products{
-       
+    .product {
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .product {
+        width: 95%;
     }
 }
