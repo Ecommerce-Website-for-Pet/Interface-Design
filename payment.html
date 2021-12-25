@@ -32,15 +32,13 @@
         }
         .left h2 {
             background-color: wheat;
+            font-size: 22px;
+            letter-spacing: 0.02em;
+            font-weight: 600;
         }
         .right h2 {
             border-bottom: 1.5px solid palevioletred;
             color: palevioletred;
-        }
-        .note {
-            font-size: 11px;
-            margin-left: 21px;
-            font-style: italic;
         }
         .form_container {
             display: flex;
@@ -49,7 +47,6 @@
         }
         .right-col1 {
             width: 50%;
-            /* margin-right: 20px; */
         }
         .form_row, .note {
             display: flex;
@@ -68,6 +65,9 @@
         .form_row input {
             height: 20px;
         }
+        #add, #form-note {
+            resize: none;
+        }
         #paycod, #paybanking {
             font-weight: normal;
             font-size: 13px;
@@ -76,7 +76,7 @@
             font-size: 13px;
             font-style: italic;
         }
-        input[type=submit] {
+        input[type=button] {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -86,11 +86,30 @@
             padding: 10px 30px;
             font-size: 16px;
             font-weight: bold;
+            cursor: pointer;
         }
+        input[type=submit] {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            color: palevioletred;
+            border-radius: 30px;
+            padding: 4px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            margin-top: 5px;
+        }
+        
         .cart {
-            font-size: 13px;
+            font-size: 12px;
             height: 300px;
             overflow-y: auto;
+        }
+        .product {
+            font-weight: 500;
         }
         .cart ::-webkit-scrollbar-thumb {
             background: wheat !important; 
@@ -101,7 +120,7 @@
             margin: 20px 10px;
         }
         .cart_row img {
-            width: 80px;
+            width: 60px;
         }
         .cart_row-name {
             display: flex;
@@ -131,10 +150,124 @@
         .detail-col {
             display: flex;
             flex-direction: column;
+            
         }
         .detail-col span {
             margin-bottom: 10px;
+            font-weight: 550;
+            letter-spacing: 0.02em;
         }
+        @media screen and (max-width: 1050px) {
+            .form_container {
+                flex-direction: column;
+            }
+            .left {
+                width: 55%;
+            }
+            .right {
+                width: 43%;
+            }
+            .cart {
+                font-size: 14px;
+            }
+            .right-col1,.right-col2 {
+            width: 100%;
+        }
+    }
+        @media screen and (max-width: 800px) {
+            .content {
+                flex-direction: column;
+            }
+            .cart {
+                height: 210px;
+            }
+            .left {
+                width: 90%;
+                height: 350px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cart_row img {
+                width: 80px;
+            }
+            .right {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+    }
+    @media screen and (max-width: 600px) {
+            .cart {
+                font-size: 13px;
+            }
+            .cart_row img {
+                width: 50px;
+                margin-top: 10px;
+                margin-left: 5px;
+                margin-right: 8px;
+            }
+            .cart_row-name {
+                width: 48%;
+            }
+    }
+    @media screen and (max-width: 500px) {
+            .cart {
+                font-size: 12px;
+            }
+            .cart_row img {
+                width: 45px;
+                margin-top: 15px;
+            }
+    }
+        .popup {
+            position: relative;
+            display: block;
+            margin: auto;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .popup .popuptext {
+            visibility: hidden;
+            width: 360px;
+            height: 150px;
+            background-color: rgb(221, 120, 154);
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 12px;
+            position: fixed;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            margin-top: -75px; /* Negative half of height. */
+            margin-left: -180px; /* Negative half of width. */
+        }
+        .popuptext span {
+            font-size: 12px;
+            font-weight: 500px;
+        }
+        /*hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0;} 
+            to {opacity: 1;}
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+        }
+        
     </style>
 </head>
 
@@ -202,19 +335,14 @@
                     <span>Thành tiền:</span>
                 </div>
                 <div class="detail-col detail-col-query">
-                    <!-- <span>80.000 VND</span>
-                    <span>20.000 VND</span>
-                    <span>100.000 VND</span> -->
                 </div>
             </div>
         </div>
         <div class="right">
             <h2>THÔNG TIN ĐẶT HÀNG</h2>
-            <form action="">
+            <form action="" >
                 <div class="form_container">
                     <div class="right-col1">
-                        <input type="checkbox" name="" id="">&emsp13; Nhập địa chỉ đã đăng ký<br/>
-                        <span class="note">Áp dụng với khách hàng thành viên</span>
                         <div class="form_row">
                             <label for="name">1. Họ tên</label>
                             <input type="text" name="name" id="name">
@@ -236,7 +364,7 @@
                         <div class="form_row">
                             <label for="payment">Hình thức thanh toán</label>
                             <div>
-                                <input type="radio" name="payment" id="paymentcod">
+                                <input type="radio" name="payment" id="paymentcod" checked>
                                 <label for="payment" id="paycod">Thanh toán khi nhận hàng</label>
                             </div>
                             <div>
@@ -247,9 +375,37 @@
                         <div class="form_row"><textarea name="note" id="form-note" cols="30" rows="2" placeholder="Ghi chú..."></textarea></div>
                     </div>
                 </div>
-                <input type="submit" value="HOÀN TẤT ĐẶT HÀNG">
+                <input type="button" value="HOÀN TẤT ĐẶT HÀNG" onclick="validate()">
+                <div class="popup">
+                    <span class="popuptext" id="myPopup">
+                        <h4>Cảm ơn bạn đã tin tưởng MarPet!</h4>
+                        <span><i>Nếu bạn chọn phương thức thanh toán chuyển khoản, vui lòng chuyển đến STK sau đây:</i>
+                            <br>Vietinbank CN Hoàng Mai
+                            <br>Số TK : 106868087203
+                            <br>Chủ TK: Uyên Nguyễn
+                            <br>
+                        </span>
+                        <input type="submit" value="XÁC NHẬN">
+                    </span>
+                    
+                </div>
             </form>
         </div>
+        <script>
+              function validate() {
+                var n = document.getElementById("name").value;
+                var m = document.getElementById("email").value;
+                var p = document.getElementById("phone").value;
+                var a = document.getElementById("add").value;
+                if ((n== "")||(m == "")||(p == "")||(a == "")) {
+                    alert("Vui lòng nhập đủ thông tin!");
+                } else {showPopup()}
+            }
+            function showPopup() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
     </div>
 
     <!-- chèn html footer -->
@@ -285,7 +441,7 @@
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+' ('+item.thuocTinh+')</span><span class="modifier">'+item.thuocTinh+'</span></div><span class="price">'+item.price*item.quantity+' VND</span></div>';
+                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier">'+item.thuocTinh+'</span></div><span class="price">'+item.price*item.quantity+' VND</span></div>';
             }
             
             else{
