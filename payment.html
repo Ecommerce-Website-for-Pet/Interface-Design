@@ -165,6 +165,9 @@
             font-weight: 550;
             letter-spacing: 0.02em;
         }
+        .detail-col-query {
+            text-align: right;
+        }
         @media screen and (max-width: 1050px) {
             .form_container {
                 flex-direction: column;
@@ -454,14 +457,14 @@
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier">'+item.thuocTinh+'</span></div><span class="price">'+formatNumber(item.price*item.quantity)+' VND</span></div>';
+                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier">'+item.thuocTinh+'</span></div><span class="price">'+formatNumber(item.price*item.quantity)+' đ</span></div>';
             }
             
             else{
-                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier"></span></div><span class="price">'+formatNumber(item.price*item.quantity)+' VND</span></div>';
+                productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier"></span></div><span class="price">'+formatNumber(item.price*item.quantity)+' đ</span></div>';
             }
         });
-        calculateCostInPayment.innerHTML += '<span>'+formatNumber(cartCost)+' VND</span><span>'+formatNumber(shippingFee)+' VND</span><span>'+formatNumber(totalPayable)+' VND</span>';
+        calculateCostInPayment.innerHTML += '<span>'+formatNumber(cartCost)+' đ</span><span>'+formatNumber(shippingFee)+' đ</span><span>'+formatNumber(totalPayable)+' đ</span>';
     }
     else{
         
