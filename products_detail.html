@@ -14,13 +14,13 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="./js/angular.min.js"></script>
     <link rel="stylesheet" href="./css/products_detail.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <script>
         function getUrlParams() {
             var params = {};
             var queryString = window.location.href.replace(
                 /[?&]+([^=&]+)=([^&]*)/gi,
-                function(m, key, value) {
+                function (m, key, value) {
                     params[key] = value;
                 }
             );
@@ -37,6 +37,7 @@
     </script>
 
 
+<script src="./js/products_detail.js"></script>
 
 </head>
 
@@ -46,8 +47,7 @@
     <div id="header"></div>
     <script>
         load("header.html");
-        function load(url)
-        {
+        function load(url) {
             req = new XMLHttpRequest();
             req.open("GET", url, false);
             req.send(null);
@@ -62,8 +62,8 @@
                         <div class="products_gallery-slider">
                             <div style="text-align:center" class="dot_container">
                                 <span class="dot" onclick="showImg()">
-                                <img src="" alt="">
-                            </span>
+                                    <img src="" alt="">
+                                </span>
                             </div>
                             <div class="products_detail-img" id="products_detail-img">
                                 <img src="" alt="">
@@ -86,15 +86,15 @@
                                 <div class="price-original">
                                     <label>Giá bán:</label>
                                     <span class="price-amount">
-                                         <span class="price"></span>
-                                    <span style="font-weight: 700;"></span>
+                                        <span class="price"></span>
+                                        <span style="font-weight: 700;"></span>
                                     </span>
                                 </div>
                                 <div class="price-discount">
                                     <label>Giá khuyến mãi:</label>
                                     <span class="price-amount">
-                                         <span class="price"></span>
-                                    <span style="color: #b93505; font-weight: 700;"></span>
+                                        <span class="price"></span>
+                                        <span style="color: #b93505; font-weight: 700;"></span>
                                     </span>
                                 </div>
                             </div>
@@ -134,8 +134,9 @@
                                             <label for="quantity">Số lượng</label>
                                             <fieldset data-quantity>
                                                 <legend>Change quantity</legend>
-                                              </fieldset>
-                                            <button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào giỏ hàng</button>
+                                            </fieldset>
+                                            <button type="submit" name="add-to-cart" class="btn_add-to-cart">Thêm vào
+                                                giỏ hàng</button>
                                         </div>
                                     </div>
                                 </form>
@@ -143,14 +144,14 @@
                                     import QuantityInput from './js/quantity.js';
 
                                     // Set up quantity forms
-                                    (function(){
-                                    let quantities = document.querySelectorAll('[data-quantity]');
+                                    (function () {
+                                        let quantities = document.querySelectorAll('[data-quantity]');
 
-                                    if (quantities instanceof Node) quantities = [quantities];
-                                    if (quantities instanceof NodeList) quantities = [].slice.call(quantities);
-                                    if (quantities instanceof Array) {
-                                        quantities.forEach(div => (div.quantity = new QuantityInput(div, 'Down', 'Up')));
-                                    }
+                                        if (quantities instanceof Node) quantities = [quantities];
+                                        if (quantities instanceof NodeList) quantities = [].slice.call(quantities);
+                                        if (quantities instanceof Array) {
+                                            quantities.forEach(div => (div.quantity = new QuantityInput(div, 'Down', 'Up')));
+                                        }
                                     })();
 
                                 </script>
@@ -186,33 +187,32 @@
                 <div class="description_right">
                     <img src="./library/cattt.gif" alt="">
                     <div>
-                        <p>MarPet <br/> tự tin làm <br/> bạn hài lòng</p>
+                        <p>MarPet <br /> tự tin làm <br /> bạn hài lòng</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <!-- chèn html footer -->
-        <!-- <div w3-include-html="footer.html"></div> -->
-        <div id="footer"></div>
-        <script>
-            load("footer.html");
-            function load(url)
-            {
-                req = new XMLHttpRequest();
-                req.open("GET", url, false);
-                req.send(null);
-                document.getElementById("footer").innerHTML = req.responseText;
-            }
-        </script>
-        <script>
-            w3.includeHTML();
-        </script>
+    <!-- chèn html footer -->
+    <!-- <div w3-include-html="footer.html"></div> -->
+    <div id="footer"></div>
+    <script>
+        load("footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById("footer").innerHTML = req.responseText;
+        }
+    </script>
+    <script>
+        w3.includeHTML();
+    </script>
 
-        <script src="./js/chatBox&returnTop-btn.js"></script>
+    <script src="./js/chatBox&returnTop-btn.js"></script>
 
-        <script src="./js/flat-menu.js"></script>
-        <!-- <script>
+    <script src="./js/flat-menu.js"></script>
+    <!-- <script>
             let productContainer = document.querySelector(".color-option");
 
 
@@ -221,16 +221,13 @@
             }
         </script> -->
 
-        <!-- js xổ ra các mục nhỏ của footer khi trình duyệt thu nhỏ -->
-        <script src="./js/footer.js"></script>
-        
-        <script src="./js/products_detail.js"></script>
+    <!-- js xổ ra các mục nhỏ của footer khi trình duyệt thu nhỏ -->
+    <script src="./js/footer.js"></script>
 
-        
-        </script>
-<script src="./js/searchHeader.js"></script>
-<script src="./js/searchdetails.js"></script>
-<script src="./js/searchMobile.js"></script>
+
+    <script src="./js/searchHeader.js"></script>
+    <script src="./js/searchdetails.js"></script>
+    <script src="./js/searchMobile.js"></script>
 </body>
 
 </html>
