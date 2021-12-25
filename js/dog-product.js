@@ -34,7 +34,7 @@ function myFunction(arr) {
                     close_del = '</del>';
                 }
                 div +=
-                    '<div class="products"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
+                    '<div class="product"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
                     arr[i].image[0] +
                     ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
                     arr[i].label +

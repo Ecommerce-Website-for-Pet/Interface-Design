@@ -1,5 +1,4 @@
 .container{
-    /* display: flex; */
     margin-left: 25px;
 }
 
@@ -7,9 +6,9 @@
     width: 70%;
     display: flex;
     flex-direction: column;
-    /* height: 30%; */
     float: left;
     margin-top: -1px;
+    justify-content: flex-start;
 }
 .wrapper a{
     text-decoration: none;
@@ -20,7 +19,6 @@ body{
     padding: 0;
 }
 .category{
-    /* display: flex; */
     width: 20%;
     flex-direction: column;
     font-size: 15px;
@@ -70,7 +68,6 @@ body{
     transform-style: preserve-3d; 
     transform: scale(1.02);
     transition: all ease 0.3s;
-    /* box-shadow: 1px 1px rgb(251, 255, 183); */
 }
 .headline{
     background-color: #DB7093;
@@ -79,7 +76,6 @@ body{
     padding: 16px 20px;
     border: 1px solid white;   
     font-weight: bold;
-    /* height: 20px; */
     line-height: 20px;
     margin-bottom: 20px;
     letter-spacing: 0.02em;
@@ -87,11 +83,13 @@ body{
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* height: 30%; */
     margin-bottom: 10px;
     cursor: pointer;
-
+    justify-content: flex-start;
+    margin-right: 32px;
+}
+.product{
+    margin-right: 32px;
 }
 .products:hover{
     background-color: white;
@@ -103,10 +101,6 @@ body{
     text-decoration: none;
     color: black;
 }
-/* img{
-    max-width: 200px;
-    height: 200px;
-} */
 .product-info a{
     display: block;
     text-decoration: none;
@@ -116,10 +110,6 @@ body{
     padding: 10px 0px;
 }
 
-.product-info a.product-dog{
-    font-size: 14px;    
-    padding: 3px 0px;
-}
 .product-info a.product-name{
     color: black;
     padding: 3px 0px;
