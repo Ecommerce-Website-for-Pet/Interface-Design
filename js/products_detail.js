@@ -14,7 +14,7 @@ let cartItemID = 1
 function render_products_gallery(arr) {
     var div = '<div class="products_main"><div class="products_content"><div class="products_gallery" id="products_gallery">';
     var i, j;
-
+    
 
     for (i = 0; i < arr.length; i++) {
         if (arr[i].productid == id) {
@@ -86,6 +86,7 @@ function render_products_gallery(arr) {
 
             div += '</div></div></div></div> <div class="description_right"><img src="./library/cattt.gif" alt=""><div><p>MarPet <br/> tự tin làm <br/> bạn hài lòng</p></div></div></div></div></div>'
             document.getElementById("container").innerHTML = div;
+            document.getElementById("tieuDeSanPham").innerHTML = arr[i].name;
             let carts = document.querySelectorAll('.add-cart');
             // let order = productid+" "
             // let counter = 1
@@ -111,8 +112,42 @@ function render_products_gallery(arr) {
 onLoadCartNumbers();
 displayCart();
 // displayCartInPayment();
+
+// đếm số loại sản phẩm, cùng productid nhưng khối lượng, màu sắc khác thì cũng tính là khác
+// function onLoadCartNumbers() {
+//     let productNumbers = localStorage.getItem('cartNumbers')
+//     if (productNumbers) {
+//         // document.querySelector('.cart span').textContent=productNumbers;
+//         document.querySelector('.countProductsInCart1 span').textContent = productNumbers;
+//         document.querySelector('.countProductsInCart2 span').textContent = productNumbers;
+//         document.querySelector('.countProductsInCart3 span').textContent = productNumbers;
+
+//     } else {
+
+//     }
+// }
+// // quantity:parseInt(document.getElementById('soluongsanpham').value)
+// function cartNumbers(product){
+//     let productNumbers=localStorage.getItem('cartNumbers')
+
+//     productNumbers=parseInt(productNumbers);
+//     if(productNumbers){
+//         localStorage.setItem('cartNumbers', productNumbers+1);
+//         document.querySelector('.countProductsInCart1 span').textContent=productNumbers+1;
+//         document.querySelector('.countProductsInCart2 span').textContent=productNumbers+1;
+//         document.querySelector('.countProductsInCart3 span').textContent=productNumbers+1;
+//     } else {
+//         localStorage.setItem('cartNumbers', 1);
+//         document.querySelector('.countProductsInCart1 span').textContent=1;
+//         document.querySelector('.countProductsInCart2 span').textContent=1;
+//         document.querySelector('.countProductsInCart3 span').textContent=1;
+//     }
+//     setItems(product);
+// }
+
+// đếm số lượng từng sản phẩm
 function onLoadCartNumbers() {
-    let productNumbers = localStorage.getItem('cartNumbers')
+    let productNumbers = localStorage.getItem('totalQuantity');
     if (productNumbers) {
         // document.querySelector('.cart span').textContent=productNumbers;
         document.querySelector('.countProductsInCart1 span').textContent = productNumbers;
@@ -125,38 +160,24 @@ function onLoadCartNumbers() {
 }
 // quantity:parseInt(document.getElementById('soluongsanpham').value)
 function cartNumbers(product){
-    let productNumbers=localStorage.getItem('cartNumbers')
+    let productNumbers=localStorage.getItem('totalQuantity');
 
     productNumbers=parseInt(productNumbers);
     if(productNumbers){
-        localStorage.setItem('cartNumbers', productNumbers+1);
-        document.querySelector('.countProductsInCart1 span').textContent=productNumbers+1;
-        document.querySelector('.countProductsInCart2 span').textContent=productNumbers+1;
-        document.querySelector('.countProductsInCart3 span').textContent=productNumbers+1;
+        localStorage.setItem('totalQuantity', productNumbers);
+        document.querySelector('.countProductsInCart1 span').textContent=productNumbers+parseInt(document.getElementById('soluongsanpham').value);
+        document.querySelector('.countProductsInCart2 span').textContent=productNumbers+parseInt(document.getElementById('soluongsanpham').value);
+        document.querySelector('.countProductsInCart3 span').textContent=productNumbers+parseInt(document.getElementById('soluongsanpham').value);
     } else {
-        localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.countProductsInCart1 span').textContent=1;
-        document.querySelector('.countProductsInCart2 span').textContent=1;
-        document.querySelector('.countProductsInCart3 span').textContent=1;
+        localStorage.setItem('totalQuantity', parseInt(document.getElementById('soluongsanpham').value));
+        document.querySelector('.countProductsInCart1 span').textContent=parseInt(document.getElementById('soluongsanpham').value);
+        document.querySelector('.countProductsInCart2 span').textContent=parseInt(document.getElementById('soluongsanpham').value);
+        document.querySelector('.countProductsInCart3 span').textContent=parseInt(document.getElementById('soluongsanpham').value);
     }
     setItems(product);
 }
 
-// function cartNumbers(product){
-//     let productNumbers=localStorage.getItem('cartNumbers')
 
-//     productNumbers=parseInt(productNumbers);
-//     if(productNumbers){
-//         localStorage.setItem('cartNumbers', productNumbers+1);
-//         document.querySelector('.countProductsInCart1 span').textContent=productNumbers+1;
-//         document.querySelector('.countProductsInCart2 span').textContent=productNumbers+1;
-//     } else {
-//         localStorage.setItem('cartNumbers', 1);
-//         document.querySelector('.countProductsInCart1 span').textContent=1;
-//         document.querySelector('.countProductsInCart2 span').textContent=1;
-//     }
-//     setItems(product);
-// }
 
 function setItems(product){
     // let cartItems=localStorage.getItem('productsInCart');
@@ -217,7 +238,91 @@ function setItems(product){
                 if(mauSac[i].checked){
                     productInfo["image"] = product.image[i];
                     productInfo["colors"] = product.colors[i];
-                    productInfo["thuocTinh"] = product.colors[i];
+
+                    switch (productInfo["colors"]) {
+                        case "red":
+                            productInfo["thuocTinh"] = "đỏ";
+                            break;
+                        case "grey":
+                            productInfo["thuocTinh"] = "xám";
+                            break;
+                        case "gray":
+                            productInfo["thuocTinh"] = "xám";
+                            break;
+                        case "black":
+                            productInfo["thuocTinh"] = "đen";
+                            break;
+                        case "brown":
+                            productInfo["thuocTinh"] = "nâu";
+                            break;
+                        case "white":
+                            productInfo["thuocTinh"] = "trắng";
+                            break;
+                        case "beige":
+                            productInfo["thuocTinh"] = "màu be";
+                            break;
+                        case "lightblue":
+                            productInfo["thuocTinh"] = "xanh dương nhạt";
+                            break;
+                        case "wheat":
+                            productInfo["thuocTinh"] = "lúa mì";
+                            break;
+                        case "chartreuse":
+                            productInfo["thuocTinh"] = "xanh nõn chuối";
+                            break;
+                        case "cyan":
+                            productInfo["thuocTinh"] = "xanh lơ";
+                            break;
+                        case "blue":
+                            productInfo["thuocTinh"] = "xanh dương";
+                            break;
+                        case "green":
+                            productInfo["thuocTinh"] = "xanh lá";
+                            break;
+                        case "yellow":
+                            productInfo["thuocTinh"] = "vàng";
+                            break;
+                        case "orange":
+                            productInfo["thuocTinh"] = "cam";
+                            break;
+                        case "pink":
+                            productInfo["thuocTinh"] = "hồng";
+                            break;
+                        case "purple":
+                            productInfo["thuocTinh"] = "tím";
+                            break;
+                        case "silver":
+                            productInfo["thuocTinh"] = "bạc";
+                            break;
+                        case "maroon":
+                            productInfo["thuocTinh"] = "hạt dẻ";
+                            break;
+                        case "fuchsia":
+                            productInfo["thuocTinh"] = "hồng vân anh";
+                            break;
+                        case "lime":
+                            productInfo["thuocTinh"] = "vàng chanh";
+                            break;
+                        case "olive":
+                            productInfo["thuocTinh"] = "ô liu";
+                            break;
+                        case "navy":
+                            productInfo["thuocTinh"] = "xanh nước biển";
+                            break;
+                        case "teal":
+                            productInfo["thuocTinh"] = "xanh mòng két";
+                            break;
+
+                        
+                        
+                            
+
+                        case productInfo["colors"]:
+                            productInfo["thuocTinh"] = productInfo["colors"];
+                            break;
+                    }
+
+                    // productInfo["thuocTinh"] = productInfo["colors"];
                     // productInfo["name"] = product.name+" ("+product.colors[i]+")";
                 }
                 
@@ -255,6 +360,7 @@ function getProductFromStorage(){
 function totalCost(product) {
     // console.log("The product price is",product.price);
     let cartCost = localStorage.getItem('totalCost');
+    let countQuantity = localStorage.getItem('totalQuantity');
     // console.log("My cartCost is",cartCost);
     // console.log(typeof cartCost);
     
@@ -306,16 +412,25 @@ function totalCost(product) {
         // productInfo["image"] = product.image[0];
         // productInfo["name"] = product.name;
     }
-
+    
     if (cartCost != null) {
         cartCost = parseInt(cartCost);
         localStorage.setItem("totalCost", cartCost + tinhTien);
         // localStorage.setItem("totalCost", cartCost + product.price[0]);
+        countQuantity=parseInt(countQuantity);
+        localStorage.setItem("totalQuantity", countQuantity + parseInt(document.getElementById('soluongsanpham').value));
     } else {
         localStorage.setItem("totalCost", tinhTien);
+        localStorage.setItem("totalQuantity", parseInt(document.getElementById('soluongsanpham').value));
 
     }
-
+    // if(countQuantity!=null){
+    //     countQuantity=parseInt(countQuantity);
+    //     localStorage.setItem("totalQuantity", countQuantity + parseInt(document.getElementById('soluongsanpham').value));
+    // }
+    // else{
+    //     localStorage.setItem("totalQuantity", parseInt(document.getElementById('soluongsanpham').value));
+    // }
 
 }
 
