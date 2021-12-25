@@ -680,7 +680,7 @@
         "category": "d_be",
         "label": "PAW",
         "name": "Bộ kéo cắt tỉa lông chó mèo chuyên dụng TOBY Pet Scissors",
-        "price": 1500000,
+        "price": [1500000],
         "discount": "",
         "image": ["library/products/both/BOTH_BE_sp1-1.jpg", "library/products/both/BOTH_BE_sp1-2.jpg"],
         "colors": "",
