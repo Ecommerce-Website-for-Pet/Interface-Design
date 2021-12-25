@@ -86,10 +86,12 @@ body{
     margin-bottom: 10px;
     cursor: pointer;
     justify-content: flex-start;
-    margin-right: 32px;
 }
-.product{
-    margin-right: 32px;
+.product {
+    margin-right: auto;
+}
+.products > .product:last-child {
+    margin-left: 0px;
 }
 .products:hover{
     background-color: white;
@@ -229,6 +231,6 @@ body{
         margin-left: 0px;
     }
     .products{
-        margin-left: 25px;
+       
     }
 }
