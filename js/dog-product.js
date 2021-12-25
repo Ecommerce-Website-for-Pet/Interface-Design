@@ -3,7 +3,7 @@ var url = "./json/products.json";
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
-        myFunction(myArr);
+        dogProduct(myArr);
     }
 };
 // xmlhttp.onreadystatechange = function () {
@@ -15,7 +15,7 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", url, true); //ra lệnh
 xmlhttp.send(); //thực hiên
 
-function myFunction(arr) {
+function dogProduct(arr) {
     var div = "";
     var i;
     var href = window.location.href;

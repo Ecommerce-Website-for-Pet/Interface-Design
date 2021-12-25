@@ -221,11 +221,14 @@ body{
     /* color: var(--fire-bush); */
     color: #DB7093;
 }
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 900px){
     .category, .wrapper {
         width: 100%;
     }
     .container{
         margin-left: 0px;
+    }
+    .products{
+        margin-left: 25px;
     }
 }

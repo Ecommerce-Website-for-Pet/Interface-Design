@@ -3,7 +3,7 @@ var url = "./json/products.json";
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
-        myFunction(myArr);
+        catProduct(myArr);
     }
 };
 // xmlhttp.onreadystatechange = function () {
@@ -15,14 +15,13 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", url, true); //ra lệnh
 xmlhttp.send(); //thực hiên
 
-function myFunction(arr) {
+function catProduct(arr) {
     var div = "";
     var i;
     var href = window.location.href;
     var link = new Array();
     link = href.split('/');
     var name = link[link.length - 1]
-        // alert(ten);
     if (name == "Cat-Product.html") {
         for (i = 0; i < arr.length; i++) {
             if (arr[i].category.charAt(0) == 'c') {
