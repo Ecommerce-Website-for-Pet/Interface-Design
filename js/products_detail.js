@@ -10,7 +10,8 @@ xmlhttp.onreadystatechange = function() {
 
 xmlhttp.open("GET", url, true); //ra lệnh
 xmlhttp.send(); //thực hiên
-let cartItemID = 1
+let cartItemID = 1;
+
 function render_products_gallery(arr) {
     var div = '<div class="products_main"><div class="products_content"><div class="products_gallery" id="products_gallery">';
     var i, j;
@@ -148,14 +149,16 @@ displayCart();
 // đếm số lượng từng sản phẩm
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('totalQuantity');
+    let productsInTheCart = getProductFromStorage();
     if (productNumbers) {
         // document.querySelector('.cart span').textContent=productNumbers;
         document.querySelector('.countProductsInCart1 span').textContent = productNumbers;
         document.querySelector('.countProductsInCart2 span').textContent = productNumbers;
         document.querySelector('.countProductsInCart3 span').textContent = productNumbers;
-
+        cartItemID = productsInTheCart[productsInTheCart.length - 1].thutusanpham;
+        cartItemID++;
     } else {
-
+        cartItemID = 1;
     }
 }
 // quantity:parseInt(document.getElementById('soluongsanpham').value)
@@ -207,9 +210,11 @@ function setItems(product){
         // image: product.image[0],
         name: product.name,
         thuocTinh:"",
+        thutusanpham:cartItemID,
         // price: product.price[0],
         quantity:parseInt(document.getElementById('soluongsanpham').value) // id 'soluongsanpham' là id của input số lượng ở <fieldset>
     }
+    cartItemID++;
     if (product.weight != "") {
         // productInfo["weight"] = product.weight ;
         var khoiLuong = document.getElementsByName('weight');
@@ -450,11 +455,11 @@ function displayCart() {
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+item.quantity*item.price+'₫</div>';
             }
             
             else{
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+item.quantity*item.price+'₫</div>';
             }
         });
         productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+cartCost+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
@@ -468,7 +473,24 @@ function displayCart() {
         productContainer2.style.display="none";
     }
 }
+const cartList = document.querySelector('.product');
+cartList.addEventListener('click', deleteProduct);
+function deleteProduct(e){
+    let cartItem;
+    if(e.target.tagName === "ION-ICON"){
+        cartItem = e.target.parentElement;
+        cartItem.remove(); // this removes from the DOM only
+    } else {
 
+    }
+
+    let products = getProductFromStorage();
+    let updatedProducts = products.filter(product => {
+        return product.thutusanpham !== parseInt(cartItem.dataset.thutusanpham);
+    });
+    localStorage.setItem('productsInCart', JSON.stringify(updatedProducts)); // updating the product list after the deletion
+    updateCartInfo();
+}
 
 // đừng xóa này nha, lỡ cần á :)))
 // function displayCartInPayment() {
