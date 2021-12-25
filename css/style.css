@@ -1,6 +1,9 @@
+@font-face {
+    font-family: SVN-Poppins;
+    src: url(../font/PoppinsVN-400.ttf) format("truetype");
+}
 * {
     padding: 0px;
     margin: 0px;
     font-family: SVN-Poppins;
-    src: url(../font/PoppinsVN-400.ttf) format("truetype");
 }
