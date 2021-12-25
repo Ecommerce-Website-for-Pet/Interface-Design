@@ -51,12 +51,17 @@ function catProduct(arr) {
     for (i = 0; i < arr.length; i++) {
         if (arr[i].category == category) {
             var d = '';
+            var e = '';
             var open_del = '';
             var close_del = '';
             if (arr[i].discount != "") {
                 d = 'đ';
                 open_del = '<del>';
                 close_del = '</del>';
+                e = formatNumber(arr[i].discount)
+            }
+            if(arr[i].discount == ""){
+                e = '';
             }
             div +=
                 '<div class="products"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
@@ -67,7 +72,7 @@ function catProduct(arr) {
                 arr[i].name +
                 '</div><br/><div class="product-price">' + open_del +
                 arr[i].price[0] +
-                " đ" + close_del + "</div><div class='product-discount' >" + arr[i].discount + ' ' + d + "</div></div></div></div></div>";
+                " đ" + close_del + "</div><div class='product-discount' >" + e + ' ' + d + "</div></div></div></div></div>";
         }
         document.getElementById("product").innerHTML = div;
 
@@ -78,6 +83,10 @@ function gotoChiTiet(id) {
     window.location.href = 'products_detail.html?productid=' + id;
 }
 
+function formatNumber(num) {
+    var n = Number(num);
+    return n.toLocaleString("vi");
+}
 // let cartItemID = 1;
 
 // // purchase product
