@@ -180,12 +180,18 @@ a {
 
 .flat-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     background-color: #db7093;
     align-items: center;
     width: 100%;
 }
-
+.flat-menu>div{
+    margin-right: auto;
+    margin-left: 150px;
+}
+.flat-menu>a{
+    margin-right: 70px;
+}
 .flat-menu>a>.fas {
     font-size: 18px;
 }
@@ -282,15 +288,15 @@ a {
 }
 
 .fa-bars {
-    padding: 10px 13px;
-    background-color: wheat;
     border-radius: 10px;
+    font-size: 25px;
+
 }
 
-.flat-menu>a:nth-child(2) {
+/* .flat-menu>a:nth-child(2) {
     width: 30%;
     text-align: right;
-}
+} */
 
 .fa-search {
     position: absolute;
