@@ -455,14 +455,14 @@ function displayCart() {
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+item.quantity*item.price+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
             }
             
             else{
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+item.quantity*item.price+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
             }
         });
-        productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+cartCost+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
+        productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+formatNumber(cartCost)+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
 
         // Object.values(cartItems).map(item => {
         //     productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><img src="'+item.image+'" alt=""><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier">Size 15 lb</span></div><span class="price">'+item.price+' VND</span></div>';
