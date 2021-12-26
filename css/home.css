@@ -54,7 +54,6 @@
 }
 
 .dot-slider {
-    width: 100%;
     line-height: 1;
     display: block;
     padding: 5px;
@@ -434,9 +433,9 @@
     .text {
         display: none;
     }
-    .homepage-section-heading {
+    /* .homepage-section-heading {
         width: 100%;
-    }
+    } */
     .highlight-cate-container,
     .homepage-service--container {
         flex-direction: column;
