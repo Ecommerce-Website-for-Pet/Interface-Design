@@ -40,21 +40,23 @@
                   const user = userCredential.user;
                   //  ...
                   alert("Đăng ký thành công");
+
                   set(ref(db, 'users/' + name.value), {
                       username: name.value,
                       email: email.value,
                       phonenumber: phone.value,
                       address: address.value
-                  });
-
-                  //  
+                  }).then(() => {
+                      window.location.href = "sign-in.html"
+                  })
               })
-              .catch((error) => {
-                  const errorCode = error.code;
-                  const errorMessage = error.message;
-                  //   ..
-                  alert(errorCode + errorMessage);
-              });
+
+          .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              //   ..
+              alert(errorCode + errorMessage);
+          });
       }
 
   });
@@ -169,49 +171,3 @@
   function isEmail(email) {
       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
   }
-
-
-  //register function
-  //   document.getElementById('reBtn').addEventListener('click', function writeUserData(reEmail, fullname, phonenumber, address) {
-  //       fullname = document.getElementById('fullname').value;
-  //       reEmail = document.getElementById('reEmail').value;
-  //       phonenumber = document.getElementById('phonenumber').value;
-  //       address = document.getElementById('address').value;
-  //       set(ref(db, 'users/' + fullname), {
-  //           username: fullname,
-  //           email: reEmail,
-  //           phonenumber: phonenumber,
-  //           address: address 
-  //       });
-  //   })
-
-
-  //   document.getElementById('reBtn').addEventListener('click', function() {
-  //       const email = document.getElementById('reEmail').value;
-  //       const password = document.getElementById('repw').value;
-  //       //   const rewritepw = document.getElementById('rerwp').value;
-  //       //   const fullname = document.getElementById('fullname').value;
-  //       //   const phonenumber = document.getElementById('phonenumber').value;
-  //       //   const address = document.getElementById('address').value;
-
-
-  //       createUserWithEmailAndPassword(auth, email, password)
-  //           .then((userCredential) => {
-  //               // Signed in 
-  //               const user = userCredential.user;
-  //               //  ...
-  //               alert("Đăng ký thành công");
-  //               set(ref(db, 'users/' + fullname), {
-  //                   username: fullname,
-  //                   email: reEmail,
-  //                   phonenumber: phonenumber,
-  //                   address: address
-  //               });
-  //           })
-  //           .catch((error) => {
-  //               const errorCode = error.code;
-  //               const errorMessage = error.message;
-  //               //   ..
-  //               alert(errorCode + errorMessage);
-  //           });
-  //   })
