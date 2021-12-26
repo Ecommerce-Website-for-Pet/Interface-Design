@@ -40,6 +40,9 @@
          .catch((error) => {
              const errorCode = error.code;
              const errorMessage = error.message;
-             console.log(errorCode + errorMessage);
+             alert("Đăng nhập không thành công" + " " + errorMessage);
+             document.getElementById("pwlogin").value = '';
+             document.getElementById('emaillogin').focus();
+
          });
  })
