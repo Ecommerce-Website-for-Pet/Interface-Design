@@ -169,8 +169,8 @@
 }
 .btn_add-to-favorite {
     padding: 15px;
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: palevioletred;
     font-weight: 700;
     font-size: 18px;
     position: relative;
@@ -190,7 +190,6 @@
 }
 
 .btn_add-to-favorite:hover {
-    background-color: white;
     color: palevioletred;
     outline: 1px solid palevioletred;
     outline-offset: -1px;
