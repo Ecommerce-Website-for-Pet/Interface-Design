@@ -132,6 +132,10 @@ function searchFunction(arr) {
       d = "đ";
       open_del = "<del>";
       close_del = "</del>";
+      e = formatNumber(arr[i].discount)
+    }
+    if(arr[i].discount == ""){
+      e= '';
     }
     div +=
       '<div class="products"><div class="product-item" onclick="gotoChiTiet(' +
@@ -144,11 +148,11 @@ function searchFunction(arr) {
       arr[i].name +
       '</div><br/><div class="product-price">' +
       open_del +
-      arr[i].price[0] +
+      formatNumber(arr[i].price[0]) +
       " đ" +
       close_del +
       "</div><div class='product-discount' >" +
-      arr[i].discount +
+      e  +
       " " +
       d +
       "</div></div></div></div></div>";
@@ -167,3 +171,7 @@ btn.addEventListener("click", () => {
   const keyEvent = new KeyboardEvent("keydown", { key: "Enter" });
   document.body.dispatchEvent(keyEvent);
 });
+function formatNumber(num) {
+  var n = Number(num);
+  return n.toLocaleString("vi");
+}
