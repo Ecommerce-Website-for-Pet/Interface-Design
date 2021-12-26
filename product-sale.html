@@ -15,66 +15,6 @@
     <link rel="stylesheet" href="./css/showsearch.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/style.css">
-    <script>
-        var xmlhttp = new XMLHttpRequest();
-        var url = "./json/products.json";
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                var myArr = JSON.parse(this.responseText);
-                dogProduct(myArr);
-            }
-        };
-        xmlhttp.open("GET", url, true); //ra lệnh
-        xmlhttp.send(); //thực hiên
-        function dogProduct(arr) {
-            var div = "";
-            // var i;
-            // var href = window.location.href;
-            // var link = new Array();
-            // link = href.split("/");
-            // var name = link[link.length - 1];
-            for (let i = 0; i < arr.length; i++) {
-                if (arr[i].discount !== "") {
-                    // var d = '';
-                    // var e = '';
-                    // var open_del = '';
-                    // var close_del = '';
-                    // if (arr[i].discount != "") {
-                    //     d = 'đ';
-                    //     open_del = '<del>';
-                    //     close_del = '</del>';
-                    //     e = formatNumber(arr[i].discount)
-                    // }
-                    // if (arr[i].discount == "") {
-                    //     e = '';
-                    // }
-                    // div +=
-                    //     '<div class="product"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
-                    //     arr[i].image[0] +
-                    //     ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
-                    //     arr[i].label +
-                    //     '</div><br/><div class="product-name">' +
-                    //     arr[i].name +
-                    //     '</div><br/><div class="product-price">' + open_del +
-                    //     formatNumber(arr[i].price[0]) +
-                    //     " đ" + close_del + "</div><div class='product-discount' >" + e + ' ' + d + "</div></div></div></div></div>";
-                    div +=
-                        '<div class="product"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
-                        arr[i].image[0] +
-                        ' "alt=""></div><div class="product-info"><div class="product-label"> ' +
-                        arr[i].label +
-                        '</div><br/><div class="product-name">' +
-                        arr[i].name +
-                        '</div><br/><div class="product-price">' + open_del +
-                        formatNumber(arr[i].price[0]) +
-                        " đ" + close_del + "</div><div class='product-discount' >" + e + ' ' + d + "</div></div></div></div></div>";
-                }
-            }
-            document.getElementById("products").innerHTML = div;
-            // return 0;
-
-        }
-    </script>
 </head>
 
 <body>
@@ -92,7 +32,7 @@
     </script>
 
     <!-- phần nội dung -->
-    <div class="products" id="products"></div>
+    <div class="products" id="sales"></div>
 
     <!-- chèn html footer -->
     <!-- <div w3-include-html="footer.html"></div> -->
@@ -119,8 +59,9 @@
     <script src="./js/footer.js"></script>
     <script src="./js/products_detail.js"></script>
     <script src="./js/searchdetails.js"></script>
-    <script src="./js/dog-product.js"></script>
-    <script src="./js/cat-product.js"></script>
+    <!-- <script src="./js/dog-product.js"></script>
+    <script src="./js/cat-product.js"></script> -->
+    <script src="./js/salesProduct.js"></script>
     <script src="./js/searchMobile.js"></script>
 </body>
 

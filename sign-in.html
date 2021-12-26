@@ -145,6 +145,65 @@
         .fgpw:hover {
             text-decoration: underline;
         }
+        @media only screen and (max-width: 900px) {
+            .flex-container{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+        @media only screen and (max-width: 600px) {
+            .flex-container{
+                width: 50%;
+            }
+            .form_button-signin{
+                margin-bottom: 20px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+            .fgpw{
+                margin-left: 0px;
+            }
+            #emaillogin{
+                width: 200px;
+            }
+            #pwlogin{
+                width: 200px;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .loginContent{
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+            }
+            .flex-container{
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .flex-container-left{
+                margin: 15px;
+                width: 195px;
+            }
+            .flex-container-right{
+                width: 230px;
+            }
+            #signupnow{
+                width: 230px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+            .fgpw{
+                top: 5px;
+            }
+        }
+
     </style>
 </head>
 
@@ -180,7 +239,7 @@
                             <br>
                             <input type="text" name="pass" id="pwlogin">
                             <br><br>
-                            <input class="form_button-signin" type="submit" value="Đăng nhập" id="loginBtn"> &ensp; &emsp; <span class="fgpw"><a href="#">Quên mật khẩu?</a></span>
+                            <input class="form_button-signin" type="submit" value="Đăng nhập" id="loginBtn"> &ensp; &emsp; <span class="fgpw"><a href="emailreset.html">Quên mật khẩu?</a></span>
                         </form>
                     </div>
                     <div class="flex-container-right">
@@ -203,6 +262,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     </div>
@@ -232,7 +292,6 @@
 
     <!-- js xổ ra các mục nhỏ của footer khi trình duyệt thu nhỏ -->
     <script src="./js/footer.js"></script>
-
     <script src="./js/products_detail.js"></script>
     <script src="./js/searchHeader.js"></script>
     <script src="./js/searchdetails.js"></script>
