@@ -32,6 +32,7 @@ function catProduct(arr) {
                     d = 'đ';
                     open_del = '<del>';
                     close_del = '</del>';
+                    e = formatNumber(arr[i].discount)
                 }
                 if(arr[i].discount == ""){
                     e = '';
