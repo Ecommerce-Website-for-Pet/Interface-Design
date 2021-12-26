@@ -508,11 +508,11 @@ function displayCart() {
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span><input value="'+item.quantity+'" id="' + item.thutusanpham + '" onkeyup="tuDongTinhTien('+item+')"></span></div><div class="total"><input value="'+item.quantity*item.price+'" readonly id="tinhTien' + item.thutusanpham + '">₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
             }
             
             else{
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+'</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+item.price+'₫</div><div class="quantity"><ion-icon name="caret-back-circle-outline"></ion-icon><span>'+item.quantity+'</span><ion-icon name="caret-forward-circle-outline"></ion-icon></div><div class="total">'+item.quantity*item.price+'₫</div>';
             }
         });
         productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+formatNumber(cartCost)+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
@@ -526,30 +526,30 @@ function displayCart() {
         productContainer2.style.display="none";
     }
 }
-function tuDongTinhTien(product){
-    var soluongsp=document.getElementById(product.thutusanpham).value;
-    // var tongtiencuasp=document.getElementById("tinhTien"+product.thutusanpham).value;
-    document.getElementById("tinhTien"+product.thutusanpham).value=soluongsp*product.price;
-}
-const cartList = document.querySelector('.product');
-cartList.addEventListener('click', deleteProduct);
-function deleteProduct(e){
-    let cartItem;
-    if(e.target.tagName === "ION-ICON"){
-        cartItem = e.target.parentElement;
-        cartItem.remove(); // this removes from the DOM only
-    } else {
+// function tuDongTinhTien(product){
+//     var soluongsp=document.getElementById(product.thutusanpham).value;
+//     // var tongtiencuasp=document.getElementById("tinhTien"+product.thutusanpham).value;
+//     document.getElementById("tinhTien"+product.thutusanpham).value=soluongsp*product.price;
+// }
+// const cartList = document.querySelector('.product');
+// cartList.addEventListener('click', deleteProduct);
+// function deleteProduct(e){
+//     let cartItem;
+//     if(e.target.tagName === "ION-ICON"){
+//         cartItem = e.target.parentElement;
+//         cartItem.remove(); // this removes from the DOM only
+//     } else {
 
 
-    }
+//     }
 
-    let products = getProductFromStorage();
-    let updatedProducts = products.filter(product => {
-        return product.thutusanpham !== parseInt(cartItem.dataset.thutusanpham);
-    });
-    localStorage.setItem('productsInCart', JSON.stringify(updatedProducts)); // updating the product list after the deletion
-    updateCartInfo();
-}
+//     let products = getProductFromStorage();
+//     let updatedProducts = products.filter(product => {
+//         return product.thutusanpham !== parseInt(cartItem.dataset.thutusanpham);
+//     });
+//     localStorage.setItem('productsInCart', JSON.stringify(updatedProducts)); // updating the product list after the deletion
+//     updateCartInfo();
+// }
 function formatNumber(num) {
     var n = Number(num);
     return n.toLocaleString("vi");
