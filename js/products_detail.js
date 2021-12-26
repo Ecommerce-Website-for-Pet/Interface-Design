@@ -455,11 +455,11 @@ function displayCart() {
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
             }
             
             else{
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><a href="../products_detail.html?productid='+item.productid+'"><img src="'+item.image+'"></a><span>'+item.name+'</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+'</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
             }
         });
         productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+formatNumber(cartCost)+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
@@ -495,6 +495,11 @@ function deleteProduct(e){
 function formatNumber(num) {
     var n = Number(num);
     return n.toLocaleString("vi");
+}
+
+//Function Đi đến chi tiết
+function gotoChiTiet(id) {
+    window.location.href = 'products_detail.html?productid=' + id;
 }
 
 // đừng xóa này nha, lỡ cần á :)))
