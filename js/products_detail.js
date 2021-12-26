@@ -333,18 +333,18 @@ function setItems(product){
                 
             }
             if(product.discount==""){
-                productInfo["price"] = formatNumber(product.price[0]);
+                productInfo["price"] = product.price[0];
             }
             else{
-                productInfo["price"] = formatNumber(product.discount);
+                productInfo["price"] = product.discount;
             }
     }
     else{
         if(product.discount==""){
-            productInfo["price"] = formatNumber(product.price[0]);
+            productInfo["price"] = product.price[0];
         }
         else{
-            productInfo["price"] = formatNumber(product.discount);
+            productInfo["price"] = product.discount;
         }
         productInfo["image"] = product.image[0];
         // productInfo["name"] = product.name;
