@@ -20,8 +20,9 @@
             background-color: #f2f3f5;
             font-family: SVN-Poppins;
         }
-        .content h2{
-            margin-left: 10px;
+        
+        .content h2 {
+            margin-left: 22px;
             margin-bottom: 10px;
             color: #db7093;
         }
@@ -38,13 +39,26 @@
             margin-left: auto;
             margin-right: auto;
         }
-        #emailreset{
-            width: 470px;
+        
+        .email_input {
+            width: 100%;
             height: 30px;
-            margin-left: 10px;
             font-family: SVN-Poppins;
+            text-align: center;
         }
-        #send{
+        
+        .email_input input {
+            width: 90%;
+            height: 30px;
+        }
+        
+        .email_input small {
+            margin: 0 10px;
+            color: #e74c3c;
+            visibility: hidden;
+        }
+        
+        #send {
             cursor: pointer;
             font-weight: bold;
             width: 200px;
@@ -52,77 +66,78 @@
             border: none;
             border-radius: 5px;
             height: 30px;
-            margin-left: 150px;
             margin-top: 10px;
         }
-        #send:hover{
+        
+        #send:hover {
             background-color: #db7093;
             color: #f5deb3;
         }
+        
         @media only screen and (max-width: 900px) {
-            .flex-container{
+            .flex-container {
                 width: 70%;
                 margin-left: auto;
                 margin-right: auto;
             }
         }
+        
         @media only screen and (max-width: 600px) {
-            .flex-container{
+            .flex-container {
                 width: 50%;
             }
-            .form_button-signin{
+            .form_button-signin {
                 margin-bottom: 20px;
             }
-            form{
+            form {
                 display: flex;
                 flex-direction: column;
             }
-            .fgpw{
+            .fgpw {
                 margin-left: 0px;
             }
-            #emaillogin{
+            #emaillogin {
                 width: 200px;
             }
-            #pwlogin{
+            #pwlogin {
                 width: 200px;
             }
         }
+        
         @media only screen and (max-width: 900px) {
-            .flex-container{
+            .flex-container {
                 width: 70%;
                 margin-left: auto;
                 margin-right: auto;
             }
-
         }
+        
         @media only screen and (max-width: 680px) {
-            .flex-container{
+            .flex-container {
                 width: 60%;
-            } 
-            #emailreset{
+            }
+            #emailreset {
                 width: 220px;
             }
-            #send{
+            #send {
                 width: 150px;
-                margin-left: 10px;
             }
         }
-        @media only screen and (max-width: 400px) {
-            .flex-container{
+        
+        @media only screen and (max-width: 420px) {
+            .flex-container {
                 width: 250px;
                 margin-left: auto;
                 margin-right: auto;
                 font-size: 12px;
             }
-            #emailreset{
+            #emailreset {
                 width: 220px;
             }
-            #send{
+            #send {
                 width: 100px;
-                margin-left: 70px;
             }
         }
-
     </style>
 </head>
 
@@ -132,6 +147,7 @@
     <div id="header"></div>
     <script>
         load("header.html");
+
         function load(url) {
             req = new XMLHttpRequest();
             req.open("GET", url, false);
@@ -145,10 +161,16 @@
         <div>
             <div class="flex-container">
                 <h2>Nhập email của bạn</h2>
-                <input type="text" id="emailreset">
-                <button  value="Gửi" id="send" onclick="checkEmail()">Gửi</button>
+                <form action="#" id="resetpw_form">
+                    <div class="email_input">
+                        <input type="text" id="emailreset" placeholder="Nhập địa chỉ email..."> <br>
+                        <span id="text"></span>
+                        <br>
+                        <button value="Gửi" id="send" onclick="validation()">Gửi</button>
+                    </div>
+                </form>
             </div>
-        </div>  
+        </div>
     </div>
     </div>
 
@@ -157,6 +179,7 @@
     <div id="footer"></div>
     <script>
         load("footer.html");
+
         function load(url) {
             req = new XMLHttpRequest();
             req.open("GET", url, false);
@@ -165,21 +188,31 @@
         }
     </script>
     <script>
-          function checkEmail(email) {
-      if (email.value === "") {
-          //show error
-          //show error class
-          setErrorFor(email, "Nhập Email");
-          return false
-      } else if (!isEmail(email.value)) {
-          setErrorFor(email, "Email không hợp lệ");
-          return false
-      } else {
-          //add success class
-          setSuccessFor(email);
-          return true;
-      }
-  }
+        function validation() {
+            var form = document.getElementById('resetpw_form');
+            var email = document.getElementById('emailreset').value;
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (email.match(pattern)) {
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+                document.getElementById('text').innerHTML = "Đã gửi email";
+                document.getElementById('text').style.color = "#2ecc71";
+                document.getElementById('emailreset').style.border = "1.5px solid #2ecc71";
+            } else if (email === "") {
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+                document.getElementById('text').innerHTML = "Vui lòng nhập email";
+                document.getElementById('text').style.color = "#e74c3c";
+                document.getElementById('emailreset').style.border = "1.5px solid #e74c3c";
+            } else {
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+                document.getElementById('text').innerHTML = "Email của bạn không hợp lệ";
+                document.getElementById('text').style.color = "#e74c3c";
+                document.getElementById('emailreset').style.border = "1.5px solid #e74c3c";
+
+            }
+        }
     </script>
     <!-- function để chèn html -->
     <script>
