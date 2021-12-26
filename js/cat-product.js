@@ -33,6 +33,9 @@ function catProduct(arr) {
                     open_del = '<del>';
                     close_del = '</del>';
                 }
+                if(arr[i].discount == ""){
+                    e = '';
+                }
                 div +=
                     '<div class="product"><div class="product-item" onclick="gotoChiTiet(' + arr[i].productid + ')" ><div class="product-top"><img src="' +
                     arr[i].image[0] +
@@ -42,7 +45,7 @@ function catProduct(arr) {
                     arr[i].name +
                     '</div><br/><div class="product-price">' + open_del +
                    formatNumber(arr[i].price[0]) +
-                    " đ" + close_del + "</div><div class='product-discount' >" + arr[i].discount + e +  ' ' + d + "</div></div></div></div></div>";
+                    " đ" + close_del + "</div><div class='product-discount' >" +  e +  ' ' + d + "</div></div></div></div></div>";
             }
         }
         document.getElementById("product").innerHTML = div;
