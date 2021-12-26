@@ -77,7 +77,7 @@ function render_products_gallery(arr) {
 
             // alert(arr[i].colors[0])
 
-            div += '</div></div></div><div class="products_buybox"><form action=""><div class="quantity_select" style="float: left;"><div class="quantity-dropdown"><label for="quantity">Số lượng</label> <fieldset data-quantity><legend>Change quantity</legend></fieldset><a class="btn_add-to-cart add-cart">Thêm vào giỏ hàng</a></div></div></form></div></div></div></div></div><div class="products_detail"><div class="products_detail-description"><div class="products_description-container"><ul class="products_detail-tabs"><li class="tab-active"><p>Thông tin chi tiết sản phẩm</p></li></ul><div class="products_description"><div class="products_description-text"><h3 class="products_description-title">Mô tả</h3><p id="description">' + arr[i].description + '</p>';
+            div += '</div></div></div><div class="products_buybox"><form action=""><div class="quantity_select" style="float: left;"><div class="quantity-dropdown"><label for="quantity">Số lượng</label> <fieldset data-quantity><legend>Change quantity</legend></fieldset><a class="btn_add-to-cart add-cart">Thêm vào giỏ hàng</a><a class="btn_add-to-favorite add-favorite"><3</a></div></div></form></div></div></div></div></div><div class="products_detail"><div class="products_detail-description"><div class="products_description-container"><ul class="products_detail-tabs"><li class="tab-active"><p>Thông tin chi tiết sản phẩm</p></li></ul><div class="products_description"><div class="products_description-text"><h3 class="products_description-title">Mô tả</h3><p id="description">' + arr[i].description + '</p>';
             if (arr[i].benefit != "") {
                 div += '<br><h3 class="products_description-title">Lợi ích</h3><p>' + arr[i].benefit + '</p>'
             }
@@ -89,12 +89,18 @@ function render_products_gallery(arr) {
             document.getElementById("container").innerHTML = div;
             document.getElementById("tieuDeSanPham").innerHTML = arr[i].name;
             let carts = document.querySelectorAll('.add-cart');
+            let favoriteproduct = document.querySelectorAll('.add-favorite');
             // let order = productid+" "
             // let counter = 1
             for (let k = 0; k < carts.length; k++) {
                 carts[k].addEventListener('click', () => {
                     cartNumbers(arr[i]);
                     totalCost(arr[i]);
+                })
+            }
+            for (let k = 0; k < favoriteproduct.length; k++) {
+                favoriteproduct[k].addEventListener('click', () => {
+                    savefavorite(arr[i]);
                 })
             }
             onLoadCartNumbers();
@@ -112,6 +118,25 @@ function render_products_gallery(arr) {
 
 onLoadCartNumbers();
 displayCart();
+// displayFavorite();
+function savefavorite(product){
+    let productFavorite = {
+        productid: product.productid,
+        image: product.image[0],
+        name: product.name,
+    }
+    saveFavoriteInStorage(productFavorite);
+}
+function getFavoriteFromStorage(){
+    return localStorage.getItem('favoriteProducts') ? JSON.parse(localStorage.getItem('favoriteProducts')) : [];
+    // returns empty array if there isn't any product info
+}
+function saveFavoriteInStorage(item){
+    let products = getFavoriteFromStorage();
+    products.push(item);
+    localStorage.setItem('favoriteProducts', JSON.stringify(products));
+    // updateCartInfo();
+}
 // displayCartInPayment();
 
 // đếm số loại sản phẩm, cùng productid nhưng khối lượng, màu sắc khác thì cũng tính là khác
@@ -349,6 +374,7 @@ function setItems(product){
         productInfo["image"] = product.image[0];
         // productInfo["name"] = product.name;
     }
+    productInfo["pricetotal"] = productInfo["price"]*productInfo["quantity"];
     // addToCartList(productInfo);
     saveProductInStorage(productInfo);
 }
@@ -438,7 +464,34 @@ function totalCost(product) {
     // }
 
 }
+function displayFavorite() {
+    let cartItemsx = localStorage.getItem("favoriteProducts");
+    cartItemsx = JSON.parse(cartItemsx);
+    let productContainerx = document.querySelector(".favorite-items");
+    // let productContainerInPayment = document.querySelector(".cart");
+    // let productContainer=document.querySelectorAll(".products");
+    // let cartCost = localStorage.getItem('totalCost');
 
+    // console.log(cartItems);
+    if (cartItemsx && productContainerx) {
+        let productContainer2x = document.querySelector(".favoriteTrong");
+        productContainer2x.style.display="none";
+        productContainerx.innerHTML = '';
+        // productContainerInPayment.innerHTML = '';
+        Object.values(cartItemsx).map(item => {
+            productContainerx.innerHTML += '<div class="favorite-item"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+'</span></div>';
+        });
+        // productContainer.innerHTML += '<div class="basketTotalContainer"><h4 class="basketTotalTitle">TỔNG CỘNG</h4><h4 class="basketTotal">'+formatNumber(cartCost)+'đ</h4></div><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="Dog-Product.html">TIẾP TỤC MUA SẮM</a><a style="margin-left:auto;margin-right:auto;display:block" class="btn_add-to-cart" href="payment.html">THANH TOÁN</a>';
+
+        // Object.values(cartItems).map(item => {
+        //     productContainerInPayment.innerHTML += '<div class="cart_row"><span class="quantity">'+item.quantity+' x</span><img src="'+item.image+'" alt=""><div class="cart_row-name"><span class="product">'+item.name+'</span><span class="modifier">Size 15 lb</span></div><span class="price">'+item.price+' VND</span></div>';
+        // });
+    }
+    else{
+        let productContainer2x = document.querySelector(".favorite-container");
+        productContainer2x.style.display="none";
+    }
+}
 function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
@@ -455,7 +508,7 @@ function displayCart() {
         // productContainerInPayment.innerHTML = '';
         Object.values(cartItems).map(item => {
             if(item.thuocTinh!=""){
-                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span>'+item.quantity+'</span></div><div class="total">'+formatNumber(item.quantity*item.price)+'₫</div>';
+                productContainer.innerHTML += '<div class="product"><ion-icon name="close-circle-outline"></ion-icon><img src="'+item.image+'" onclick="gotoChiTiet(' + item.productid + ')" onmouseover="" style="cursor: pointer;"><span>'+item.name+' ('+item.thuocTinh+')</span></div><div class="price">'+formatNumber(item.price)+'₫</div><div class="quantity"><span><input value="'+item.quantity+'" id="' + item.thutusanpham + '" onkeyup="tuDongTinhTien('+item+')"></span></div><div class="total"><input value="'+item.quantity*item.price+'" readonly id="tinhTien' + item.thutusanpham + '">₫</div>';
             }
             
             else{
@@ -472,6 +525,11 @@ function displayCart() {
         let productContainer2 = document.querySelector(".products-container");
         productContainer2.style.display="none";
     }
+}
+function tuDongTinhTien(product){
+    var soluongsp=document.getElementById(product.thutusanpham).value;
+    // var tongtiencuasp=document.getElementById("tinhTien"+product.thutusanpham).value;
+    document.getElementById("tinhTien"+product.thutusanpham).value=soluongsp*product.price;
 }
 const cartList = document.querySelector('.product');
 cartList.addEventListener('click', deleteProduct);
