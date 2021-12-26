@@ -721,7 +721,16 @@ a {
 
 
 /* -----reponsive------------ */
-
+@media only screen and (max-width: 1244px) {
+    .others>li>a>span{
+        font-size: 14px !important;
+    }
+}
+@media only screen and (max-width: 1183px) {
+    .others>li>a>span{
+        font-size: 10px !important;
+    }
+}
 @media only screen and (max-width: 1020px) {
     .header-bottom {
         display: none;

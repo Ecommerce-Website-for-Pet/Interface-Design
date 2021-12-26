@@ -497,4 +497,7 @@
     .btn_in_homepage {
         margin-top: 20px;
     }
+    .homepage-section-heading>h2{
+        text-align: center;
+    }
 }
