@@ -203,6 +203,9 @@
     margin-bottom: 3%;
     color: white;
     line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .flashsale-products--top--title>h2 {
@@ -283,7 +286,7 @@
     text-decoration: line-through;
 }
 
-.prev,
+/* .prev,
 .next {
     cursor: pointer;
     position: absolute;
@@ -298,7 +301,7 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     z-index: 2;
-}
+} */
 
 
 /* ---------------survice----------------- */
@@ -316,11 +319,11 @@
 
 /*---------------------- blog----------------------- */
 
-.homepage-blog--top {
+/* .homepage-blog--top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
+} */
 
 .btn_in_blog {
     margin-top: 0px;
@@ -366,12 +369,14 @@
 
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover,
+/* .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.slider-mobile{
+    display: none;
 }
-
-
 /* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
@@ -417,9 +422,11 @@
 }
 
 @media only screen and (max-width: 747px) {
-    .slide-container {
-        width: 100%;
-        height: 444px;
+    .slider-mobile{
+        display: block;
+    }
+    .slider-normal{
+        display: none;
     }
     .slide-container>img {
         height: 100%;
@@ -485,7 +492,7 @@
 }
 
 @media only screen and (max-width: 567px) {
-    .homepage-blog--top {
+    .homepage-blog--top, .flashsale-products--top {
         flex-direction: column;
     }
     .btn_in_homepage {

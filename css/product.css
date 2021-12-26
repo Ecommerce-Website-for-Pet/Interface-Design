@@ -85,11 +85,13 @@ body{
     flex-wrap: wrap;
     margin-bottom: 10px;
     cursor: pointer;
-    justify-content: flex-start;
-    margin-left: 20px;
+    justify-content: space-between;
 }
 .product {
-    margin: 10px;
+    width: 32%;
+}
+#products>div.products {
+    width: 32%;
 }
 .products:hover{
     background-color: white;
@@ -109,7 +111,6 @@ body{
  .product-info{
     padding: 10px 0px;
 }
-
 
 .product-info a.product-name{
     color: black;
@@ -231,16 +232,10 @@ body{
     .product {
         width: 47%;
     }
-    .products{
-        margin-left: 10px;
-    }
 }
 @media only screen and (max-width: 550px){
     .product {
         width: 95%;
-    }
-    .products{
-        margin-left: 30px;
     }
 }
 
