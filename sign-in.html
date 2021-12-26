@@ -14,15 +14,22 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <style>
-        .flex-container {
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #f2f3f5;
+            font-family: SVN-Poppins;
+        }
+        
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .loginContent {
             display: flex;
             flex-wrap: nowrap;
-            font-family: SVN-Poppins;
-            max-width: 900px;
-            margin: 50px 20px;
-            font-size: 15px;
-            margin-left: auto;
-            margin-right: auto;
         }
         
         .flex-container-left {
@@ -48,11 +55,11 @@
         }
         
         .form_button-signin {
-            width: 100px;
-            height: 30px;
-            background-color: #f5deb3;
-            border: none;
-            font-weight: bold;
+            width: 100px !important;
+            height: 30px !important;
+            background-color: #f5deb3 !important;
+            border: none !important;
+            font-weight: bold !important;
         }
         
         .form_button-signup {
@@ -64,9 +71,13 @@
             font-weight: bold;
         }
         
-        h2 {
-            margin-left: 25px;
+        .content h2 {
+            margin-bottom: 20px;
             font-family: SVN-Poppins;
+            color: palevioletred;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 2px;
         }
         
         .link {
@@ -78,16 +89,27 @@
             font-size: 14px;
         }
         
+        .flex-container {
+            background-color: white;
+            padding: 30px 0;
+            box-shadow: 0px 0px 25px 2px rgb(173, 173, 173, 0.5);
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 50px 20px;
+            font-size: 15px;
+        }
+        
+        .flex-container-right {
+            margin-right: 30px;
+            padding: 0px;
+        }
+        
         .flex-container-right>ul {
             list-style-type: disc;
         }
         
         .flex-container-right>li {
             color: #f5deb3;
-        }
-        
-        li>span {
-            /* color: black; */
         }
         
         .text-pink {
@@ -103,6 +125,25 @@
         .flex-container-left>a {
             color: black;
             text-decoration: none;
+        }
+        
+        .flex-container-left input {
+            margin-top: 10px;
+            border: none;
+            background-color: #f2f3f5;
+            height: 30px;
+        }
+        
+        .form_button-signin:hover {
+            background-color: rgb(216, 111, 146, 0.5) !important;
+        }
+        
+        .form_button-signup:hover {
+            box-shadow: 0px 0px 25px 2px rgb(173, 173, 173, 0.5);
+        }
+        
+        .fgpw:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -125,36 +166,39 @@
     <!-------------------------Phần nội dung---------------------------------- -->
     <div class="content">
         <div>
-            <h2>Đăng nhập</h2>
             <div class="flex-container">
-                <div class="flex-container-left">
-                    <form action="">
-                        <label for="email" class="form_label">Email của bạn:</label>
-                        <br>
-                        <input type="text" name="email">
-                        <br><br>
-                        <label for="pass" class="form_label">Mật khẩu:</label>
-                        <br>
-                        <input type="text" name="pass">
-                        <br><br>
-                        <input class="form_button-signin" type="button" value="Đăng nhập"> &ensp; &emsp; <span><a href="#">Quên mật khẩu?</a></span>
-                    </form>
-                </div>
-                <div class="flex-container-right">
-                    <div style="background-color: #f5f5f5; padding: 10px;">
-                        <div><b>Bạn là khách hàng mới?</b></div>
-                        <br>
-                        <!-- <input type="button" value="Đăng ký ngay" class="form_button-signup"> -->
-                        <button class="form_button-signup"><a class="form_button-signup" href="sign-up.html">Đăng ký ngay</a></button>
-                        <br>
-                        <br>
-                        <ul>
-                            <li><span>Để được trải nghiệm những tiện ích mua sắn và chế độ khách hàng <span class="text-pink">VIP</span></span>
-                            </li>
-                            <li><span>Để được hưởng ưu đãi, chương trình giảm giá hấp dẫn chỉ áp dụng cho thành viên</span></li>
-                            <li><span>Để tích lũy <span class="text-pink">MP-xu</span> đổi quà tặng và nhiều hơn thế nữa</span>
-                            </li>
-                        </ul>
+
+                <h2>Đăng nhập</h2>
+                <div class="loginContent">
+                    <div class="flex-container-left">
+                        <form action="">
+                            <label for="email" class="form_label">Email của bạn:</label>
+                            <br>
+                            <input type="text" name="email" id="emaillogin">
+                            <br><br>
+                            <label for="pass" class="form_label">Mật khẩu:</label>
+                            <br>
+                            <input type="text" name="pass" id="pwlogin">
+                            <br><br>
+                            <input class="form_button-signin" type="button" value="Đăng nhập"> &ensp; &emsp; <span class="fgpw"><a href="#">Quên mật khẩu?</a></span>
+                        </form>
+                    </div>
+                    <div class="flex-container-right">
+                        <div style="background-color: #f5f5f5; padding: 10px;">
+                            <div><b>Bạn là khách hàng mới?</b></div>
+                            <br>
+                            <!-- <input type="button" value="Đăng ký ngay" class="form_button-signup"> -->
+                            <button class="form_button-signup"><a class="form_button-signup" href="sign-up.html">Đăng ký ngay</a></button>
+                            <br>
+                            <br>
+                            <ul>
+                                <li><span>Để được trải nghiệm những tiện ích mua sắn và chế độ khách hàng <span class="text-pink">VIP</span></span>
+                                </li>
+                                <li><span>Để được hưởng ưu đãi, chương trình giảm giá hấp dẫn chỉ áp dụng cho thành viên</span></li>
+                                <li><span>Để tích lũy <span class="text-pink">MP-xu</span> đổi quà tặng và nhiều hơn thế nữa</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
