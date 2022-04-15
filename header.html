@@ -264,10 +264,10 @@
     <!-- -----------------fixed button on screen----------- -->
     <img src="./library/back-to-top-icon-png-0.png" class=" fixed-btn" onclick="topFunction()" id="topBtn" title="Go to top">
     <!-- Khi nhấp vào thì chuyển qua trang messenger fb của shop -->
-    <a href="https://m.me/107421025083727" target="blank"><img style="z-index:9999999999999" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2 fixed-btn"></img>
+    <!-- <a href="https://m.me/107421025083727" target="blank"><img style="z-index:9999999999999" src="./library/480px-Facebook_Messenger_logo_2020.svg.png" class="open-button-2 fixed-btn"></img> -->
     </a>
     <!-- Khi nhấp vào thì mở ô chat box để gửi tn -->
-    <img src="./library/sms-3.png" class="open-button-1 fixed-btn" onclick="openForm()" style="z-index:9999999999999"></img>
+    <!-- <img src="./library/sms-3.png" class="open-button-1 fixed-btn" onclick="openForm()" style="z-index:9999999999999"></img> -->
 
     <div class="chat-popup" id="myForm">
 
@@ -301,6 +301,15 @@
         </div>
 
     </div>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script src="./js/fbPlugin.js"></script>
+    
     <script>
         window.onload = function() {
                 // Get the modal
